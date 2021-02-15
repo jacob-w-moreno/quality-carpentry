@@ -1,0 +1,20 @@
+.intro {
+  // position
+    position: relative;
+  // color
+    background: gray;
+  // size
+    width: 100vw;
+    height: 450px;
+  // display
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mascot {
+  position: absolute;
+  right: 50px;
+  bottom: -60px;
+}
