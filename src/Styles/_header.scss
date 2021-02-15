@@ -1,14 +1,18 @@
 .header {
-  z-index: 2;
-  padding: 8px 24px;
-  width: 100vw;
-  background: #4B4B4B;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  position: sticky;
-  top: 0;
-  left: 0;
+  // position
+    z-index: 2;
+    position: sticky;
+    top: 0;
+    left: 0;
+  // size
+    padding: 8px 24px;
+    width: 100vw;
+  // style
+    background: #4B4B4B;
+  // display
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
   ul {
     display: flex;

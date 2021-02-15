@@ -1,15 +1,22 @@
+// position
+// display
+// size
+// style
+// text
+
 .intro {
   // position
     position: relative;
-  // style
-    background: gray;
-    width: 100vw;
-    height: 450px;
   // display
     display: flex;
     flex-flow: column;
     justify-content: center;
     align-items: center;
+  // size
+    width: 100vw;
+    height: 450px;
+  // style
+    background: gray;
 }
 
 .mascot {
@@ -25,7 +32,6 @@
 }
 
 .landing_title {
-
   margin: 40px;
   font-size: 2rem;
   text-align: center;
