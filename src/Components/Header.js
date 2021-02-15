@@ -10,7 +10,7 @@ const Header = props => {
         <li className='header_link'>HOME</li>
         <li className='header_link'>SERVICES</li>
         <li className='header_link'>ABOUT</li>
-        <li className='header_cta'>GET A QUOTE</li>
+        <li className='button_cta'>GET A QUOTE</li>
       </ul>
     </nav>
   </div>

@@ -1,0 +1,56 @@
+.intro {
+  // position
+    position: relative;
+  // color
+    background: gray;
+  // size
+    width: 100vw;
+    height: 450px;
+  // display
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mascot {
+  // position
+    position: absolute;
+    right: 50px;
+    bottom: -60px;
+}
+
+.landing_services {
+  // text
+    text-align: center;
+  
+  h3 {
+    margin: 40px;
+    font-size: 2rem;
+  }
+}
+
+.landing_services-container {
+  // display
+    display: flex;
+    justify-content: center;
+
+  // marpad
+    margin-bottom: 40px;
+}
+
+.service {
+  // @include b(red);
+  margin: 0 24px;
+}
+
+.service_icon-placeholder {
+  // dimensions
+    height: 150px;
+    width: 150px;
+  // style
+    background: gray;
+    border-radius: 50%;
+  // marpad
+    margin-bottom: 16px;
+}
