@@ -1,9 +1,8 @@
 .intro {
   // position
     position: relative;
-  // color
+  // style
     background: gray;
-  // size
     width: 100vw;
     height: 450px;
   // display
@@ -23,11 +22,13 @@
 .landing_services {
   // text
     text-align: center;
-  
-  h3 {
-    margin: 40px;
-    font-size: 2rem;
-  }
+}
+
+.landing_title {
+
+  margin: 40px;
+  font-size: 2rem;
+  text-align: center;
 }
 
 .landing_services-container {
@@ -35,22 +36,25 @@
     display: flex;
     justify-content: center;
 
-  // marpad
+  // position
     margin-bottom: 40px;
 }
 
 .service {
-  // @include b(red);
   margin: 0 24px;
 }
 
 .service_icon-placeholder {
-  // dimensions
+  // style
     height: 150px;
     width: 150px;
-  // style
     background: gray;
     border-radius: 50%;
-  // marpad
+  // text
     margin-bottom: 16px;
+}
+
+.landing_mission {
+  background: gray;
+  height: 400px;
 }
