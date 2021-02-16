@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Mascot from '../../Styles/Assets/Mascot.png';
+import Mascot from '../Styles/Assets/Mascot.png';
 
 const Intro = props => {
   return <div className='intro'>

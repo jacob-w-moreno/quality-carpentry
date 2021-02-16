@@ -1,13 +1,13 @@
 import './Styles/_style.scss';
+import routes from './routes';
 
 import Header from './Components/Header';
-import Landing from './Components/Landing/Landing';
 
 function App() {
   return (
     <div className="App">
       <Header/>
-      <Landing/>
+      {routes}
     </div>
   );
 }

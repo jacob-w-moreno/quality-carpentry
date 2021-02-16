@@ -1,0 +1,24 @@
+.bio {
+  display: flex;
+  justify-content: center;
+  padding: 40px 0;
+}
+
+.bio_img {
+  margin-right: 24px;
+}
+
+.bio_name {
+  margin-top: 24px;
+  font-size: 2rem;
+  color: $red;
+}
+
+.bio_title {
+  font-size: 1.2rem;
+  margin-bottom: 32px;
+}
+
+.bio_bio {
+  width: 600px;
+}

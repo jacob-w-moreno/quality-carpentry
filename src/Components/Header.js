@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 
 import Logo from '../Styles/Assets/QCLogo.png';
 
@@ -10,9 +11,15 @@ const Header = props => {
     </div>
     <nav>
       <ul>
-        <li className='header_link'>HOME</li>
-        <li className='header_link'>SERVICES</li>
-        <li className='header_link'>ABOUT</li>
+        <li className='header_link'>
+          <Link to='/'> HOME </Link>
+        </li>
+        <li className='header_link'>
+          <Link to='/services'> SERVICES </Link>
+        </li>
+        <li className='header_link'>
+          <Link to='/about'> ABOUT </Link>
+        </li>
         <li className='button_cta'>GET A QUOTE</li>
       </ul>
     </nav>

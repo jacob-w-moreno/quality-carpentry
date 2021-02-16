@@ -8,7 +8,7 @@
     padding: 8px 24px;
     width: 100vw;
   // style
-    background: #4B4B4B;
+    background: $darkgray;
   // display
     display: flex;
     align-items: center;
@@ -39,7 +39,7 @@
   &:hover {
     cursor: pointer;
   }
-  color: #c1b9b9;
+  color: $logogray;
   font-weight: bold;
   font-size: 1.5rem;
   letter-spacing: 2px;
