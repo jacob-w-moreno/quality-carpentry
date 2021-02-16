@@ -4,10 +4,9 @@
     position: sticky;
     top: 0;
     left: 0;
-  // size
+  // style
     padding: 8px 24px;
     width: 100vw;
-  // style
     background: $darkgray;
   // display
     display: flex;
@@ -46,10 +45,121 @@
 }
 
 .header_logo-img {
-  height: 55px;
+  height: 45px;
   margin-right: 12px;
+}
+
+.header_nav-container {
+  display: flex;
+  align-items: center;
+}
+
+.header_button {
+  margin-left: 40px;
 }
 
 .header_link {
   color: #c1b9b9;
+  height: 50px;
+  line-height: 50px;
+}
+
+.header_dropdown-container {
+  position: relative;
+  &:hover .header_dropdown {
+    display: block;
+  }
+}
+
+.header_dropdown-container:hover .dropdown-content {
+  display: block;
+}
+
+.header_dropdown-caret {
+  margin-left: 8px;
+  width: 10px;
+  filter: invert(81%) sepia(4%) saturate(280%) 
+  hue-rotate(314deg) brightness(90%) contrast(99%);
+}
+
+.header_dropdown {
+  display: none;
+  width: 200px;
+  position: absolute;
+  background: $darkgray;
+  padding-left: 16px;
+  margin-left: -16px;
+}
+
+.header_dropdown-item {
+  overflow: hidden;
+  color: $logogray;
+  height: 40px;
+  line-height: 20px;
+  width: 100%;
+  padding: 8px 0;
+  border-bottom: 1px solid #6d6d6d;
+  &:hover { 
+    color: white; 
+    padding-left: 9px;
+  }
+  transition: padding 0.2s ease;
+  &:last-of-type { border: none; }
+}
+
+.header_hamburger {
+  display: none;
+  height: 20px;
+  margin-left: 24px;
+  filter: invert(81%) sepia(4%) saturate(280%) 
+  hue-rotate(314deg) brightness(90%) contrast(99%);
+}
+
+@media(max-width:1050px) {
+  .header_logo {
+    font-size: 1rem;
+  }
+  .header_logo-img {
+    height: 35px;
+  }
+}
+
+@media(max-width: 950px) {
+  .header nav {
+    display: none;
+  }
+  .header_hamburger {
+    display: initial;
+  }
+  .header {
+    padding: 8px 12px;
+  }
+  .header_button {
+    font-size: .9rem;
+    margin-left: 24px;
+  }
+}
+
+@media(max-width: 750px) {
+  .header nav {
+    display: none;
+  }
+  .header_logo-img {
+    height: 35px;
+  }
+  .header_button {
+    font-size: .8rem;
+  }
+  .header_button {
+    display: none;
+  }
+  .header_hamburger {
+    display: initial;
+  }
+}
+
+@media(max-width: 400px) {
+  .header_logo-text {
+    font-size: .7rem;
+  }
 }

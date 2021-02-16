@@ -1,0 +1,51 @@
+.intro {
+  // position
+    position: relative;
+  // display
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+  // size
+    width: 100vw;
+    height: 500px;
+  // style
+    background: gray;
+    font-size: 1.6rem;
+}
+
+.mascot {
+  // position
+    position: absolute;
+    right: 50px;
+    bottom: -60px;
+}
+
+@media(max-width: 1200px) {
+  .intro {
+    font-size: 1.4rem;
+  }
+  .mascot {
+    height: 300px;
+    bottom: -20px;
+  }
+}
+
+@media(max-width: 900px) {
+  .intro {
+    height: 400px;
+    font-size: 1rem;
+  }
+  .mascot {
+    height: 200px;
+  }
+}
+
+@media(max-width: 650px) {
+  .intro {
+    font-size: .8rem;
+  }
+  .mascot {
+    display: none;
+  }
+}

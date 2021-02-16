@@ -6,7 +6,6 @@ $darkgray: #4B4B4B;
 $logogray: #c1b9b9;
 
 .App {
-  height: 150vh;
 }
 
 * {
@@ -44,5 +43,6 @@ ul {
 }
 
 @import './about';
+@import './general';
 @import './header';
 @import './landing';

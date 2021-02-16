@@ -5,7 +5,8 @@ import Service from './Service';
 
 const Landing = props => {
   const services = [
-    "Roofing", "Flooring", "Remodels", "Basements", "Tree Removal"
+    "Roofing", "Flooring", "Remodels", "Basements", 
+    "Tree Removal", "Other"
   ];
 
   return <div className='landing'>
@@ -13,7 +14,7 @@ const Landing = props => {
       primaryText="PRIMARY INTRO TEXT"
       secondaryText="Secondary Intro Text"
       mascot={true}/>
-    <div className='landing_services'>
+    {/* <div className='landing_services'>
       <h3 className='landing_title'>WHAT WE DO BEST</h3>
       <div className='landing_services-container'>
         {services.map((element, index) => {
@@ -23,7 +24,7 @@ const Landing = props => {
         })}
       </div>
       <button className='button_cta'>VIEW ALL SERVICES</button>
-    </div>
+    </div> */}
     <div className='landing_mission'>
       <h3 className='landing_title'>OUR MISSION</h3>
     </div>

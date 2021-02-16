@@ -2,10 +2,10 @@ import React from 'react';
 
 import Intro from '../Intro';
 import Bio from './Bio';
-import Esteban from '../../Styles/Assets/Esteban.png';
-import Jonathan from '../../Styles/Assets/Jonathan.png';
-import Rob from '../../Styles/Assets/Rob.png';
-import Placeholder from '../../Styles/Assets/Placeholder.png';
+import Esteban from '../../Styles/Assets/Bio Esteban.png';
+import Jonathan from '../../Styles/Assets/Bio Jonathan.png';
+import Rob from '../../Styles/Assets/Bio Rob.png';
+import Placeholder from '../../Styles/Assets/Logo Placeholder.png';
 
 const About = props => {
   return <div className='about'>
