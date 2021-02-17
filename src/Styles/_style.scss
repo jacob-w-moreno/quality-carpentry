@@ -29,17 +29,21 @@ ul {
 }
 
 .button_cta {
+// box
   border: none;
-  background: $red;
-  color: white;
   padding: 8px 24px;
   border-radius: 8px;
+// style
+  background: $red;
+// text
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+// pseudo
   &:hover {
     transform: scale(1.05);
     cursor: pointer;
   }
-  font-weight: bold;
-  font-size: 1.05rem;
 }
 
 @import './about';
