@@ -187,6 +187,9 @@
 }
 
 @media(max-width: 1000px) {
+  .header {
+    padding: 8px 12px;
+  }
   .header_logo-img {
     height: 36px;
   }
