@@ -6,12 +6,9 @@ const Intro = props => {
   return <div className='intro'>
     <h1>{props.primaryText.toUpperCase()}</h1>
     <h2>{props.secondaryText}</h2>
-    {props.mascot
-      ? <img className="mascot" 
-        src={Mascot} 
-        alt="Quality Carpentry mascot (a cartoon man with a tool belt)"/>
-      : null
-    }
+    <img className="mascot" 
+      src={Mascot} 
+      alt="Quality Carpentry mascot (a cartoon man with a tool belt)"/>
   </div>
 }
 

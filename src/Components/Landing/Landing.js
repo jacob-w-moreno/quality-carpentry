@@ -23,7 +23,6 @@ const services = [
           service={element}/>
       })}
     </div>
-    <button className='button_cta'>VIEW ALL SERVICES</button>
   </div>
 
   const landingMission = <div className='landing_mission'>

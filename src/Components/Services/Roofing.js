@@ -58,6 +58,11 @@ const Services = props => {
         height={400}
     />
     }
+  </Aux>
+
+  const gallery = <div className='service_gallery'>
+    <h3 className='service_summary-h3'>GALLERY</h3>
+    {imageDisplay}
     <div className='service_gallery-preview'>
       {
         images.map((element, i) => {
@@ -70,17 +75,6 @@ const Services = props => {
         })
       }
     </div>
-  </Aux>
-
-  const gallery = <div className='service_gallery'>
-    <h3 className='service_summary-h3'>GALLERY</h3>
-    {/* <BeforeAfterSlider
-      before={images[index][0]}
-      after={images[index][1]}
-      width={716}
-      height={400}
-    /> */}
-    {/* {imageDisplay} */}
   </div>
 
 // ===== ===== "COMPONENTS" END ===== =====

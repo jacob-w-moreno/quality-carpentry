@@ -5,6 +5,10 @@
 // text
 
 .landing_services {
+  // display
+  display: flex;
+  flex-flow: column;
+  align-items: center;
   // text
     text-align: center;
 }
@@ -17,7 +21,10 @@
 .landing_services-container {
   // display
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+    width: 100vw;
+    padding: 0 24px;
 
   // position
     margin-bottom: 40px;
@@ -25,14 +32,16 @@
 
 .landing_service {
   margin: 0 24px;
+  margin-bottom: 24px;
 }
 
 .service_icon-placeholder {
   // style
-    height: 150px;
-    width: 150px;
+    height: 128px;
+    width: 128px;
     background: gray;
-    border-radius: 50%;
+    // border-radius: 50%;
+    border-radius: 12px;
   // text
     margin-bottom: 16px;
 }
@@ -40,4 +49,19 @@
 .landing_mission {
   background: gray;
   height: 400px;
+}
+
+@media(max-width: 1110px) {
+  .landing_services-container {
+    max-width: 600px;
+    flex-wrap: wrap;
+  }
+}
+
+@media(max-width: 400px) {
+  .service_icon-placeholder {
+    height: 90px;
+    width: 90px;
+    margin-bottom: 8px;
+  }
 }
