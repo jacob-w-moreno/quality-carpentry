@@ -60,8 +60,8 @@ const Header = props => {
       <li className='header_link no-highlight'>SERVICES</li>
     </ul>
     {services.map((element, index) => {
-      return <Link to={'/' + element.split(' ').join('-').toLowerCase()}>
-        <div className='header_dropdown-item-2' key={index+element} onClick={()=>setDropdown(false)}>
+      return <Link className='header_dropdown-item-2' to={'/' + element.split(' ').join('-').toLowerCase()}>
+        <div key={index+element} onClick={()=>setDropdown(false)}>
           {element}
         </div>
       </Link>

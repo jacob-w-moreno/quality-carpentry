@@ -127,6 +127,7 @@
   width: 100%;
   padding: 8px 0;
   border-bottom: 1px solid #6d6d6d;
+  @include b(red);
 // text
   color: $logogray;
   line-height: 20px;

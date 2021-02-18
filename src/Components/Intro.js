@@ -5,7 +5,7 @@ import Mascot from '../Styles/Assets/Mascot.png';
 const Intro = props => {
   return <div className='intro'>
     <h1>{props.primaryText.toUpperCase()}</h1>
-    <h3>{props.secondaryText}</h3>
+    <h2>{props.secondaryText}</h2>
     {props.mascot
       ? <img className="mascot" 
         src={Mascot} 

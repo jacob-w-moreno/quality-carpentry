@@ -11,7 +11,6 @@
     height: 500px;
   // style
     background: gray;
-    font-size: 1.6rem;
 }
 
 .mascot {
@@ -21,10 +20,24 @@
     bottom: -60px;
 }
 
-@media(max-width: 1200px) {
-  .intro {
-    font-size: 1.4rem;
+.button_cta {
+  // box
+    border: none;
+    padding: 8px 24px;
+    border-radius: 8px;
+  // style
+    background: $red;
+  // text
+    color: white;
+    font-weight: bold;
+  // pseudo
+    &:hover {
+      transform: scale(1.05);
+      cursor: pointer;
+    }
   }
+
+@media(max-width: 1200px) {
   .mascot {
     height: 300px;
     bottom: -20px;
@@ -34,7 +47,6 @@
 @media(max-width: 900px) {
   .intro {
     height: 400px;
-    font-size: 1rem;
   }
   .mascot {
     height: 200px;
@@ -42,9 +54,6 @@
 }
 
 @media(max-width: 650px) {
-  .intro {
-    font-size: .8rem;
-  }
   .mascot {
     display: none;
   }
