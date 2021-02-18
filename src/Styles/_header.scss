@@ -18,16 +18,6 @@
     &:hover {
       cursor: pointer;
     }
-
-    li {
-      margin-left: 40px;
-      font-weight: bold;
-      &:hover {
-        cursor: pointer;
-        color: white;
-      }
-      &:first-of-type { margin-left: 0; }
-    }
   }
 }
 
@@ -77,10 +67,16 @@
 .header_link {
 // box
   height: 50px;
+  margin-left: 40px;
 // text
   color: #c1b9b9;
   line-height: 50px;
+  font-weight: bold;
 // pseudo
+  &:hover {
+    cursor: pointer;
+    color: white;
+  }
   &:hover {
     cursor: pointer;
     color: white;
@@ -126,8 +122,6 @@
   height: 40px;
   width: 100%;
   padding: 8px 0;
-  border-bottom: 1px solid #6d6d6d;
-  @include b(red);
 // text
   color: $logogray;
   line-height: 20px;
@@ -158,11 +152,9 @@
 
 .header_dropdown-item-2 {
 // box
-  height: 40px;
+  height: 32px;
   width: 250px;
-  padding: 8px 0;
   margin-left: 120px;
-  // border-bottom: 1px solid #6d6d6d;
 // text
   color: $logogray;
   line-height: 20px;
@@ -171,7 +163,7 @@
     color: white;
     cursor: pointer;
   }
-  &:last-of-type { border: none; }
+  &:first-of-type { margin-top: 8px; }
 }
 
 .header_hamburger {
@@ -222,10 +214,12 @@
     font-weight: bold;
     line-height:30px;
     text-align: left;
+  // pseudo
     &:first-of-type { margin-top: 12px; }
   }
   .no-highlight {
     &:hover { color: $logogray; }
+    border: none;
   }
   .header_hamburger {
     display: initial;

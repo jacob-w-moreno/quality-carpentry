@@ -22,8 +22,12 @@ const Header = props => {
 
   const servicesDropdown = <div className='header_dropdown'>
     {services.map((element, index) => {
-      return <Link to={'/' + element.split(' ').join('-').toLowerCase()} key={index+element}>
-        <div className='header_dropdown-item'> {element} </div>
+      return <Link
+        to={'/' + element.split(' ').join('-').toLowerCase()}
+        key={index+element}>
+        <div className='header_dropdown-item'> 
+          {element} 
+        </div>
       </Link>
     })}
   </div>
@@ -37,7 +41,9 @@ const Header = props => {
   const navigation = <div className='header_nav-container'>
     <nav>
       <ul>
-        <li className='header_link'> <Link to='/'> HOME </Link> </li>
+        <Link to='/' className='header_link'>
+          <li>HOME</li>
+        </Link>
 
         <li className='header_link header_dropdown-container'>
           SERVICES
@@ -45,7 +51,9 @@ const Header = props => {
           { servicesDropdown }
         </li>
 
-        <li className='header_link'> <Link to='/about'> ABOUT </Link> </li>
+        <Link to='/about' className='header_link'>
+          <li>ABOUT</li>
+        </Link>
       </ul>
       <button className='header_button button_cta'>GET A QUOTE</button>
     </nav>
@@ -55,8 +63,12 @@ const Header = props => {
 
   const hamburgerDropdown = <div className='header_dropdown-2'>
     <ul>
-      <li className='header_link' onClick={()=>setDropdown(false)}><Link to='/'> HOME </Link></li>
-      <li className='header_link' onClick={()=>setDropdown(false)}><Link to='/about'> ABOUT </Link></li>
+    <Link to='/'>
+      <li className='header_link' onClick={()=>setDropdown(false)}>HOME</li>
+    </Link>
+    <Link to='/about'>
+      <li className='header_link' onClick={()=>setDropdown(false)}>ABOUT</li>
+    </Link>
       <li className='header_link no-highlight'>SERVICES</li>
     </ul>
     {services.map((element, index) => {
