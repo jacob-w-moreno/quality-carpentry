@@ -22,7 +22,9 @@ const Header = props => {
 
   const servicesDropdown = <div className='header_dropdown'>
     {services.map((element, index) => {
-      return <div className='header_dropdown-item' key={index+element}> {element} </div>
+      return <Link to={'/' + element.split(' ').join('-').toLowerCase()} key={index+element}>
+        <div className='header_dropdown-item'> {element} </div>
+      </Link>
     })}
   </div>
 
