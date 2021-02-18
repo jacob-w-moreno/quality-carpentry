@@ -3,8 +3,9 @@ import BeforeAfterSlider from 'react-before-after-slider';
 import Intro from '../Intro';
 import GalleryBox from './GalleryBox';
 import Aux from '../Aux';
+import Services from './Services';
 
-const Services = props => {
+const Roofing = props => {
 // ===== ===== CONSTANTS BEG ===== =====
 
   const [index, setIndex] = useState(0)
@@ -86,7 +87,8 @@ const Services = props => {
     />
     {serviceIntro}
     {gallery}
+    <Services title="Our other services"/>
   </div>
 }
 
-export default Services;
+export default Roofing;
