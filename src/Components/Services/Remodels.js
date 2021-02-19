@@ -12,6 +12,7 @@ const Remodels = props => {
   const images=[
     [
       'https://hgtvhome.sndimg.com/content/dam/images/hgtv/fullset/2015/7/7/0/HFXUP111H_after-kitchen-2_h.jpg.rend.hgtvcom.966.644.suffix/1436278822871.jpeg',
+      'https://www.seapointe.com/wp-content/uploads/2019/10/Remodel-VS-Relocate-MAIN.jpg'
     ],
     [
       'https://hgtvhome.sndimg.com/content/dam/images/hgtv/fullset/2015/10/27/2/Original_Designs-by-Human-L-Shaped-Kitchen-After-1.jpg.rend.hgtvcom.966.725.suffix/1445990176110.jpeg'
@@ -46,13 +47,14 @@ const Remodels = props => {
 
   const imageDisplay = <Aux>
     {images[index].length===1
-      ? <img className='service_main-picture' src={images[index][0]} alt=''/>
+      ? <img className='service_main-picture' src={images[index][0]} alt='Gallery'/>
       : <BeforeAfterSlider
-        before={images[index][0]}
-        after={images[index][1]}
-        width={716}
-        height={400}
-    />
+          className='before-after-slider'
+          before={images[index][0]}
+          after={images[index][1]}
+          height={400}
+          width={716}
+        />
     }
   </Aux>
 
@@ -64,7 +66,7 @@ const Remodels = props => {
         images.map((element, i) => {
           return <GalleryBox
             img={element[0]}
-            alt='Gallery image'
+            alt='Gallery'
             clicked={()=>setIndex(i)}
             current={i===index}
             key={i + element}/>

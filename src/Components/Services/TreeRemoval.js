@@ -11,7 +11,8 @@ const TreeRemoval = props => {
   const [index, setIndex] = useState(0)
   const images=[
     [
-      'https://res.cloudinary.com/force/image/upload/v1520001725/mohawk/gallery/hardwood/WEM03_27_00.jpg'
+      'https://res.cloudinary.com/force/image/upload/v1520001725/mohawk/gallery/hardwood/WEM03_27_00.jpg',
+      'https://vantagevinyl.com/wp-content/uploads/2020/06/IN_GPL_TruTex_27012_1-scaled.jpg'
     ],
     [
       'https://thelastinventory.com/wp-content/uploads/2020/03/LawsonGates-2.png'
@@ -46,13 +47,14 @@ const TreeRemoval = props => {
 
   const imageDisplay = <Aux>
     {images[index].length===1
-      ? <img className='service_main-picture' src={images[index][0]} alt=''/>
+      ? <img className='service_main-picture' src={images[index][0]} alt='Gallery'/>
       : <BeforeAfterSlider
-        before={images[index][0]}
-        after={images[index][1]}
-        width={716}
-        height={400}
-    />
+          className='before-after-slider'
+          before={images[index][0]}
+          after={images[index][1]}
+          height={400}
+          width={716}
+        />
     }
   </Aux>
 
@@ -64,7 +66,7 @@ const TreeRemoval = props => {
         images.map((element, i) => {
           return <GalleryBox
             img={element[0]}
-            alt='Gallery image'
+            alt='Gallery'
             clicked={()=>setIndex(i)}
             current={i===index}
             key={i + element}/>

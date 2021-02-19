@@ -1,5 +1,5 @@
 import React from 'react';
-import Arrow from '../../Styles/Assets/GoArrow.png';
+// import Arrow from '../../Styles/Assets/GoArrow.png';
 import {Link} from 'react-router-dom';
 
 const Service = props => {

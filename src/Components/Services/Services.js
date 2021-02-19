@@ -12,7 +12,7 @@ const Services = props => {
   <h3 className='landing_title'>{props.title.toUpperCase()}</h3>
   <div className='landing_services-container'>
     {services.map((element, index) => {
-      return <Service 
+      return <Service
         key={index}
         service={element}/>
     })}

@@ -11,7 +11,8 @@ const Basements = props => {
   const [index, setIndex] = useState(0)
   const images=[
     [
-      'https://metrobuildingandremodeling.com/wp-content/uploads/2018/10/prg_MR_devost_basement_remodel_ashburn_va_18_after.jpg'
+      'https://metrobuildingandremodeling.com/wp-content/uploads/2018/10/prg_MR_devost_basement_remodel_ashburn_va_18_after.jpg',
+      'https://i2.wp.com/www.basementproutah.com/wp-content/uploads/2013/04/highland-basement-exercise.jpg?fit=710%2C575'
     ],
     [
       'https://i2.wp.com/www.basementproutah.com/wp-content/uploads/2013/04/highland-basement-exercise.jpg?fit=710%2C575'
@@ -46,13 +47,14 @@ const Basements = props => {
 
   const imageDisplay = <Aux>
     {images[index].length===1
-      ? <img className='service_main-picture' src={images[index][0]} alt=''/>
+      ? <img className='service_main-picture' src={images[index][0]} alt='Gallery'/>
       : <BeforeAfterSlider
-        before={images[index][0]}
-        after={images[index][1]}
-        width={716}
-        height={400}
-    />
+          className='before-after-slider'
+          before={images[index][0]}
+          after={images[index][1]}
+          height={400}
+          width={716}
+        />
     }
   </Aux>
 
@@ -64,7 +66,7 @@ const Basements = props => {
         images.map((element, i) => {
           return <GalleryBox
             img={element[0]}
-            alt='Gallery image'
+            alt='Gallery'
             clicked={()=>setIndex(i)}
             current={i===index}
             key={i + element}/>

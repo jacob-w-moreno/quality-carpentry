@@ -2,7 +2,6 @@ import React from 'react';
 
 import Intro from '../Intro';
 import Services from '../Services/Services';
-import Service from '../Services/Service';
 
 const Landing = props => {
 // ===== ===== COMPONENTS BEG ===== =====

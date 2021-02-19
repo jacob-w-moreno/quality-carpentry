@@ -72,8 +72,8 @@ const Header = props => {
       <li className='header_link no-highlight'>SERVICES</li>
     </ul>
     {services.map((element, index) => {
-      return <Link className='header_dropdown-item-2' to={'/' + element.split(' ').join('-').toLowerCase()}>
-        <div key={index+element} onClick={()=>setDropdown(false)}>
+      return <Link key={index+element} className='header_dropdown-item-2' to={'/' + element.split(' ').join('-').toLowerCase()}>
+        <div onClick={()=>setDropdown(false)}>
           {element}
         </div>
       </Link>
