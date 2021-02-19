@@ -45,22 +45,9 @@ const Flooring = props => {
     </p>
   </div>
 
-  const imageDisplay = <Aux>
-    {images[index].length===1
-      ? <img className='service_main-picture' src={images[index][0]} alt='Gallery'/>
-      : <BeforeAfterSlider
-          className='before-after-slider'
-          before={images[index][0]}
-          after={images[index][1]}
-          height={400}
-          width={716}
-        />
-    }
-  </Aux>
-
   const gallery = <div className='service_gallery'>
     <h3 className='service_summary-h3'>GALLERY</h3>
-    {imageDisplay}
+    <img className='service_main-picture' src={images[index][0]} alt='Gallery'/>
     <div className='service_gallery-preview'>
       {
         images.map((element, i) => {
