@@ -5,26 +5,25 @@ import GalleryBox from './GalleryBox';
 import Aux from '../Aux';
 import Services from './Services';
 
-const Roofing = props => {
+const Basements = props => {
 // ===== ===== CONSTANTS BEG ===== =====
 
   const [index, setIndex] = useState(0)
   const images=[
     [
-      'https://s3.amazonaws.com/greenbuildingadvisor.s3.tauntoncloud.com/app/uploads/2019/08/22170730/Metal-roof-lede-700x438.jpg',
-      'https://www.barthroofing.com/wp-content/uploads/2019/12/file-1.jpg'
+      'https://metrobuildingandremodeling.com/wp-content/uploads/2018/10/prg_MR_devost_basement_remodel_ashburn_va_18_after.jpg'
     ],
     [
-      'https://www.metalroofing.com/media/images/about-dark-red-shingle-750.original_VNYNA3w.jpg',
+      'https://i2.wp.com/www.basementproutah.com/wp-content/uploads/2013/04/highland-basement-exercise.jpg?fit=710%2C575'
     ],
     [
-      'https://www.evorooftechnologies.com/wp-content/uploads/2019/05/3-in-1-Roof-tiles-installed.jpg'
+      'https://metrobuildingandremodeling.com/wp-content/uploads/2018/10/prg_MR_devost_basement_remodel_ashburn_va_18_after.jpg'
     ],
     [
-      'https://www.bluebarrelsystems.com/wp-content/uploads/2018/10/standing-seam-metal-roof-e1596918130324.jpg'
+      'https://www.finishedbasementsplus.com/wp-content/uploads/2020/01/highland-mi-open-basement-design-fireplace.jpg'
     ],
     [
-      'https://modernize.com/wp-content/themes/modernize/dist/images/bg/roof-hero-desktop.jpg'
+      'https://cdn.treehouseinternetgroup.com/uploads/photo_gallery/medium/169469-5a6f47b2c181f_img8515.jpg?v=1517241959'
     ]
   ]
   
@@ -32,7 +31,7 @@ const Roofing = props => {
 // ===== ===== "COMPONENTS" BEG ===== =====
 
   const serviceIntro = <div className='service_summary'>
-    <h3 className='service_summary-h3'>SOMETHING ABOUT ROOVES</h3>
+    <h3 className='service_summary-h3'>SOMETHING ABOUT BASEMENTS</h3>
     <p className='service_summary-p'>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
       sed do eiusmod tempor incididunt ut labore et dolore magna 
@@ -47,7 +46,7 @@ const Roofing = props => {
 
   const imageDisplay = <Aux>
     {images[index].length===1
-      ? <img className='service_main-picture' src={images[index][0]} alt='Gallery Image'/>
+      ? <img className='service_main-picture' src={images[index][0]} alt=''/>
       : <BeforeAfterSlider
         before={images[index][0]}
         after={images[index][1]}
@@ -78,8 +77,8 @@ const Roofing = props => {
 
   return <div>
     <Intro
-      primaryText='Quality Roofing'
-      secondaryText="More details about roofing"
+      primaryText='Quality Basements'
+      secondaryText="More details about basements"
     />
     {serviceIntro}
     {gallery}
@@ -87,4 +86,4 @@ const Roofing = props => {
   </div>
 }
 
-export default Roofing;
+export default Basements;

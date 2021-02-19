@@ -5,26 +5,25 @@ import GalleryBox from './GalleryBox';
 import Aux from '../Aux';
 import Services from './Services';
 
-const Roofing = props => {
+const Remodels = props => {
 // ===== ===== CONSTANTS BEG ===== =====
 
   const [index, setIndex] = useState(0)
   const images=[
     [
-      'https://s3.amazonaws.com/greenbuildingadvisor.s3.tauntoncloud.com/app/uploads/2019/08/22170730/Metal-roof-lede-700x438.jpg',
-      'https://www.barthroofing.com/wp-content/uploads/2019/12/file-1.jpg'
+      'https://hgtvhome.sndimg.com/content/dam/images/hgtv/fullset/2015/7/7/0/HFXUP111H_after-kitchen-2_h.jpg.rend.hgtvcom.966.644.suffix/1436278822871.jpeg',
     ],
     [
-      'https://www.metalroofing.com/media/images/about-dark-red-shingle-750.original_VNYNA3w.jpg',
+      'https://hgtvhome.sndimg.com/content/dam/images/hgtv/fullset/2015/10/27/2/Original_Designs-by-Human-L-Shaped-Kitchen-After-1.jpg.rend.hgtvcom.966.725.suffix/1445990176110.jpeg'
     ],
     [
-      'https://www.evorooftechnologies.com/wp-content/uploads/2019/05/3-in-1-Roof-tiles-installed.jpg'
+      'https://www.remodelingimage.com/wp-content/uploads/2019/11/beautiful-modern-kitchen.jpg'
     ],
     [
-      'https://www.bluebarrelsystems.com/wp-content/uploads/2018/10/standing-seam-metal-roof-e1596918130324.jpg'
+      'https://coloradobuildermag.com/wp-content/uploads/2019/02/open-kitchen-modern-transitional-island-seating-Danny-Raustadt-dt-800x445.jpg'
     ],
     [
-      'https://modernize.com/wp-content/themes/modernize/dist/images/bg/roof-hero-desktop.jpg'
+      'https://www.seapointe.com/wp-content/uploads/2019/10/Remodel-VS-Relocate-MAIN.jpg'
     ]
   ]
   
@@ -32,7 +31,7 @@ const Roofing = props => {
 // ===== ===== "COMPONENTS" BEG ===== =====
 
   const serviceIntro = <div className='service_summary'>
-    <h3 className='service_summary-h3'>SOMETHING ABOUT ROOVES</h3>
+    <h3 className='service_summary-h3'>SOMETHING ABOUT REMODELS</h3>
     <p className='service_summary-p'>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
       sed do eiusmod tempor incididunt ut labore et dolore magna 
@@ -47,7 +46,7 @@ const Roofing = props => {
 
   const imageDisplay = <Aux>
     {images[index].length===1
-      ? <img className='service_main-picture' src={images[index][0]} alt='Gallery Image'/>
+      ? <img className='service_main-picture' src={images[index][0]} alt=''/>
       : <BeforeAfterSlider
         before={images[index][0]}
         after={images[index][1]}
@@ -78,8 +77,8 @@ const Roofing = props => {
 
   return <div>
     <Intro
-      primaryText='Quality Roofing'
-      secondaryText="More details about roofing"
+      primaryText='Quality Remodels'
+      secondaryText="More details about remodels"
     />
     {serviceIntro}
     {gallery}
@@ -87,4 +86,4 @@ const Roofing = props => {
   </div>
 }
 
-export default Roofing;
+export default Remodels;

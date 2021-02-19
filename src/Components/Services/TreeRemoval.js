@@ -5,26 +5,25 @@ import GalleryBox from './GalleryBox';
 import Aux from '../Aux';
 import Services from './Services';
 
-const Roofing = props => {
+const TreeRemoval = props => {
 // ===== ===== CONSTANTS BEG ===== =====
 
   const [index, setIndex] = useState(0)
   const images=[
     [
-      'https://s3.amazonaws.com/greenbuildingadvisor.s3.tauntoncloud.com/app/uploads/2019/08/22170730/Metal-roof-lede-700x438.jpg',
-      'https://www.barthroofing.com/wp-content/uploads/2019/12/file-1.jpg'
+      'https://res.cloudinary.com/force/image/upload/v1520001725/mohawk/gallery/hardwood/WEM03_27_00.jpg'
     ],
     [
-      'https://www.metalroofing.com/media/images/about-dark-red-shingle-750.original_VNYNA3w.jpg',
+      'https://thelastinventory.com/wp-content/uploads/2020/03/LawsonGates-2.png'
     ],
     [
-      'https://www.evorooftechnologies.com/wp-content/uploads/2019/05/3-in-1-Roof-tiles-installed.jpg'
+      'https://contentgrid.homedepot-static.com/hdus/en_US/DTCCOMNEW/Articles/how-to-repair-laminate-flooring-step-5.jpg'
     ],
     [
-      'https://www.bluebarrelsystems.com/wp-content/uploads/2018/10/standing-seam-metal-roof-e1596918130324.jpg'
+      'https://vantagevinyl.com/wp-content/uploads/2020/06/IN_GPL_TruTex_27012_1-scaled.jpg'
     ],
     [
-      'https://modernize.com/wp-content/themes/modernize/dist/images/bg/roof-hero-desktop.jpg'
+      'https://secure.img1-fg.wfcdn.com/im/11040301/compr-r85/1031/103192191/windworn-hickory-38-thick-x-5-wide-x-varying-length-engineered-hardwood-flooring.jpg'
     ]
   ]
   
@@ -32,7 +31,7 @@ const Roofing = props => {
 // ===== ===== "COMPONENTS" BEG ===== =====
 
   const serviceIntro = <div className='service_summary'>
-    <h3 className='service_summary-h3'>SOMETHING ABOUT ROOVES</h3>
+    <h3 className='service_summary-h3'>SOMETHING ABOUT TREE REMOVAL</h3>
     <p className='service_summary-p'>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
       sed do eiusmod tempor incididunt ut labore et dolore magna 
@@ -47,7 +46,7 @@ const Roofing = props => {
 
   const imageDisplay = <Aux>
     {images[index].length===1
-      ? <img className='service_main-picture' src={images[index][0]} alt='Gallery Image'/>
+      ? <img className='service_main-picture' src={images[index][0]} alt=''/>
       : <BeforeAfterSlider
         before={images[index][0]}
         after={images[index][1]}
@@ -78,8 +77,8 @@ const Roofing = props => {
 
   return <div>
     <Intro
-      primaryText='Quality Roofing'
-      secondaryText="More details about roofing"
+      primaryText='Quality Tree Removal'
+      secondaryText="More details about tree removal"
     />
     {serviceIntro}
     {gallery}
@@ -87,4 +86,4 @@ const Roofing = props => {
   </div>
 }
 
-export default Roofing;
+export default TreeRemoval;
