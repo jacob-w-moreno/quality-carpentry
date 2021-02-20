@@ -1,5 +1,6 @@
 const functions = require('firebase-functions');
 const admin = require('firebase-admin');
+const nodemailer = require('nodemailer');
 
 admin.initializeApp();
 const db = admin.firestore();
@@ -48,3 +49,35 @@ exports.createEmail = functions.https.onRequest((req, res) => {
       console.error(err);
     })
 });
+
+exports.sendEmail = functions.firestore.document('emails/{emailID}')
+  .onCreate((snap, context) => {
+    const mailOptions = {
+      from: `softauthor1@gmail.com`,
+      to: snap.data().email,
+      subject: 'contact form message',
+      html: `<h1>Order Confirmation</h1>
+       <p> <b>Email: </b>${snap.data().email} </p>`
+    };
+    return transporter.sendMail(mailOptions, (error, data) => {
+      if (error) {
+          console.log(error)
+          return
+      }
+      console.log("Sent!")
+    });
+  })
+
+// ===== ===== NODEMAILER BEG ===== =====
+
+var transporter = nodemailer.createTransport({
+  host: 'smtp.gmail.com',
+  port: 465,
+  secure: true,
+  auth: {
+      user: '********@gmail.com',
+      pass: '************'
+  }
+});
+
+// ===== ===== NODEMAILER END ===== =====
