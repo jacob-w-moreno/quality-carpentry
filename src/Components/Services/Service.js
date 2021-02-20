@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import Intro from '../Intro';
 import GalleryBox from './GalleryBox';
 import Services from './ServicesList/Services';
-import GetQuote from './GetQuote';
+import GetQuote from '../Contact/GetQuote';
 
 const Service = props => {
 // ===== ===== CONSTANTS BEG ===== =====

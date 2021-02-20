@@ -1,0 +1,39 @@
+.contact_get-quote {
+// box
+  padding: 24px;
+}
+
+.contact_icon {
+  width: 30px;
+  margin-right: 16px;
+  filter: invert(100%);
+}
+
+.contact_method {
+// style
+  text-align: center;
+// box
+  width: 400px;
+}
+
+.contact_method-details {
+// display
+  display: flex;
+  justify-content: center;
+  align-items: center;
+// box
+  margin: 12px;
+  padding: 16px;
+  border-radius: 12px;
+// style
+  background: $darkgray;
+  color: white;
+}
+
+.contact_methods {
+// display
+  display: flex;
+  justify-content: center;
+// box
+  margin-top: 16px;
+}
