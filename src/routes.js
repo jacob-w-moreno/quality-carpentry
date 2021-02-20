@@ -8,6 +8,7 @@ import Landing from './Components/Landing/Landing';
 import Roofing from './Components/Services/Roofing';
 import Remodels from './Components/Services/Remodels';
 import TreeRemoval from './Components/Services/TreeRemoval';
+import Other from './Components/Services/Other';
 
 export default (
   <Switch>
@@ -18,5 +19,6 @@ export default (
     <Route exact path='/remodels' component={Remodels}/>
     <Route exact path='/about' component={About}/>
     <Route exact path='/tree-removal' component={TreeRemoval}/>
+    <Route exact path='/other' component={Other}/>
   </Switch>
 )

@@ -5,23 +5,29 @@ import GalleryBox from './GalleryBox';
 import Aux from '../Aux';
 import Services from './Services';
 
-const Basements = props => {
+const TreeRemoval = props => {
 // ===== ===== CONSTANTS BEG ===== =====
 
+  console.log('route:', props.location.pathname.slice(1));
+
   const [index, setIndex] = useState(0)
-  const images=[
-    [ 'https://metrobuildingandremodeling.com/wp-content/uploads/2018/10/prg_MR_devost_basement_remodel_ashburn_va_18_after.jpg' ],
-    [ 'https://i2.wp.com/www.basementproutah.com/wp-content/uploads/2013/04/highland-basement-exercise.jpg?fit=710%2C575' ],
-    [ 'https://metrobuildingandremodeling.com/wp-content/uploads/2018/10/prg_MR_devost_basement_remodel_ashburn_va_18_after.jpg' ],
-    [ 'https://www.finishedbasementsplus.com/wp-content/uploads/2020/01/highland-mi-open-basement-design-fireplace.jpg' ],
-    [ 'https://cdn.treehouseinternetgroup.com/uploads/photo_gallery/medium/169469-5a6f47b2c181f_img8515.jpg?v=1517241959' ]
+  let images;
+  switch ('route') {
+    case 'other':
+  }
+  images=[
+    [ 'https://res.cloudinary.com/force/image/upload/v1520001725/mohawk/gallery/hardwood/WEM03_27_00.jpg', ],
+    [ 'https://thelastinventory.com/wp-content/uploads/2020/03/LawsonGates-2.png' ],
+    [ 'https://contentgrid.homedepot-static.com/hdus/en_US/DTCCOMNEW/Articles/how-to-repair-laminate-flooring-step-5.jpg' ],
+    [ 'https://vantagevinyl.com/wp-content/uploads/2020/06/IN_GPL_TruTex_27012_1-scaled.jpg' ],
+    [ 'https://secure.img1-fg.wfcdn.com/im/11040301/compr-r85/1031/103192191/windworn-hickory-38-thick-x-5-wide-x-varying-length-engineered-hardwood-flooring.jpg' ]
   ]
   
 // ===== ===== CONSTANTS END ===== =====
 // ===== ===== "COMPONENTS" BEG ===== =====
 
   const serviceIntro = <div className='service_summary'>
-    <h3 className='service_summary-h3'>SOMETHING ABOUT BASEMENTS</h3>
+    <h3 className='service_summary-h3'>SOMETHING ABOUT TREE REMOVAL</h3>
     <p className='service_summary-p'>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
       sed do eiusmod tempor incididunt ut labore et dolore magna 
@@ -55,8 +61,8 @@ const Basements = props => {
 
   return <div>
     <Intro
-      primaryText='Quality Basements'
-      secondaryText="More details about basements"
+      primaryText='Quality Tree Removal'
+      secondaryText="More details about tree removal"
     />
     {serviceIntro}
     {gallery}
@@ -64,4 +70,4 @@ const Basements = props => {
   </div>
 }
 
-export default Basements;
+export default TreeRemoval;
