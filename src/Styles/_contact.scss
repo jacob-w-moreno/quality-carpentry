@@ -4,8 +4,10 @@
 }
 
 .contact_icon {
+// box
   width: 30px;
   margin-right: 16px;
+// style
   filter: invert(100%);
 }
 
@@ -14,6 +16,7 @@
   text-align: center;
 // box
   width: 400px;
+  margin-top: 24px;
 }
 
 .contact_method-details {
@@ -36,4 +39,17 @@
   justify-content: center;
 // box
   margin-top: 16px;
+}
+
+@media(max-width:900px) {
+  .contact_methods {
+    flex-flow: column;
+    align-items: center;
+  }
+}
+
+@media(max-width:400px) {
+  .contact_method {
+    width: 250px;
+  }
 }
