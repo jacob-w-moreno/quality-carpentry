@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import Intro from '../Intro';
 import GalleryBox from './GalleryBox';
 import Services from './ServicesList/Services';
+import GetQuote from './GetQuote';
 
 const Service = props => {
 // ===== ===== CONSTANTS BEG ===== =====
@@ -118,6 +119,7 @@ const Service = props => {
     />
     {serviceIntro}
     {gallery}
+    <GetQuote/>
     <Services title="Our other services"/>
   </div>
 }

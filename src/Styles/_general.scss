@@ -1,25 +1,3 @@
-.intro {
-  // position
-    position: relative;
-  // display
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-items: center;
-  // size
-    width: 100vw;
-    height: 500px;
-  // style
-    background: gray;
-}
-
-.mascot {
-  // position
-    position: absolute;
-    right: 50px;
-    bottom: -60px;
-}
-
 .button_cta {
   // box
     border: none;
@@ -36,6 +14,28 @@
       cursor: pointer;
     }
   }
+  
+.intro {
+  // position
+    position: relative;
+  // display
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+  // size
+    width: 100vw;
+    height: 500px;
+  // style
+    background: gray;
+}
+
+.mascot {
+// position
+  position: absolute;
+  right: 50px;
+  bottom: -60px;
+}
 
 @media(max-width: 1200px) {
   .mascot {

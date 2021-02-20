@@ -21,6 +21,129 @@
   }
 }
 
+.header_button {
+// box
+  margin-left: 40px;
+}
+  
+.header_button-2 {
+// display
+  display: none;
+// box
+  width: 80%;
+  margin-bottom: 16px;
+}
+  
+.header_dropdown {
+// position
+  position: absolute;
+// display
+  display: none;
+// box
+  width: 200px;
+  padding-left: 16px;
+  margin-left: -16px;
+// style
+  background: $darkgray;
+}
+  
+.header_dropdown-2 {
+// position
+  position: fixed;
+  z-index: 3;
+// display
+  display: none;
+  flex-flow: column;
+  align-items: center;
+// style
+  background: $darkgray;
+// box
+  border-top: 1px solid black;
+  width: 100%;
+}
+
+.header_dropdown-caret {
+// box
+  margin-left: 8px;
+  width: 10px;
+// style
+  filter: invert(81%) sepia(4%) saturate(280%) 
+  hue-rotate(314deg) brightness(90%) contrast(99%);
+}
+
+.header_dropdown-container {
+// position
+  position: relative;
+// pseudo
+  &:hover .header_dropdown, .dropdown-content { display: block; };
+}
+
+.header_dropdown-item {
+// box
+  height: 40px;
+  width: 100%;
+  padding: 8px 0;
+// text
+  color: $logogray;
+  line-height: 20px;
+// style
+  transition: padding 0.2s ease;
+// pseudo
+  &:hover { 
+    color: white; 
+    padding-left: 9px;
+  }
+  &:last-of-type { border: none; }
+}
+  
+.header_dropdown-item-2 {
+// box
+  height: 32px;
+  width: 250px;
+  margin-left: 120px;
+// text
+  color: $logogray;
+  line-height: 20px;
+// pseudo
+  &:hover { 
+    color: white;
+    cursor: pointer;
+  }
+  &:first-of-type { margin-top: 8px; }
+}
+
+.header_hamburger {
+// display
+  display: none;
+// box
+  height: 20px;
+  margin-left: 24px;
+// style
+  filter: invert(81%) sepia(4%) saturate(280%) 
+  hue-rotate(314deg) brightness(90%) contrast(99%);
+// pseudo
+  &:hover { cursor: pointer; }
+}
+
+.header_link {
+// box
+  height: 50px;
+  margin-left: 40px;
+// text
+  color: #c1b9b9;
+  line-height: 50px;
+  font-weight: bold;
+// pseudo
+  &:hover {
+    cursor: pointer;
+    color: white;
+  }
+  &:hover {
+    cursor: pointer;
+    color: white;
+  }
+}
+
 .header_logo {
 // display
   display: flex;
@@ -49,134 +172,6 @@
   nav {
     display: flex;
   }
-}
-
-.header_button {
-// box
-  margin-left: 40px;
-}
-
-.header_button-2 {
-// display
-  display: none;
-// box
-  width: 80%;
-  margin-bottom: 16px;
-}
-
-.header_link {
-// box
-  height: 50px;
-  margin-left: 40px;
-// text
-  color: #c1b9b9;
-  line-height: 50px;
-  font-weight: bold;
-// pseudo
-  &:hover {
-    cursor: pointer;
-    color: white;
-  }
-  &:hover {
-    cursor: pointer;
-    color: white;
-  }
-}
-
-.header_dropdown-container {
-// position
-  position: relative;
-// pseudo
-  &:hover .header_dropdown { display: block; }
-}
-
-.header_dropdown-container:hover .dropdown-content {
-// display
-  display: block;
-}
-
-.header_dropdown-caret {
-// box
-  margin-left: 8px;
-  width: 10px;
-// style
-  filter: invert(81%) sepia(4%) saturate(280%) 
-  hue-rotate(314deg) brightness(90%) contrast(99%);
-}
-
-.header_dropdown {
-// position
-  position: absolute;
-// display
-  display: none;
-// box
-  width: 200px;
-  padding-left: 16px;
-  margin-left: -16px;
-// style
-  background: $darkgray;
-}
-
-.header_dropdown-item {
-// box
-  height: 40px;
-  width: 100%;
-  padding: 8px 0;
-// text
-  color: $logogray;
-  line-height: 20px;
-// style
-  transition: padding 0.2s ease;
-// pseudo
-  &:hover { 
-    color: white; 
-    padding-left: 9px;
-  }
-  &:last-of-type { border: none; }
-}
-
-.header_dropdown-2 {
-// position
-  position: fixed;
-  z-index: 3;
-// display
-  display: none;
-  flex-flow: column;
-  align-items: center;
-// style
-  background: $darkgray;
-// box
-  border-top: 1px solid black;
-  width: 100%;
-}
-
-.header_dropdown-item-2 {
-// box
-  height: 32px;
-  width: 250px;
-  margin-left: 120px;
-// text
-  color: $logogray;
-  line-height: 20px;
-// pseudo
-  &:hover { 
-    color: white;
-    cursor: pointer;
-  }
-  &:first-of-type { margin-top: 8px; }
-}
-
-.header_hamburger {
-// display
-  display: none;
-// box
-  height: 20px;
-  margin-left: 24px;
-// style
-  filter: invert(81%) sepia(4%) saturate(280%) 
-  hue-rotate(314deg) brightness(90%) contrast(99%);
-// pseudo
-  &:hover { cursor: pointer; }
 }
 
 @media(max-width: 1000px) {
@@ -228,55 +223,3 @@
     display: flex;
   }
 }
-
-// @media(max-width:1050px) {
-//   .header_logo {
-//     font-size: 1rem;
-//   }
-//   .header_logo-img {
-//     height: 35px;
-//   }
-// }
-
-// @media(max-width: 950px) {
-//   .header nav {
-//     display: none;
-//   }
-//   .header_hamburger {
-//     display: initial;
-//   }
-//   .header {
-//     padding: 8px 12px;
-//   }
-//   .header_button {
-//     font-size: .9rem;
-//     margin-left: 24px;
-//   }
-//   .header_dropdown-2 {
-//     display: flex;
-//   }
-// }
-
-// @media(max-width: 750px) {
-//   .header nav {
-//     display: none;
-//   }
-//   .header_logo-img {
-//     height: 35px;
-//   }
-//   .header_button {
-//     display: none;
-//   }
-//   .header_button-2 {
-//     display: initial;
-//   }
-//   .header_hamburger {
-//     display: initial;
-//   }
-// }
-
-// @media(max-width: 400px) {
-//   .header_logo-text {
-//     font-size: .7rem;
-//   }
-// }
