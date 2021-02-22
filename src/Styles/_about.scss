@@ -9,7 +9,6 @@
 .bio_bio {
 // box
   max-width: 600px;
-  padding: 0 24px;
 }
 
 .bio_img {
@@ -50,5 +49,8 @@
   }
   .bio_title {
     margin-bottom: 12px;
+  }
+  .bio_bio {
+    padding: 0 24px;
   }
 }
