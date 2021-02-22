@@ -20,12 +20,12 @@ const Footer = props => {
       </div>
     </Column>
     <Column title="SITE MAP">
-      <div className='footer_child'>
-        HOME
-      </div>
-      <div className='footer_child'>
-        ABOUT
-      </div>
+      <Link to='/'>
+        <div className='footer_child'> HOME </div>
+      </Link>
+      <Link to='/about'>
+        <div className='footer_child'> ABOUT </div>
+      </Link>
       <div className='footer_child footer_no-hover'>
         SERVICES
       </div>
