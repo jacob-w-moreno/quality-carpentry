@@ -1,0 +1,18 @@
+.footer {
+// style
+  background: $darkgray;
+  color: white;
+// box
+  padding: 24px;
+// display
+  display: flex;
+  justify-content: center;
+}
+
+.footer_column {
+  @include b(red);
+// style
+  color: white;
+// box
+  width: 400px;
+}
