@@ -22,7 +22,7 @@ const Landing = props => {
     <Services title="What we do best"/>
     <Reviews style='#e3e3e3'/>
     {/* {landingMission} */}
-    <GetQuote/>
+    <GetQuote title="let's work together"/>
   </div>
 // ===== ===== RETURN END ===== =====
 }

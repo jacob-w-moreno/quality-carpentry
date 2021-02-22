@@ -10,8 +10,8 @@ import Placeholder from '../../Styles/Assets/Logo Placeholder.png';
 const About = props => {
   return <div className='about'>
     <Intro
-      primaryText="WHO WE ARE"
-      secondaryText="More text goes here"/>
+      primaryText="MEET YOUR NEW TEAM"
+      secondaryText="We'll get the job done together"/>
     <Bio
       pic={Placeholder}
       name="Daniel Crawley"
