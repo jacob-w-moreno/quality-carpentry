@@ -9,20 +9,20 @@ const GetQuote = props => {
       <ContactMethod
         img='http://simpleicon.com/wp-content/uploads/phone-symbol-2.png'
         alt="phone icon"
-        method="phone call"
+        method="Call us"
         href={'tel:8018301084'}
         contactInfo="(801) 830-1084"
       />
       <ContactMethod
         img='http://simpleicon.com/wp-content/uploads/phone-symbol-2.png'
         alt="text message icon"
-        method="text message"
+        method="Text us"
         contactInfo="(801) 830-1084"
       />
       <ContactMethod
         img='https://www.freepnglogos.com/uploads/email-png/blue-email-box-circle-png-transparent-icon-2.png'
         alt="email icon"
-        method="email"
+        method="Email us"
         contactInfo="sales@qualityutah.com"
       />
     </div>

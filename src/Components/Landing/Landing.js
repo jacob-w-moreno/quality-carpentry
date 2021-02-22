@@ -3,6 +3,7 @@ import React from 'react';
 import Intro from '../Intro';
 import Services from '../Services/ServicesList/Services';
 import GetQuote from '../Contact/GetQuote';
+import Reviews from '../Reviews';
 
 const Landing = props => {
 // ===== ===== COMPONENTS BEG ===== =====
@@ -19,7 +20,8 @@ const Landing = props => {
       secondaryText="Secondary Intro Text"
       mascot={true}/>
     <Services title="What we do best"/>
-    {landingMission}
+    <Reviews style='#e3e3e3'/>
+    {/* {landingMission} */}
     <GetQuote/>
   </div>
 // ===== ===== RETURN END ===== =====
