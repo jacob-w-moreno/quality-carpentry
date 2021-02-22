@@ -119,7 +119,7 @@ const Service = props => {
     {serviceIntro}
     {gallery}
     <GetQuote title="GET A QUOTE"/>
-    <Reviews style='#e3e3e3'/>
+    <Reviews background='#e3e3e3'/>
     <Services title="Our other services"/>
   </div>
 }

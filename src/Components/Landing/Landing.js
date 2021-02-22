@@ -8,9 +8,9 @@ import Reviews from '../Reviews';
 const Landing = props => {
 // ===== ===== COMPONENTS BEG ===== =====
 
-  const landingMission = <div className='landing_mission'>
-      <h3 className='landing_title'>OUR MISSION</h3>
-    </div>
+  // const landingMission = <div className='landing_mission'>
+  //     <h3 className='landing_title'>OUR MISSION</h3>
+  //   </div>
 
 // ===== ===== COMPONENTS END ===== =====
 // ===== ===== RETURN BEG ===== =====
@@ -20,7 +20,7 @@ const Landing = props => {
       secondaryText="Secondary Intro Text"
       mascot={true}/>
     <Services title="What we do best"/>
-    <Reviews style='#e3e3e3'/>
+    <Reviews background='#e3e3e3'/>
     {/* {landingMission} */}
     <GetQuote title="let's work together"/>
   </div>

@@ -31,10 +31,10 @@ const Reviews = props => {
       }
     }, 5500);
     return () => clearInterval(interval);
-  }, [index]);
+  }, [index, reviews.length]);
 // */
 
-  return <div className='reviews' style={{background: props.style}}>
+  return <div className='reviews' style={{background: props.background}}>
     <h3>WHAT OUR CUSTOMERS THINK</h3>
     <div className='review'>
       <p className='review_review'>
