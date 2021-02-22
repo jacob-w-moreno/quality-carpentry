@@ -1,6 +1,6 @@
 .service_gallery {
 // box
-  margin-bottom: 36px;
+  padding-bottom: 24px;
 // display
   display: flex;
   flex-flow: column;
@@ -55,12 +55,12 @@
   display: flex;
   flex-flow: column;
   align-items: center;
+// box
+  margin-bottom: 24px;
 }
 
 .service_summary-h3 {
-// box
-  margin: 24px;
-// text
+// style
   color: $red;
 }
 
@@ -68,7 +68,7 @@
 // box
   max-width: 716px;
   padding: 0 18px;
-// text
+// style
   text-align: center;
 }
 

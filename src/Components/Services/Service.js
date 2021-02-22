@@ -3,13 +3,12 @@ import Intro from '../Intro';
 import GalleryBox from './GalleryBox';
 import Services from './ServicesList/Services';
 import GetQuote from '../Contact/GetQuote';
+import Reviews from '../Reviews';
 
 const Service = props => {
 // ===== ===== CONSTANTS BEG ===== =====
 
-  console.log('route:', props.location.pathname.slice(1));
-
-  const [index, setIndex] = useState(0);
+  const [index, setIndex] = useState(1);
   let images, title;
 
   switch (props.location.pathname) {
@@ -93,7 +92,7 @@ const Service = props => {
     </p>
   </div>
 
-  const gallery = <div className='service_gallery'>
+  const gallery = <div className='service_gallery' style={{background: '#e3e3e3'}}>
     <h3 className='service_summary-h3'>GALLERY</h3>
     <img className='service_main-picture' src={images[index]} alt='Gallery'/>
     <div className='service_gallery-preview'>
@@ -120,6 +119,7 @@ const Service = props => {
     {serviceIntro}
     {gallery}
     <GetQuote/>
+    <Reviews style='#e3e3e3'/>
     <Services title="Our other services"/>
   </div>
 }

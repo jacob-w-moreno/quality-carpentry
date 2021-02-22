@@ -8,7 +8,7 @@ const Services = props => {
     "Tree Removal", "Other"
   ];
 
-  return <div className='landing_services'>
+  return <div className='landing_services' style={{background: props.style}}>
   <h3 className='landing_title'>{props.title.toUpperCase()}</h3>
   <div className='landing_services-container'>
     {services.map((element, index) => {

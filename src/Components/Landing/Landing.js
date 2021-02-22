@@ -2,6 +2,7 @@ import React from 'react';
 
 import Intro from '../Intro';
 import Services from '../Services/ServicesList/Services';
+import GetQuote from '../Contact/GetQuote';
 
 const Landing = props => {
 // ===== ===== COMPONENTS BEG ===== =====
@@ -19,6 +20,7 @@ const Landing = props => {
       mascot={true}/>
     <Services title="What we do best"/>
     {landingMission}
+    <GetQuote/>
   </div>
 // ===== ===== RETURN END ===== =====
 }

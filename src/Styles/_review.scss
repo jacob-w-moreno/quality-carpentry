@@ -1,0 +1,46 @@
+.review {
+// position
+  position: relative;
+// box
+  max-width: 800px;
+  padding: 0 24px;
+}
+
+.review_name {
+  margin-bottom: 24px;
+}
+
+.review_review {
+// style
+  font-family: 'Courgette', cursive;
+  font-size: 1.8rem;
+// box
+  margin-bottom: 24px;
+  border-top: 4px solid white;
+  padding-top: 24px;
+}
+
+.review_star {
+  height: 75px;
+  margin: 0 4px;
+}
+
+.reviews {
+// display
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+// box
+  padding-bottom: 24px;
+// style
+  text-align: center;
+}
+
+@media (max-width: 550px) {
+  .review_review {
+    font-size: 1.5rem;
+  }
+  .review_star {
+    height: 40px;
+  }
+}

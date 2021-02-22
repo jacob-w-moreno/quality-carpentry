@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 // font-family: 'Montserrat', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+// font-family: 'Courgette', cursive;
 
 $red: #FB0001;
 $darkgray: #4B4B4B;
@@ -33,7 +35,7 @@ h2 {
 }
 
 h3 {
-  margin: 0 16px;
+  padding: 24px;
   font-size: 2rem;
   text-align: center;
   color: $red;
@@ -67,8 +69,10 @@ span {
 }
 
 @import './about';
+@import './blog';
 @import './contact';
 @import './general';
 @import './header';
 @import './landing';
+@import './review';
 @import './services';

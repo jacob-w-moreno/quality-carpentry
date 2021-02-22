@@ -3,7 +3,7 @@ import React from 'react';
 import ContactMethod from './ContactMethod';
 
 const GetQuote = props => {
-  return <div className='contact_get-quote' style={{'background': '#e3e3e3'}}>
+  return <div style={{'background': props.style}}>
     <h3>GET A QUOTE</h3>
     <div className='contact_methods'>
       <ContactMethod
