@@ -6,18 +6,23 @@ import Logo from '../../Styles/Assets/Logo Full.png';
 const Footer = props => {
   return <div className='footer'>
     <Column title="CONNECT WITH US">
-      <div className='footer_child'>
+      <a className='footer_child'
+        href='http://www.instagram.com/'
+        target='_blank'
+        rel="noopener noreferrer">
         <div className='footer_icon'/>
         <span>@qualitycarpentry</span>
-      </div>
-      <div className='footer_child'>
+      </a>
+      <a className='footer_child'
+        href='mailto:sales@qualityutah.com?subject=Quote Request'>
         <div className='footer_icon'/>
         <span>sales@qualityutah.com</span>
-      </div>
-      <div className='footer_child'>
+      </a>
+      <a className='footer_child'
+        href='tel:8018301084'>
         <div className='footer_icon'/>
         <span>(801) 830-1084</span>
-      </div>
+      </a>
     </Column>
     <Column title="SITE MAP">
       <Link to='/'>
