@@ -42,7 +42,7 @@ const Landing = props => {
     <Services title="What we do best"/>
     <Reviews background='#e3e3e3'/>
     {values}
-    <GetQuote title="let's work together" background="#e3e3e3"/>
+    <GetQuote title="" background="#e3e3e3"/>
   </div>
 
 // ===== ===== RETURN END ===== =====

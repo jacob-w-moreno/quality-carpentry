@@ -4,7 +4,10 @@ import ContactMethod from './ContactMethod';
 
 const GetQuote = props => {
   return <div style={{'background': props.background}}>
-    <h3>{props.title.toUpperCase()}</h3>
+    {props.title
+      ? <h3>{props.title.toUpperCase()}</h3>
+      : <div style={{height: '24px'}}/>
+    }
     <div className='contact_methods'>
       <ContactMethod
         img='http://simpleicon.com/wp-content/uploads/phone-symbol-2.png'
