@@ -4,11 +4,12 @@
 // display
   display: flex;
   justify-content: center;
+  @include b(red);
 }
 
 .bio_bio {
 // box
-  max-width: 600px;
+  width: 600px;
 }
 
 .bio_img {
@@ -34,6 +35,14 @@
     width: 85vw;
   }
 }
+
+@media (max-width: 650px) {
+  .bio_bio {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
 @media (max-width:1100px) {
   .bio {
     flex-flow: column;
@@ -52,5 +61,6 @@
   }
   .bio_bio {
     padding: 0 24px;
+    @include b(yellow);
   }
 }
