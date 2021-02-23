@@ -34,7 +34,7 @@ const Reviews = props => {
   }, [index, reviews.length]);
 // */
 
-  return <div className='reviews' style={{background: props.background}}>
+  return <div className='reviews' >
     <h3>WHAT OUR CUSTOMERS THINK</h3>
     <div className='review'>
       <p className='review_review'>

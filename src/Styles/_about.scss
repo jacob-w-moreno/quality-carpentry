@@ -4,7 +4,6 @@
 // display
   display: flex;
   justify-content: center;
-  @include b(red);
 }
 
 .bio_bio {
@@ -61,6 +60,5 @@
   }
   .bio_bio {
     padding: 0 24px;
-    @include b(yellow);
   }
 }
