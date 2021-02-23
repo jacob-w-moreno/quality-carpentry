@@ -10,8 +10,8 @@ const GetQuote = props => {
         img='http://simpleicon.com/wp-content/uploads/phone-symbol-2.png'
         alt="phone icon"
         method="Call or text us"
-        href='tel:8018301084'
-        contactInfo="(801) 830-1084"
+        href='tel:3852447957'
+        contactInfo="(385) 244-7957"
       />
       <ContactMethod
         img='https://www.freepnglogos.com/uploads/email-png/blue-email-box-circle-png-transparent-icon-2.png'

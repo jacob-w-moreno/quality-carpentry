@@ -19,9 +19,9 @@ const Footer = props => {
         <span>sales@qualityutah.com</span>
       </a>
       <a className='footer_child'
-        href='tel:8018301084'>
+        href='tel:3852447957'>
         <div className='footer_icon'/>
-        <span>(801) 830-1084</span>
+        <span>(385) 244-7957</span>
       </a>
     </Column>
     <Column title="SITE MAP">
