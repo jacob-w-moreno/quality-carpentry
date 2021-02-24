@@ -55,7 +55,7 @@ const Footer = props => {
     </Column>
     <Column title="&#169; 2021 QUALITY CARPENTRY">
       <div className='footer_child footer_no-hover'>
-        <img className='footer_logo' src={Logo}/>
+        <img className='footer_logo' src={Logo} alt="Quality Carpentry Logo"/>
       </div>
     </Column>
   </div>

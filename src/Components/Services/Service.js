@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import Intro from '../Intro';
 import GalleryBox from './GalleryBox';
 import Services from './ServicesList/Services';
@@ -16,7 +16,20 @@ import flooring8 from '../../Styles/Assets/Services/Flooring/8.jpg';
 import flooring9 from '../../Styles/Assets/Services/Flooring/9.jpg';
 import flooring10 from '../../Styles/Assets/Services/Flooring/10.jpg';
 
+import basement1 from '../../Styles/Assets/Services/Basements/1.jpg';
+// import basement2 from '../../Styles/Assets/Services/Basements/2.jpg';
+import basement3 from '../../Styles/Assets/Services/Basements/3.jpg';
+import basement4 from '../../Styles/Assets/Services/Basements/4.jpg';
+import basement5 from '../../Styles/Assets/Services/Basements/5.jpg';
+
+import roofing1 from '../../Styles/Assets/Services/Roofing/1.jpg';
+import roofing2 from '../../Styles/Assets/Services/Roofing/2.jpg';
+
 const Service = props => {
+
+  useEffect(()=>{
+    setIndex(1);
+  },[props.location.pathname])
 // ===== ===== CONSTANTS BEG ===== =====
 
   const [index, setIndex] = useState(1);
@@ -24,13 +37,7 @@ const Service = props => {
 
   switch (props.location.pathname) {
     case '/services/basements':
-      images=[
-        'https://metrobuildingandremodeling.com/wp-content/uploads/2018/10/prg_MR_devost_basement_remodel_ashburn_va_18_after.jpg',
-        'https://i2.wp.com/www.basementproutah.com/wp-content/uploads/2013/04/highland-basement-exercise.jpg?fit=710%2C575',
-        'https://metrobuildingandremodeling.com/wp-content/uploads/2018/10/prg_MR_devost_basement_remodel_ashburn_va_18_after.jpg',
-        'https://www.finishedbasementsplus.com/wp-content/uploads/2020/01/highland-mi-open-basement-design-fireplace.jpg',
-        'https://cdn.treehouseinternetgroup.com/uploads/photo_gallery/medium/169469-5a6f47b2c181f_img8515.jpg?v=1517241959'
-      ];
+      images=[ basement1, basement3, basement4, basement5 ];
       title="Basements";
       break;
     case '/services/flooring':
@@ -48,13 +55,7 @@ const Service = props => {
       title="Remodels";
       break;
     case '/services/roofing':
-      images=[
-        'https://s3.amazonaws.com/greenbuildingadvisor.s3.tauntoncloud.com/app/uploads/2019/08/22170730/Metal-roof-lede-700x438.jpg',
-        'https://www.metalroofing.com/media/images/about-dark-red-shingle-750.original_VNYNA3w.jpg',
-        'https://www.evorooftechnologies.com/wp-content/uploads/2019/05/3-in-1-Roof-tiles-installed.jpg',
-        'https://www.bluebarrelsystems.com/wp-content/uploads/2018/10/standing-seam-metal-roof-e1596918130324.jpg',
-        'https://modernize.com/wp-content/themes/modernize/dist/images/bg/roof-hero-desktop.jpg'
-      ];
+      images=[ roofing1, roofing2 ];
       title="Roofing";
       break;
     case '/services/other':
