@@ -27,10 +27,13 @@
     width: 100vw;
     height: 500px;
   // style
+    color: white;
     background: gray;
-    background-image: url('https://protekpainters.com/wp-content/uploads/2018/02/Light-Carpentry-Interior-and-Exterior-Painting-Services-ProTEK-Painters-Newton-MA.jpg');
+    background-image: url('./Assets/Background.png');
+    background-position-x: 50%;
     background-size: cover;
     background-attachment: fixed;
+    h2 { color: $logogray; }
 }
 
 .mascot {
@@ -42,22 +45,13 @@
 
 @media(max-width: 1200px) {
   .mascot {
-    height: 300px;
-    bottom: -20px;
+    display: none;
   }
 }
 
 @media(max-width: 900px) {
   .intro {
     height: 400px;
-  }
-  .mascot {
-    height: 200px;
-  }
-}
-
-@media(max-width: 650px) {
-  .mascot {
-    display: none;
+    text-align: center;
   }
 }

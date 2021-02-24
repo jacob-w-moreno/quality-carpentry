@@ -25,6 +25,10 @@ import basement5 from '../../Styles/Assets/Services/Basements/5.jpg';
 import roofing1 from '../../Styles/Assets/Services/Roofing/1.jpg';
 import roofing2 from '../../Styles/Assets/Services/Roofing/2.jpg';
 
+import remodels1 from '../../Styles/Assets/Services/Remodels/1.jpg';
+import remodels2 from '../../Styles/Assets/Services/Remodels/2.jpg';
+import remodels3 from '../../Styles/Assets/Services/Remodels/3.jpg';
+
 const Service = props => {
 
   useEffect(()=>{
@@ -45,13 +49,7 @@ const Service = props => {
       title="Flooring";
       break;
     case '/services/remodels':
-      images=[
-        'https://hgtvhome.sndimg.com/content/dam/images/hgtv/fullset/2015/7/7/0/HFXUP111H_after-kitchen-2_h.jpg.rend.hgtvcom.966.644.suffix/1436278822871.jpeg',
-        'https://hgtvhome.sndimg.com/content/dam/images/hgtv/fullset/2015/10/27/2/Original_Designs-by-Human-L-Shaped-Kitchen-After-1.jpg.rend.hgtvcom.966.725.suffix/1445990176110.jpeg',
-        'https://www.remodelingimage.com/wp-content/uploads/2019/11/beautiful-modern-kitchen.jpg',
-        'https://coloradobuildermag.com/wp-content/uploads/2019/02/open-kitchen-modern-transitional-island-seating-Danny-Raustadt-dt-800x445.jpg',
-        'https://www.seapointe.com/wp-content/uploads/2019/10/Remodel-VS-Relocate-MAIN.jpg'
-      ];
+      images=[ remodels1, remodels2, remodels3 ];
       title="Remodels";
       break;
     case '/services/roofing':

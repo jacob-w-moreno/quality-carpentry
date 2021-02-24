@@ -8,6 +8,7 @@
 
 .review_name {
   margin-bottom: 24px;
+  color: $logogray;
 }
 
 .review_review {
@@ -16,8 +17,6 @@
   font-size: 1.8rem;
 // box
   margin-bottom: 24px;
-  border-top: 4px solid white;
-  padding-top: 24px;
 }
 
 .review_star {
@@ -34,7 +33,9 @@
   padding-bottom: 24px;
 // style
   text-align: center;
-  background-image: url('https://www.healinghealth.com/wp/wp-content/uploads/2014/10/dreamstime_m_44612710.jpg');
+  color: white;
+  // background-image: url('https://www.healinghealth.com/wp/wp-content/uploads/2014/10/dreamstime_m_44612710.jpg');
+  background-image: url('https://ak.picdn.net/shutterstock/videos/1021482712/thumb/1.jpg');
   background-attachment: fixed;
   background-size: cover;
   background-position-y: 70%;
