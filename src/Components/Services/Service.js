@@ -5,6 +5,17 @@ import Services from './ServicesList/Services';
 import GetQuote from '../Contact/GetQuote';
 import Reviews from '../Reviews';
 
+import flooring1 from '../../Styles/Assets/Services/Flooring/1.jpg';
+import flooring2 from '../../Styles/Assets/Services/Flooring/2.jpg';
+import flooring3 from '../../Styles/Assets/Services/Flooring/3.jpg';
+import flooring4 from '../../Styles/Assets/Services/Flooring/4.jpg';
+import flooring5 from '../../Styles/Assets/Services/Flooring/5.jpg';
+import flooring6 from '../../Styles/Assets/Services/Flooring/6.jpg';
+import flooring7 from '../../Styles/Assets/Services/Flooring/7.jpg';
+import flooring8 from '../../Styles/Assets/Services/Flooring/8.jpg';
+import flooring9 from '../../Styles/Assets/Services/Flooring/9.jpg';
+import flooring10 from '../../Styles/Assets/Services/Flooring/10.jpg';
+
 const Service = props => {
 // ===== ===== CONSTANTS BEG ===== =====
 
@@ -23,13 +34,7 @@ const Service = props => {
       title="Basements";
       break;
     case '/services/flooring':
-      images=[
-        'https://res.cloudinary.com/force/image/upload/v1520001725/mohawk/gallery/hardwood/WEM03_27_00.jpg',
-        'https://thelastinventory.com/wp-content/uploads/2020/03/LawsonGates-2.png',
-        'https://contentgrid.homedepot-static.com/hdus/en_US/DTCCOMNEW/Articles/how-to-repair-laminate-flooring-step-5.jpg',
-        'https://vantagevinyl.com/wp-content/uploads/2020/06/IN_GPL_TruTex_27012_1-scaled.jpg',
-        'https://secure.img1-fg.wfcdn.com/im/11040301/compr-r85/1031/103192191/windworn-hickory-38-thick-x-5-wide-x-varying-length-engineered-hardwood-flooring.jpg'
-      ];
+      images=[ flooring2, flooring5, flooring4, flooring6, flooring3, flooring1, flooring7, flooring8, flooring9, flooring10 ];
       title="Flooring";
       break;
     case '/services/remodels':
@@ -94,7 +99,9 @@ const Service = props => {
 
   const gallery = <div className='service_gallery' style={{background: '#e3e3e3'}}>
     <h3 className='service_summary-h3'>GALLERY</h3>
-    <img className='service_main-picture' src={images[index]} alt='Gallery'/>
+    <div className='service_main-picture'>
+      <img className='service_main-img' src={images[index]} alt='Gallery'/>
+    </div>
     <div className='service_gallery-preview'>
       {
         images.map((element, i) => {

@@ -2,9 +2,9 @@ import React, {useState} from 'react';
 import {Link} from 'react-router-dom';
 
 import Aux from '../Aux';
-import Logo from '../../Styles/Assets/Logo Smallest.png';
-import Dropdown from '../../Styles/Assets/Icon Dropdown.png';
-import Hamburger from '../../Styles/Assets/Icon Hamburger.png';
+import Logo from '../../Styles/Assets/Logos/Minimal.png';
+import Dropdown from '../../Styles/Assets/Icons/Dropdown.png';
+import Hamburger from '../../Styles/Assets/Icons/Hamburger.png';
 
 const Header = props => {
   const [dropdown, setDropdown] = useState(false);

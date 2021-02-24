@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from 'react';
+import ReviewStar from '../Styles/Assets/ReviewStar.png';
 
 const Reviews = props => {
   const [index, setIndex] = useState(1);
@@ -43,7 +44,7 @@ const Reviews = props => {
       <p className='review_name'>— {reviews[index].name}</p>
       {reviews[index].stars.map(element => {
         return <img className='review_star'
-        src={'http://assets.stickpng.com/images/580b585b2edbce24c47b2913.png'}
+        src={ReviewStar}
         alt="review star"
         key={element}/>
       })}

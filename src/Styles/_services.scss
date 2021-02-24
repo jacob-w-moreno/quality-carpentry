@@ -42,12 +42,28 @@
   align-items: center;
 }
 
+.service_icon {
+// box
+  height: 128px;
+  width: 128px;
+  margin-bottom: 16px;
+  filter: invert(26%) sepia(12%) saturate(19%) hue-rotate(339deg) brightness(100%) contrast(89%);
+}
+
 .service_main-picture {
 // box
   height: 50vw;
   width: 90vw;
   max-height: 400px;
   max-width: 716px;
+  // background: linear-gradient($logogray, black);
+  display: flex;
+  justify-content: center;
+}
+
+.service_main-img {
+  height: 100%;
+  width: auto;
 }
 
 .service_summary {

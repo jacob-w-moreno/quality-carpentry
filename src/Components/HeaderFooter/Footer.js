@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Column from './Column';
-import Logo from '../../Styles/Assets/Logo Full.png';
+import Logo from '../../Styles/Assets/Logos/Full.png';
 
 const Footer = props => {
   return <div className='footer'>
