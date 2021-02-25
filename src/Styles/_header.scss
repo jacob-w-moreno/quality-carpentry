@@ -40,7 +40,29 @@
   width: 80%;
   margin-bottom: 16px;
 }
-  
+
+.header_contact {
+// position
+  position: absolute;
+  top: 66px;
+  right: 0;
+// display
+  display: flex;
+  flex-flow: column;
+  a {
+  // style
+    background: $red;
+    color: white;
+  // box
+    margin-bottom: 12px;
+    width: 250px;
+    padding: 12px;
+    border-radius: 8px;
+  // pseudo
+    &:hover { color: white; }
+  }
+}
+
 .header_dropdown {
 // position
   position: absolute;

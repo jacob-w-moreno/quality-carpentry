@@ -7,11 +7,20 @@ import Dropdown from '../../Styles/Assets/Icons/Dropdown.png';
 import Hamburger from '../../Styles/Assets/Icons/Hamburger.png';
 
 const Header = props => {
+// ===== ===== DATA BEG ===== =====
+  
   const [dropdown, setDropdown] = useState(false);
+  const [contact, setContact] = useState(true);
   const services = [
     "Roofing", "Flooring", "Remodels", "Basements",
     "Tree Removal", "Other"
   ];
+  
+// ===== ===== DATA END ===== =====
+
+  console.log(contact);
+
+// ===== ===== "COMPONENTS"" BEG ===== =====
 
   const logo = <Link to='/'>
     <div className='header_logo'>
@@ -38,6 +47,14 @@ const Header = props => {
     onClick={()=>dropdown?setDropdown(false):setDropdown(true)}
   />
 
+  let contactInfo;
+  if (contact) {
+    contactInfo = <div className='header_contact'>
+      <a href='tel:3852447957'> (385) 244-7957 </a>
+      <a href='mailto:sales@qualityutah.com?subject=Quote Request'> sales@qualityutah.com </a>
+    </div>
+  }
+
   const navigation = <div className='header_nav-container'>
     <nav>
       <ul>
@@ -55,22 +72,22 @@ const Header = props => {
           <li>ABOUT</li>
         </Link>
       </ul>
-      <button className='header_button button_cta'>GET A QUOTE</button>
+      <button className='header_button button_cta'
+        onClick={()=>setContact(contact?false:true)}>GET A QUOTE</button>
+      {contactInfo}
     </nav>
     {hamburger}
   </div>
 
 
   const hamburgerDropdown = <div className='header_dropdown-2'>
-    {/* <a href='tel:3852447957'className='hamburger_button button_cta'>(385) 244-7957</a>
-    <a className='hamburger_button button_cta'>sales@qualityutah.com</a> */}
     <ul>
-    <Link to='/'>
-      <li className='header_link' onClick={()=>setDropdown(false)}>HOME</li>
-    </Link>
-    <Link to='/about'>
-      <li className='header_link' onClick={()=>setDropdown(false)}>ABOUT</li>
-    </Link>
+      <Link to='/'>
+        <li className='header_link' onClick={()=>setDropdown(false)}>HOME</li>
+      </Link>
+      <Link to='/about'>
+        <li className='header_link' onClick={()=>setDropdown(false)}>ABOUT</li>
+      </Link>
       <li className='header_link no-highlight'>SERVICES</li>
     </ul>
     {services.map((element, index) => {
@@ -82,6 +99,8 @@ const Header = props => {
     })}
     <button className='header_button-2 button_cta'>GET A QUOTE</button>
   </div>
+
+// ===== ===== "COMPONENTS"" END ===== =====
 
   return <Aux>
   <div className='header'>

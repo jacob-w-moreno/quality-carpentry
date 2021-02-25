@@ -17,7 +17,6 @@ import flooring9 from '../../Styles/Assets/Services/Flooring/9.jpg';
 import flooring10 from '../../Styles/Assets/Services/Flooring/10.jpg';
 
 import basement1 from '../../Styles/Assets/Services/Basements/1.jpg';
-// import basement2 from '../../Styles/Assets/Services/Basements/2.jpg';
 import basement3 from '../../Styles/Assets/Services/Basements/3.jpg';
 import basement4 from '../../Styles/Assets/Services/Basements/4.jpg';
 import basement5 from '../../Styles/Assets/Services/Basements/5.jpg';
@@ -37,7 +36,7 @@ const Service = props => {
 // ===== ===== CONSTANTS BEG ===== =====
 
   const [index, setIndex] = useState(1);
-  let images, introTitle, introParagraph;
+  let images, introTitle, secondaryText;
   let description = <p className='service_summary-p'>
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
   </p>
@@ -45,41 +44,55 @@ const Service = props => {
   switch (props.location.pathname) {
     case '/services/roofing':
       introTitle="Roofing";
-      introParagraph="We'll put a roof over your head";
-      description = <p className='service_summary-p'>Our roofing experts have years of experience protecting Utah's homes by installing and repairing high-quality roofs. We understand that the roof is one of the most important features of any home — both structurally and aesthetically — which is why we use premium materials, never cut corners, and finish every roofing job perfectly.</p>;
+      secondaryText="we'll put a roof over your head";
+      description = <p className='service_summary-p'>
+        Our roofing experts have years of experience protecting Utah's homes by installing and repairing high-quality roofs. We understand that the roof is one of the most important features of any home — both structurally and aesthetically — which is why we use premium materials, never cut corners, and finish every roofing job perfectly.
+      </p>;
       images=[ roofing1, roofing2 ];
       break;
 
     case '/services/flooring':
       introTitle="Flooring";
-      introParagraph="We stand by the work you'll stand on"
-      description=<p className='service_summary-p'>All of the floors we repair and install are beautiful and long-lasting, so you'll be able to enjoy them for years to come. Like everything else we do, we stand by the quality of every flooring job we finish.</p>
+      secondaryText="we stand by the work you'll stand on"
+      description=<p className='service_summary-p'>
+        All of the floors we repair and install are beautiful and long-lasting, so you'll be able to enjoy them for years to come. Like everything else we do, we stand by the quality of every flooring job we finish.
+      </p>
       images=[ flooring2, flooring5, flooring4, flooring6, flooring3, flooring1, flooring7, flooring8, flooring9, flooring10 ];
       break;
 
     case '/services/remodels':
       introTitle="Remodels";
-      introParagraph="Your home but better"
-      description=<p className='service_summary-p'>Our team of experienced professionals is waiting to make the dream you have for your house a reality. We will work with you to come up with a plan, then we'll work to </p>
+      secondaryText="your home—but better"
+      description=<p className='service_summary-p'>
+        Our team of experienced professionals is waiting to make the dream you have for your house a reality. We'll work with you to determine realistic goals for your house, then we'll bring them to life. With our help, you'll be living in your dream home before you know it!
+      </p>
       images=[ remodels1, remodels2, remodels3 ];
       break;
 
     case '/services/basements':
       introTitle="Basements";
-      introParagraph="basements are cool";
-      description=<p className='service_summary-p'></p>
+      secondaryText="invest in your basement";
+      description=<p className='service_summary-p'>
+        With our help, finally finishing your basement is a realistic goal. At Quality Carpentry, we're known for our fast, beautiful, and high-quality basements that increase the value of houses. Whether you're building a basement apartment or a nicer place to store your belongings, we can get the job done.
+      </p>
       images=[ basement1, basement3, basement4, basement5 ];
       break;
 
     case '/services/other':
-      introTitle="Other";
-      introParagraph="We do other stuff, too!";
+      introTitle="General Carpentry";
+      secondaryText="we've done it all before";
+      description=<p className='service_summary-p'>
+        Our team has over 30 years of experience in contract work, flipping houses, finish carpentry, construction, and general woodworking. If you're working on a project that isn't listed here, please let us know! We'll be happy to help however we can.
+      </p>
       images = [];
       break;
 
     case '/services/tree-removal':
       introTitle="Tree Removal";
-      introParagraph="We remove trees";
+      secondaryText="we remove poorly placed trees";
+      description=<p className='service_summary-p'>
+        Trees are the perfect addition to any home—when they're in the right spot. If you have a tree you'd like removed, we'd be happy to help! We'll be sure to remove it quicky and in the right way, so that in a few short weeks, you'll never know the tree was even there.
+      </p>
       images = [];
       break;
       
@@ -90,7 +103,7 @@ const Service = props => {
 // ===== ===== "COMPONENTS" BEG ===== =====
 
   const serviceIntro = <div className='service_summary'>
-    <h3 className='service_summary-h3'> { introParagraph.toUpperCase() } </h3>
+    <h3 className='service_summary-h3'> { 'MORE ABOUT ' + introTitle.toUpperCase() } </h3>
     {description}
   </div>
 
@@ -123,6 +136,7 @@ const Service = props => {
   return <div>
     <Intro
       primaryText={'Quality ' + introTitle}
+      secondaryText={secondaryText}
     />
     {serviceIntro}
     {gallery}

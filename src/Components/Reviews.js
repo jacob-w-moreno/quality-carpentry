@@ -5,18 +5,18 @@ const Reviews = props => {
   const [index, setIndex] = useState(1);
   const reviews = [
     {
-      name: 'Jake Moreno',
-      review: 'Rob and his team were a delight to work with. 10/10 would recommend!',
+      name: 'Eren J.',
+      review: "They were fast, efficient, and professional. We'll definitely hire them again for our next project!",
       stars: [1,2,3,4,5]
     },
     {
-      name: 'Anika Crawley',
-      review: 'The quality of the carpentry was exquisite. I love my new popcorn ceilings!',
+      name: 'Levi A.',
+      review: "They did such a great job finishing our basement. Their team was responsive and clear on cost and timelines.",
       stars: [1,2,3,4,5]
     },
     {
-      name: 'Rob Crawley',
-      review: 'This is a fake review! It\'s my company, and I want it to look good!',
+      name: 'Edward E.',
+      review: 'We were extremely impressed with the quality of work they provided and would highly recommend.',
       stars: [1,2,3,4,5]
     },
   ]
@@ -30,7 +30,7 @@ const Reviews = props => {
       } else {
         setIndex(0);
       }
-    }, 5500);
+    }, 6500);
     return () => clearInterval(interval);
   }, [index, reviews.length]);
 // */
