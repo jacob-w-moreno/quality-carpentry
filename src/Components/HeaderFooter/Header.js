@@ -19,8 +19,6 @@ const Header = props => {
   
 // ===== ===== DATA END ===== =====
 
-  console.log(contact);
-
 // ===== ===== "COMPONENTS"" BEG ===== =====
 
   const logo = <Link to='/'>
