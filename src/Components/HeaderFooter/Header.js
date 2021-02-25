@@ -10,7 +10,7 @@ const Header = props => {
 // ===== ===== DATA BEG ===== =====
   
   const [dropdown, setDropdown] = useState(false);
-  const [contact, setContact] = useState(true);
+  const [contact, setContact] = useState(false);
   const services = [
     "Roofing", "Flooring", "Remodels", "Basements",
     "Tree Removal", "Other"
