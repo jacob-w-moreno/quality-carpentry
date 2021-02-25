@@ -46,7 +46,7 @@ const Service = props => {
       introTitle="Roofing";
       secondaryText="we'll put a roof over your head";
       description = <p className='service_summary-p'>
-        Our roofing experts have years of experience protecting Utah's homes by installing and repairing high-quality roofs. We understand that the roof is one of the most important features of any home — both structurally and aesthetically — which is why we use premium materials, never cut corners, and finish every roofing job perfectly.
+        Our roofing experts have years of experience protecting Utah's homes by installing and repairing high-quality roofs. We understand that the roof is one of the most important features of any home — both structurally and aesthetically — which is why we use premium materials, never cut corners, and do every job the right way.
       </p>;
       images=[ roofing1, roofing2 ];
       break;
@@ -55,7 +55,7 @@ const Service = props => {
       introTitle="Flooring";
       secondaryText="we stand by the work you'll stand on"
       description=<p className='service_summary-p'>
-        All of the floors we repair and install are beautiful and long-lasting, so you'll be able to enjoy them for years to come. Like everything else we do, we stand by the quality of every flooring job we finish.
+        All of the floors we repair and install are beautiful and long-lasting, so you'll be able to enjoy them for years to come. Like everything else we do, we stand by the quality of every flooring job we take on.
       </p>
       images=[ flooring2, flooring5, flooring4, flooring6, flooring3, flooring1, flooring7, flooring8, flooring9, flooring10 ];
       break;
@@ -66,7 +66,7 @@ const Service = props => {
       description=<p className='service_summary-p'>
         Our team of experienced professionals is waiting to make the dream you have for your house a reality. We'll work with you to determine realistic goals for your house, then we'll bring them to life. With our help, you'll be living in your dream home before you know it!
       </p>
-      images=[ remodels1, remodels2, remodels3 ];
+      images=[ remodels2, remodels3 ];
       break;
 
     case '/services/basements':

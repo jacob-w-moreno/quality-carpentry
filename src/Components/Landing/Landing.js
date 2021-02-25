@@ -28,12 +28,12 @@ const Landing = props => {
     {
       image: Speed, 
       value: 'Speed', 
-      description: "We work hard and efficiently to make sure every job is finished quickly — without cutting any corners, guaranteed."
+      description: "We work hard and efficiently to make sure every job is finished quickly — without cutting any corners."
     },
     {
       image: Price,
       value: 'Affordability',
-      description: "We quote honest and reasonable prices, and work with our custmers to help them build their dream home within their budget."
+      description: "We quote honest and reasonable prices, and work with our customers to help them finish every project within their budget."
     }
   ]
   

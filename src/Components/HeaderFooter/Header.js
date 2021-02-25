@@ -5,6 +5,7 @@ import Aux from '../Aux';
 import Logo from '../../Styles/Assets/Logos/Minimal.png';
 import Dropdown from '../../Styles/Assets/Icons/Dropdown.png';
 import Hamburger from '../../Styles/Assets/Icons/Hamburger.png';
+import X from '../../Styles/Assets/Icons/X.png';
 
 const Header = props => {
 // ===== ===== DATA BEG ===== =====
@@ -42,7 +43,7 @@ const Header = props => {
   </div>
 
   const hamburger = <img className='header_hamburger'
-    src={Hamburger}
+    src={dropdown ? X : Hamburger}
     alt='hamburger menu'
     onClick={()=>dropdown?setDropdown(false):setDropdown(true)}
   />
