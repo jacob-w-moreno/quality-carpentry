@@ -35,6 +35,8 @@
 // display
   display: flex;
   justify-content: center;
+// box
+  margin-top: -12px;
 }
 
 .value {
@@ -56,8 +58,8 @@
 
 .value_icon {
 // box
-  height: 150px;
-  width: 150px;
+  height: 175px;
+  width: 175px;
   margin-bottom: 24px;
 // style
   // background: gray;

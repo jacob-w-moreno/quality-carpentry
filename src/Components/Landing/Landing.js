@@ -6,14 +6,35 @@ import GetQuote from '../Contact/GetQuote';
 import Reviews from '../Reviews';
 import Value from './Value';
 
+import Communication from '../../Styles/Assets/Icons/Communication2.png';
+import Price from '../../Styles/Assets/Icons/Price2.png';
+import Quality from '../../Styles/Assets/Icons/Quality2.png';
+import Speed from '../../Styles/Assets/Icons/Speed2.png';
+
 const Landing = props => {
 // ===== ===== DATA BEG ===== =====
   
   const valuesList = [
-    { image: 'https://www.radiancetech.com/wp-content/uploads/2019/01/quality-icon-blue.png', value: 'Quality', description: "We believe in doing things right the first time. In our opinion, every job is worth doing perfectly, and we won't quit until the job is done." },
-    { image: 'https://pics.freeicons.io/uploads/icons/png/20830632741582956833-512.png', value: 'Communication', description: "Our job is to make you happy. Before, during, and after every project, we will communicate with you to ensure that everything we do exceeds your expectations." },
-    { image: 'https://cdn0.iconfinder.com/data/icons/time-39/32/Time_Outline_Time_Fast_Watch_Clock_Hour-512.png', value: 'Speed', description: "We want to make sure you're living your best life as quickly as possible." },
-    { image: 'https://img.pngio.com/price-tag-svg-png-icon-free-download-568452-onlinewebfontscom-price-icon-png-980_981.png', value: 'Price' },
+    {
+      image: Quality,
+      value: 'Quality',
+      description: "We do things right because every job is worth doing well. We are proud of the work that we do and will gladly attest to its quality."
+    },
+    {
+      image: Communication,
+      value: 'Communication',
+      description: "We communicate with our customers before, during, and after every project to ensure that our work exceeds all expectations."
+    },
+    {
+      image: Speed, 
+      value: 'Speed', 
+      description: "We work hard and efficiently to make sure every job is finished quickly — without cutting any corners, guaranteed."
+    },
+    {
+      image: Price,
+      value: 'Affordability',
+      description: "We quote honest and reasonable prices, and work with our custmers to help them build their dream home within their budget."
+    }
   ]
   
 // ===== ===== DATA END ===== =====
@@ -37,7 +58,7 @@ const Landing = props => {
   return <div className='landing'>
     <Intro
       primaryText="QUALITY CARPENTRY"
-      secondaryText="For when you need it done right the first time"
+      secondaryText="We do it right the first time"
       mascot={true}/>
     <Services title="What we do best"/>
     <Reviews background='#e3e3e3'/>

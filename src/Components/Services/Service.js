@@ -37,45 +37,52 @@ const Service = props => {
 // ===== ===== CONSTANTS BEG ===== =====
 
   const [index, setIndex] = useState(1);
-  let images, title;
+  let images, introTitle, introParagraph;
+  let description = <p className='service_summary-p'>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  </p>
 
   switch (props.location.pathname) {
-    case '/services/basements':
-      images=[ basement1, basement3, basement4, basement5 ];
-      title="Basements";
-      break;
-    case '/services/flooring':
-      images=[ flooring2, flooring5, flooring4, flooring6, flooring3, flooring1, flooring7, flooring8, flooring9, flooring10 ];
-      title="Flooring";
-      break;
-    case '/services/remodels':
-      images=[ remodels1, remodels2, remodels3 ];
-      title="Remodels";
-      break;
     case '/services/roofing':
+      introTitle="Roofing";
+      introParagraph="We'll put a roof over your head";
+      description = <p className='service_summary-p'>Our roofing experts have years of experience protecting Utah's homes by installing and repairing high-quality roofs. We understand that the roof is one of the most important features of any home — both structurally and aesthetically — which is why we use premium materials, never cut corners, and finish every roofing job perfectly.</p>;
       images=[ roofing1, roofing2 ];
-      title="Roofing";
       break;
+
+    case '/services/flooring':
+      introTitle="Flooring";
+      introParagraph="We stand by the work you'll stand on"
+      description=<p className='service_summary-p'>All of the floors we repair and install are beautiful and long-lasting, so you'll be able to enjoy them for years to come. Like everything else we do, we stand by the quality of every flooring job we finish.</p>
+      images=[ flooring2, flooring5, flooring4, flooring6, flooring3, flooring1, flooring7, flooring8, flooring9, flooring10 ];
+      break;
+
+    case '/services/remodels':
+      introTitle="Remodels";
+      introParagraph="Your home but better"
+      description=<p className='service_summary-p'>Our team of experienced professionals is waiting to make the dream you have for your house a reality. We will work with you to come up with a plan, then we'll work to </p>
+      images=[ remodels1, remodels2, remodels3 ];
+      break;
+
+    case '/services/basements':
+      introTitle="Basements";
+      introParagraph="basements are cool";
+      description=<p className='service_summary-p'></p>
+      images=[ basement1, basement3, basement4, basement5 ];
+      break;
+
     case '/services/other':
-      images=[
-        'https://res.cloudinary.com/force/image/upload/v1520001725/mohawk/gallery/hardwood/WEM03_27_00.jpg',
-        'https://thelastinventory.com/wp-content/uploads/2020/03/LawsonGates-2.png',
-        'https://contentgrid.homedepot-static.com/hdus/en_US/DTCCOMNEW/Articles/how-to-repair-laminate-flooring-step-5.jpg',
-        'https://vantagevinyl.com/wp-content/uploads/2020/06/IN_GPL_TruTex_27012_1-scaled.jpg',
-        'https://secure.img1-fg.wfcdn.com/im/11040301/compr-r85/1031/103192191/windworn-hickory-38-thick-x-5-wide-x-varying-length-engineered-hardwood-flooring.jpg'
-      ];
-      title="Other";
+      introTitle="Other";
+      introParagraph="We do other stuff, too!";
+      images = [];
       break;
+
     case '/services/tree-removal':
-      images=[
-        'https://res.cloudinary.com/force/image/upload/v1520001725/mohawk/gallery/hardwood/WEM03_27_00.jpg',
-        'https://thelastinventory.com/wp-content/uploads/2020/03/LawsonGates-2.png',
-        'https://contentgrid.homedepot-static.com/hdus/en_US/DTCCOMNEW/Articles/how-to-repair-laminate-flooring-step-5.jpg',
-        'https://vantagevinyl.com/wp-content/uploads/2020/06/IN_GPL_TruTex_27012_1-scaled.jpg',
-        'https://secure.img1-fg.wfcdn.com/im/11040301/compr-r85/1031/103192191/windworn-hickory-38-thick-x-5-wide-x-varying-length-engineered-hardwood-flooring.jpg'
-      ];
-      title="Tree Removal";
+      introTitle="Tree Removal";
+      introParagraph="We remove trees";
+      images = [];
       break;
+      
     default: images=null;
   }
   
@@ -83,44 +90,39 @@ const Service = props => {
 // ===== ===== "COMPONENTS" BEG ===== =====
 
   const serviceIntro = <div className='service_summary'>
-    <h3 className='service_summary-h3'>SOMETHING ABOUT {title.toUpperCase()}</h3>
-    <p className='service_summary-p'>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-      sed do eiusmod tempor incididunt ut labore et dolore magna 
-      aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
-      ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-      Duis aute irure dolor in reprehenderit in voluptate velit 
-      esse cillum dolore eu fugiat nulla pariatur. Excepteur sint 
-      occaecat cupidatat non proident, sunt in culpa qui officia 
-      deserunt mollit anim id est laborum.
-    </p>
+    <h3 className='service_summary-h3'> { introParagraph.toUpperCase() } </h3>
+    {description}
   </div>
 
-  const gallery = <div className='service_gallery' style={{background: '#e3e3e3'}}>
-    <h3 className='service_summary-h3'>GALLERY</h3>
-    <div className='service_main-picture'>
-      <img className='service_main-img' src={images[index]} alt='Gallery'/>
+  let gallery = null;
+  if (images.length > 0) {
+    gallery = <div className='service_gallery' style={{background: '#e3e3e3'}}>
+      <h3 className='service_summary-h3'>{ introTitle.toUpperCase() } GALLERY</h3>
+      <div className='service_main-picture'>
+        <img className='service_main-img' src={images[index]} alt='Gallery'/>
+      </div>
+      <div className='service_gallery-preview'>
+        {
+          images.map((element, i) => {
+            return <GalleryBox
+              img={element}
+              alt='Gallery'
+              clicked={()=>setIndex(i)}
+              current={i===index}
+              key={i + element}/>
+          })
+        }
+      </div>
     </div>
-    <div className='service_gallery-preview'>
-      {
-        images.map((element, i) => {
-          return <GalleryBox
-            img={element}
-            alt='Gallery'
-            clicked={()=>setIndex(i)}
-            current={i===index}
-            key={i + element}/>
-        })
-      }
-    </div>
-  </div>
+  }
+
+  
 
 // ===== ===== "COMPONENTS" END ===== =====
 
   return <div>
     <Intro
-      primaryText={'Quality ' + title}
-      secondaryText={ "More details about quality " + title}
+      primaryText={'Quality ' + introTitle}
     />
     {serviceIntro}
     {gallery}
