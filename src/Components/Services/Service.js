@@ -24,7 +24,6 @@ import basement5 from '../../Styles/Assets/Services/Basements/5.jpg';
 import roofing1 from '../../Styles/Assets/Services/Roofing/1.jpg';
 import roofing2 from '../../Styles/Assets/Services/Roofing/2.jpg';
 
-import remodels1 from '../../Styles/Assets/Services/Remodels/1.jpg';
 import remodels2 from '../../Styles/Assets/Services/Remodels/2.jpg';
 import remodels3 from '../../Styles/Assets/Services/Remodels/3.jpg';
 
