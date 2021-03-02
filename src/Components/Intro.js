@@ -17,7 +17,6 @@ const Intro = props => {
   // ===== ===== DATA END ===== =====
 
   useEffect(() => {
-    console.log('running');
     const interval = setInterval(() => {
       let newIndex = index + 1;
       if (newIndex < images.length) {
@@ -34,7 +33,7 @@ const Intro = props => {
   if (props.gallery) {
     gallery = <img className='intro_gallery'
       src={images[index]}
-      alt={'gallery image'}/>
+      alt={'gallery'}/>
   }
 
   return <div className='intro'>

@@ -52,10 +52,6 @@ const Landing = props => {
       </div>
     </div>
 
-  const gallery = <div className='intro_gallery'>
-
-  </div>
-
 // ===== ===== COMPONENTS END ===== =====
 // ===== ===== RETURN BEG ===== =====
 

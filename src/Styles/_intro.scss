@@ -30,8 +30,6 @@
   color: white;
   background: gray;
   background-image: url('./Assets/Backgrounds/Intro2.png');
-  // background-image: url('https://www.stevesoult.com/wp-content/uploads/2014/07/wood_background3.jpg');
-  // background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQr_TAoJrDAwHXOSv6hfRRlxT2qTaIbRFs-xw&usqp=CAU');
   background-position-x: 50%;
   background-position-y: 10px;
   background-size: cover;
@@ -47,7 +45,7 @@
 .intro_gallery {
 // box
   border: 8px solid white;
-  height: 300px;
+  max-height: 300px;
   width: auto;
   margin-top: 12px;
 // style
@@ -74,5 +72,11 @@
   .intro {
     height: 400px;
     text-align: center;
+  }
+}
+
+@media(max-width: 500px) {
+  .intro_gallery {
+    height: 200px;
   }
 }
