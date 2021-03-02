@@ -16,25 +16,27 @@
   }
   
 .intro {
-  // position
-    position: relative;
-  // display
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-items: center;
-  // size
-    width: 100vw;
-    height: 500px;
-  // style
-    color: white;
-    background: gray;
-    background-image: url('./Assets/Backgrounds/Intro.png');
-    // background-image: url('http://unblast.com/wp-content/uploads/2020/05/Light-Wood-Background-Texture-1.jpg');
-    background-position-x: 50%;
-    background-size: cover;
-    background-attachment: fixed;
-    h2 { color: $logogray; }
+// position
+  position: relative;
+// display
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+// size
+  width: 100vw;
+  height: 500px;
+// style
+  color: white;
+  background: gray;
+  background-image: url('./Assets/Backgrounds/Intro2.png');
+  // background-image: url('https://www.stevesoult.com/wp-content/uploads/2014/07/wood_background3.jpg');
+  // background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQr_TAoJrDAwHXOSv6hfRRlxT2qTaIbRFs-xw&usqp=CAU');
+  background-position-x: 50%;
+  background-position-y: 10px;
+  background-size: cover;
+  background-attachment: fixed;
+  h2 { color: $logogray; }
 }
 
 // .intro_intro {
