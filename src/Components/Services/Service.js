@@ -5,6 +5,11 @@ import Services from './ServicesList/Services';
 import GetQuote from '../Contact/GetQuote';
 import Reviews from '../Reviews';
 
+import basement1 from '../../Styles/Assets/Services/Basements/1.jpg';
+import basement3 from '../../Styles/Assets/Services/Basements/3.jpg';
+import basement4 from '../../Styles/Assets/Services/Basements/4.jpg';
+import basement5 from '../../Styles/Assets/Services/Basements/5.jpg';
+
 import flooring1 from '../../Styles/Assets/Services/Flooring/1.jpg';
 import flooring2 from '../../Styles/Assets/Services/Flooring/2.jpg';
 import flooring3 from '../../Styles/Assets/Services/Flooring/3.jpg';
@@ -16,20 +21,16 @@ import flooring8 from '../../Styles/Assets/Services/Flooring/8.jpg';
 import flooring9 from '../../Styles/Assets/Services/Flooring/9.jpg';
 import flooring10 from '../../Styles/Assets/Services/Flooring/10.jpg';
 
-import basement1 from '../../Styles/Assets/Services/Basements/1.jpg';
-import basement3 from '../../Styles/Assets/Services/Basements/3.jpg';
-import basement4 from '../../Styles/Assets/Services/Basements/4.jpg';
-import basement5 from '../../Styles/Assets/Services/Basements/5.jpg';
-
 import roofing1 from '../../Styles/Assets/Services/Roofing/1.jpg';
 import roofing2 from '../../Styles/Assets/Services/Roofing/2.jpg';
+import roofing3 from '../../Styles/Assets/Services/Roofing/3.jpg';
 
-let remodels1 = 'https://drive.google.com/uc?export=view&id=1qU0yDBmzt2ylS90e6QETAekgtz_JbNbU';
-let remodels2 = 'https://drive.google.com/uc?export=view&id=1VoU60yBG18BeAWvqNJNxXCqdq1fUkgRa';
+import remodels1 from '../../Styles/Assets/Services/Remodels/1.jpg';
+import remodels2 from '../../Styles/Assets/Services/Remodels/2.jpg';
 
-let treeRemoval1 = 'https://drive.google.com/uc?export=view&id=1CxicHqPNGDjJDXFkRJgCtN8CneoB8jA5';
-let treeRemoval2 = 'https://drive.google.com/uc?export=view&id=1Ks0UZsGJJEkG_hDYOJ7oWrsfZ-b4mD4x';
-let treeRemoval3 = 'https://drive.google.com/uc?export=view&id=1fo8WFGNRcYy7vl3744Fj3qS7SGUT0fBa';
+import tree1 from '../../Styles/Assets/Services/TreeRemoval/1.jpg';
+import tree2 from '../../Styles/Assets/Services/TreeRemoval/2.jpg';
+import tree3 from '../../Styles/Assets/Services/TreeRemoval/3.jpg';
 
 const Service = props => {
 
@@ -51,7 +52,7 @@ const Service = props => {
       description = <p className='service_summary-p'>
         Our roofing experts have experience protecting Utah's homes by installing and repairing high-quality roofs. We understand that the roof is one of the most important features of any home — both structurally and aesthetically — which is why we use premium materials, never cut corners, and do every job the right way.
       </p>;
-      images=[ roofing1, roofing2 ];
+      images=[ roofing1, roofing2, roofing3 ];
       break;
 
     case '/services/flooring':
@@ -96,7 +97,7 @@ const Service = props => {
       description=<p className='service_summary-p'>
         Trees are the perfect addition to any home—when they're in the right condition and the right spot. If you have a tree that's posing a threat to your house (or a tree that you don't like), we'd be happy to trim it or remove it. We'll be sure to do it quicky and in the right way so your home stays safe and beautiful.
       </p>
-      images = [ treeRemoval1, treeRemoval2, treeRemoval3 ];
+      images = [ tree1, tree2, tree3 ];
       break;
       
     default: images=null;

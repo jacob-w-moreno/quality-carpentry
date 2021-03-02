@@ -46,9 +46,10 @@
 
 .intro_gallery {
 // box
-  // margin-top: 64px;
+  border: 8px solid white;
   height: 300px;
-  width: 500px;
+  width: auto;
+  margin-top: 12px;
 // style
   background: gray;
 }

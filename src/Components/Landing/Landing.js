@@ -13,7 +13,7 @@ import Speed from '../../Styles/Assets/Icons/Speed2.png';
 
 const Landing = props => {
 // ===== ===== DATA BEG ===== =====
-  
+
   const valuesList = [
     {
       image: Quality,
@@ -52,6 +52,10 @@ const Landing = props => {
       </div>
     </div>
 
+  const gallery = <div className='intro_gallery'>
+
+  </div>
+
 // ===== ===== COMPONENTS END ===== =====
 // ===== ===== RETURN BEG ===== =====
 
@@ -59,7 +63,7 @@ const Landing = props => {
     <Intro
       primaryText="QUALITY CARPENTRY"
       mascot={true}
-      class='intro_intro'/>
+      gallery={true}/>
     <Services title="What we do"/>
     <Reviews background='#e3e3e3'/>
     {values}
