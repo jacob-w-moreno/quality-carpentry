@@ -94,7 +94,7 @@ const Service = props => {
       introTitle="Tree Removal";
       secondaryText="we remove poorly placed trees";
       description=<p className='service_summary-p'>
-        Trees are the perfect addition to any home—when they're in the right spot. If you have a tree you'd like removed, we'd be happy to help! We'll be sure to remove it quicky and in the right way, so that in a few short weeks, you'll never know the tree was even there.
+        Trees are the perfect addition to any home—when they're in the right condition and the right spot. If you have a tree that's posing a threat to your house (or a tree that you don't like), we'd be happy to trim it or remove it. We'll be sure to do it quicky and in the right way so your home stays safe and beautiful.
       </p>
       images = [ treeRemoval1, treeRemoval2, treeRemoval3 ];
       break;
