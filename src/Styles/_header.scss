@@ -30,8 +30,21 @@
 
 .header_button {
 // box
-  margin-left: 40px;
-}
+  border: none;
+  padding: 0 16px;
+  border-radius: 8px;
+  margin-left: 36px;
+// style
+  font-size: .8rem;
+  font-weight: bold;
+  color: black;
+  background: $yellow;
+// pseudo
+  &:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+  }
+  }
   
 .header_button-2 {
 // display
@@ -219,8 +232,20 @@
     line-height: 40px;
   }
   .header_button {
+  // box
+    border: none;
     padding: 0 16px;
+    border-radius: 8px;
+  // style
     font-size: .8rem;
+    font-weight: bold;
+    color: black;
+    background: $yellow;
+  // pseudo
+    &:hover {
+      transform: scale(1.05);
+      cursor: pointer;
+    }
   }
 }
 

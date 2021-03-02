@@ -58,9 +58,9 @@ const Landing = props => {
   return <div className='landing'>
     <Intro
       primaryText="QUALITY CARPENTRY"
-      secondaryText="We do it right the first time"
-      mascot={true}/>
-    <Services title="What we do best"/>
+      mascot={true}
+      class='intro_intro'/>
+    <Services title="What we do"/>
     <Reviews background='#e3e3e3'/>
     {values}
     <GetQuote title="" background="#e3e3e3"/>

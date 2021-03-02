@@ -24,8 +24,12 @@ import basement5 from '../../Styles/Assets/Services/Basements/5.jpg';
 import roofing1 from '../../Styles/Assets/Services/Roofing/1.jpg';
 import roofing2 from '../../Styles/Assets/Services/Roofing/2.jpg';
 
-import remodels2 from '../../Styles/Assets/Services/Remodels/2.jpg';
-import remodels3 from '../../Styles/Assets/Services/Remodels/3.jpg';
+let remodels1 = 'https://drive.google.com/uc?export=view&id=1qU0yDBmzt2ylS90e6QETAekgtz_JbNbU';
+let remodels2 = 'https://drive.google.com/uc?export=view&id=1VoU60yBG18BeAWvqNJNxXCqdq1fUkgRa';
+
+let treeRemoval1 = 'https://drive.google.com/uc?export=view&id=1CxicHqPNGDjJDXFkRJgCtN8CneoB8jA5';
+let treeRemoval2 = 'https://drive.google.com/uc?export=view&id=1Ks0UZsGJJEkG_hDYOJ7oWrsfZ-b4mD4x';
+let treeRemoval3 = 'https://drive.google.com/uc?export=view&id=1fo8WFGNRcYy7vl3744Fj3qS7SGUT0fBa';
 
 const Service = props => {
 
@@ -45,7 +49,7 @@ const Service = props => {
       introTitle="Roofing";
       secondaryText="we'll put a roof over your head";
       description = <p className='service_summary-p'>
-        Our roofing experts have years of experience protecting Utah's homes by installing and repairing high-quality roofs. We understand that the roof is one of the most important features of any home — both structurally and aesthetically — which is why we use premium materials, never cut corners, and do every job the right way.
+        Our roofing experts have experience protecting Utah's homes by installing and repairing high-quality roofs. We understand that the roof is one of the most important features of any home — both structurally and aesthetically — which is why we use premium materials, never cut corners, and do every job the right way.
       </p>;
       images=[ roofing1, roofing2 ];
       break;
@@ -63,16 +67,16 @@ const Service = props => {
       introTitle="Remodels";
       secondaryText="your home—but better"
       description=<p className='service_summary-p'>
-        Our team of experienced professionals is waiting to make the dream you have for your house a reality. We'll work with you to determine realistic goals for your house, then we'll bring them to life. With our help, you'll be living in your dream home before you know it!
+        Our team of experienced professionals are waiting to make the dream you have for your house a reality. We'll work with you to determine goals for your house, then we'll bring them to life. With our help, you'll be living in your dream home before you know it!
       </p>
-      images=[ remodels2, remodels3 ];
+      images=[ remodels1, remodels2 ];
       break;
 
     case '/services/basements':
       introTitle="Basements";
       secondaryText="invest in your basement";
       description=<p className='service_summary-p'>
-        With our help, finally finishing your basement is a realistic goal. At Quality Carpentry, we're known for our fast, beautiful, and high-quality basements that increase the value of houses. Whether you're building a basement apartment or a nicer place to store your belongings, we can get the job done.
+        With our help, finally finishing your basement is a realistic goal. At Quality Carpentry, we're known for our fast, beautiful, and high-quality basements that increase the value of houses. Whether you're building a basement apartment or creating more space for your growing family, we can get the job done.
       </p>
       images=[ basement1, basement3, basement4, basement5 ];
       break;
@@ -92,7 +96,7 @@ const Service = props => {
       description=<p className='service_summary-p'>
         Trees are the perfect addition to any home—when they're in the right spot. If you have a tree you'd like removed, we'd be happy to help! We'll be sure to remove it quicky and in the right way, so that in a few short weeks, you'll never know the tree was even there.
       </p>
-      images = [];
+      images = [ treeRemoval1, treeRemoval2, treeRemoval3 ];
       break;
       
     default: images=null;

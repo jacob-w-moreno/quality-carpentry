@@ -71,7 +71,7 @@ const Header = props => {
           <li>ABOUT</li>
         </Link>
       </ul>
-      <button className='header_button button_cta'
+      <button className='header_button'
         onClick={()=>setContact(contact?false:true)}>GET A QUOTE</button>
       {contactInfo}
     </nav>
