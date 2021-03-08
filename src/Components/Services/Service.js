@@ -96,7 +96,7 @@ const Service = props => {
 
     case '/services/junk-removal':
       introTitle="Junk Removal";
-      description="hi";
+      description="We can get rid of everything—inside and out—that's detracting from the value and beauty of your home. Be it trees, trash, debris, furniture or anything else you no longer want or need, we make it easy to get rid of your junk. Let's make your house feel like home again.";
       images=[ junk1B, junk1A, junk2B, junk2A, junk3B, junk3A, junk4B, junk4A, junk5B, junk5A ];
       break;
 
