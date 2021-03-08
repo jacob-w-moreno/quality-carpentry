@@ -16,7 +16,8 @@ const Services = props => {
     {service: 'Remodels', image: Remodels},
     {service: 'Basements', image: Basements},
     {service: 'Tree Removal', image: TreeRemoval},
-    {service: 'Other', image: Other},
+    {service: 'Junk Removal', image: Other}
+    // {service: 'Other', image: Other},
   ];
 
   return <div className='landing_services' style={{background: props.style}}>

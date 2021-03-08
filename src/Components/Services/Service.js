@@ -21,6 +21,17 @@ import flooring8 from '../../Styles/Assets/Services/Flooring/8.jpg';
 import flooring9 from '../../Styles/Assets/Services/Flooring/9.jpg';
 import flooring10 from '../../Styles/Assets/Services/Flooring/10.jpg';
 
+import junk1A from '../../Styles/Assets/Services/JunkRemoval/1A.jpg';
+import junk1B from '../../Styles/Assets/Services/JunkRemoval/1B.jpg';
+import junk2A from '../../Styles/Assets/Services/JunkRemoval/2A.jpg';
+import junk2B from '../../Styles/Assets/Services/JunkRemoval/2B.jpg';
+import junk3A from '../../Styles/Assets/Services/JunkRemoval/3A.jpg';
+import junk3B from '../../Styles/Assets/Services/JunkRemoval/3B.jpg';
+import junk4A from '../../Styles/Assets/Services/JunkRemoval/4A.jpg';
+import junk4B from '../../Styles/Assets/Services/JunkRemoval/4B.jpg';
+import junk5A from '../../Styles/Assets/Services/JunkRemoval/5A.jpg';
+import junk5B from '../../Styles/Assets/Services/JunkRemoval/5B.jpg';
+
 import roofing1 from '../../Styles/Assets/Services/Roofing/1.jpg';
 import roofing2 from '../../Styles/Assets/Services/Roofing/2.jpg';
 import roofing3 from '../../Styles/Assets/Services/Roofing/3.jpg';
@@ -31,6 +42,8 @@ import remodels2 from '../../Styles/Assets/Services/Remodels/2.jpg';
 import tree1 from '../../Styles/Assets/Services/TreeRemoval/1.jpg';
 import tree2 from '../../Styles/Assets/Services/TreeRemoval/2.jpg';
 import tree3 from '../../Styles/Assets/Services/TreeRemoval/3.jpg';
+
+
 
 const Service = props => {
 
@@ -48,55 +61,49 @@ const Service = props => {
   switch (props.location.pathname) {
     case '/services/roofing':
       introTitle="Roofing";
-      secondaryText="we'll put a roof over your head";
-      description = <p className='service_summary-p'>
-        Our roofing experts have experience protecting Utah's homes by installing and repairing high-quality roofs. We understand that the roof is one of the most important features of any home — both structurally and aesthetically — which is why we use premium materials, never cut corners, and do every job the right way.
-      </p>;
+      // secondaryText="we'll put a roof over your head";
+      description="Our roofing experts have experience protecting Utah's homes by installing and repairing high-quality roofs. We understand that the roof is one of the most important features of any home — both structurally and aesthetically — which is why we use premium materials, never cut corners, and do every job the right way.";
       images=[ roofing1, roofing2, roofing3 ];
       break;
 
     case '/services/flooring':
       introTitle="Flooring";
-      secondaryText="we stand by the work you'll stand on"
-      description=<p className='service_summary-p'>
-        All of the floors we repair and install are beautiful and long-lasting, so you'll be able to enjoy them for years to come. Like everything else we do, we stand by the quality of every flooring job we take on.
-      </p>
+      // secondaryText="we stand by the work you'll stand on"
+      description="All of the floors we repair and install are beautiful and long-lasting, so you'll be able to enjoy them for years to come. Like everything else we do, we stand by the quality of every flooring job we take on.";
       images=[ flooring2, flooring5, flooring4, flooring6, flooring3, flooring1, flooring7, flooring8, flooring9, flooring10 ];
       break;
 
     case '/services/remodels':
       introTitle="Remodels";
-      secondaryText="your home—but better"
-      description=<p className='service_summary-p'>
-        Our team of experienced professionals are waiting to make the dream you have for your house a reality. We'll work with you to determine goals for your house, then we'll bring them to life. With our help, you'll be living in your dream home before you know it!
-      </p>
+      // secondaryText="your home—but better"
+      description="Our team of experienced professionals are waiting to make the dream you have for your house a reality. We'll work with you to determine goals for your house, then we'll bring them to life. With our help, you'll be living in your dream home before you know it!";
       images=[ remodels1, remodels2 ];
       break;
 
     case '/services/basements':
       introTitle="Basements";
-      secondaryText="invest in your basement";
-      description=<p className='service_summary-p'>
-        With our help, finally finishing your basement is a realistic goal. At Quality Carpentry, we're known for our fast, beautiful, and high-quality basements that increase the value of houses. Whether you're building a basement apartment or creating more space for your growing family, we can get the job done.
-      </p>
+      // secondaryText="invest in your basement";
+      description="With our help, finally finishing your basement is a realistic goal. At Quality Carpentry, we're known for our fast, beautiful, and high-quality basements that increase the value of houses. Whether you're building a basement apartment or creating more space for your growing family, we can get the job done.";
       images=[ basement1, basement3, basement4, basement5 ];
       break;
 
     case '/services/other':
       introTitle="General Carpentry";
-      secondaryText="we've done it all before";
-      description=<p className='service_summary-p'>
-        Our team has over 30 years of experience in contract work, flipping houses, finish carpentry, construction, and general woodworking. If you're working on a project that isn't listed here, please let us know! We'll be happy to help however we can.
-      </p>
+      // secondaryText="we've done it all before";
+      description="Our team has over 30 years of experience in contract work, flipping houses, finish carpentry, construction, and general woodworking. If you're working on a project that isn't listed here, please let us know! We'll be happy to help however we can.";
       images = [];
+      break;
+
+    case '/services/junk-removal':
+      introTitle="Junk Removal";
+      description="hi";
+      images=[ junk1B, junk1A, junk2B, junk2A, junk3B, junk3A, junk4B, junk4A, junk5B, junk5A ];
       break;
 
     case '/services/tree-removal':
       introTitle="Tree Removal";
-      secondaryText="we remove poorly placed trees";
-      description=<p className='service_summary-p'>
-        Trees are the perfect addition to any home—when they're in the right condition and the right spot. If you have a tree that's posing a threat to your house (or a tree that you don't like), we'd be happy to trim it or remove it. We'll be sure to do it quicky and in the right way so your home stays safe and beautiful.
-      </p>
+      // secondaryText="we remove poorly placed trees";
+      description="Trees are the perfect addition to any home—when they're in the right condition and the right spot. If you have a tree that's posing a threat to your house (or a tree that you don't like), we'd be happy to trim it or remove it. We'll be sure to do it quicky and in the right way so your home stays safe and beautiful.";
       images = [ tree1, tree2, tree3 ];
       break;
       
@@ -108,7 +115,7 @@ const Service = props => {
 
   const serviceIntro = <div className='service_summary'>
     <h3 className='service_summary-h3'> { 'MORE ABOUT ' + introTitle.toUpperCase() } </h3>
-    {description}
+    <p className='service_summary-p'>{description}</p>
   </div>
 
   let gallery = null;
