@@ -6,7 +6,8 @@ import Flooring from '../../../Styles/Assets/Icons/Flooring.png';
 import Remodels from '../../../Styles/Assets/Icons/Remodels.png';
 import Roofing from '../../../Styles/Assets/Icons/Roofing.png';
 import TreeRemoval from '../../../Styles/Assets/Icons/TreeRemoval.png';
-import Other from '../../../Styles/Assets/Icons/Other.png';
+// import Other from '../../../Styles/Assets/Icons/Other.png';
+import JunkRemoval from '../../../Styles/Assets/Icons/JunkRemoval.png';
 
 const Services = props => {
 
@@ -16,7 +17,7 @@ const Services = props => {
     {service: 'Remodels', image: Remodels},
     {service: 'Basements', image: Basements},
     {service: 'Tree Removal', image: TreeRemoval},
-    {service: 'Junk Removal', image: Other}
+    {service: 'Junk Removal', image: JunkRemoval}
     // {service: 'Other', image: Other},
   ];
 
