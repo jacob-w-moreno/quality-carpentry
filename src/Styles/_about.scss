@@ -1,6 +1,6 @@
 .bio {
 // box
-  width: 400px;
+  max-width: 400px;
 // display
   display: flex;
   flex-flow: column;
@@ -15,10 +15,13 @@
 }
 
 .bio_grid {
+// box
+  margin: 48px 0;
+// display
   display: grid;
   justify-content: center;
-  grid-template-columns: repeat(auto-fit, 400px);
-  grid-gap: 40px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 400px));
+  grid-gap: 60px;
 }
 
 .bio_img {
@@ -32,11 +35,13 @@
   margin-top: 24px;
   font-size: 1.6rem;
   padding: 0;
+  color: black;
 }
 
 .bio_title {
 // box
   margin-bottom: 12px;
+  color: gray;
 }
 
 @media (max-width: 650px) {
