@@ -13,6 +13,9 @@ import Donette from '../../Styles/Assets/Bios/Donette.jpg';
 import Cody from '../../Styles/Assets/Bios/Cody.jpg';
 import Wes from '../../Styles/Assets/Bios/Wes.jpg';
 import Cayden from '../../Styles/Assets/Bios/Cayden.jpg';
+import Ian from '../../Styles/Assets/Bios/Ian.jpg';
+import Isaac from '../../Styles/Assets/Bios/Isaac.jpg';
+import Tyler from '../../Styles/Assets/Bios/Tyler.jpg';
 
 const About = props => {
   return <div className='about'>
@@ -113,6 +116,24 @@ const About = props => {
         name="Jay Price"
         title="Employee"
         bio="Jay is 24 years old and already has several years of experience in residential remodeling and construction. He is currently studying at Utah Valley University."
+      />
+      <Bio
+        pic={Ian}
+        name="Ian Reid"
+        title="Employee"
+        bio="Ian is from Highland, Utah. He is recently married and is a mechanical engineering student at BYU. He absolutely loves all things carpentry and prides himself on a job well done."
+      />
+      <Bio
+        pic={Isaac}
+        name="Isaac Gividen"
+        title="Employee"
+        bio="Isaac grew up in Cedar Hills Ut. He is currently attending Brigham Young University. He was recently married in August 2020. He has a passion for building and creating."
+      />
+      <Bio
+        pic={Tyler}
+        name="Tyler Smith"
+        title="Employee"
+        bio="Tyler lives in the Ogden area with his family. He's currently studying at Weber State University and hopes to run his own business one day. He loves to play guitar and banjo. He loves working at Quality because it provides a great flexible opportunity to work and still go to school."
       />
     </div>
   </div>
