@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Bio = props => {
-  return <div className='bio' style={{'background': props.background}}>
+  return <div className='bio'>
     <img 
       className='bio_img' 
       src={props.pic} 

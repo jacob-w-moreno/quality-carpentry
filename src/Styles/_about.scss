@@ -1,38 +1,42 @@
 .bio {
 // box
-  padding: 40px 0;
+  width: 400px;
 // display
   display: flex;
-  justify-content: center;
+  flex-flow: column;
+  align-items: center;
+  text-align: center;
+  // @include b(red);
 }
 
 .bio_bio {
-// box
-  width: 600px;
+  color: gray;
+  font-size: 1rem;
+}
+
+.bio_grid {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, 400px);
+  grid-gap: 40px;
 }
 
 .bio_img {
-  // box
-  width: 400px;
-  margin-right: 24px;
+// box
+  border-radius: 200px;
+  height: 200px; width: 200px;
 }
 
 .bio_name {
 // box
   margin-top: 24px;
+  font-size: 1.6rem;
   padding: 0;
-// text
-  text-align: left;
 }
 
 .bio_title {
 // box
-  margin-bottom: 32px;
-}
-@media (max-width:460px) {
-  .bio_img {
-    width: 85vw;
-  }
+  margin-bottom: 12px;
 }
 
 @media (max-width: 650px) {
@@ -47,9 +51,6 @@
     flex-flow: column;
     align-items: center;
     text-align: center;
-  }
-  .bio_img { 
-    margin: 0;
   }
   .bio_name {
     margin-top: 12px;
