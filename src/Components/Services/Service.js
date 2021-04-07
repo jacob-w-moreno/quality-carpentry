@@ -20,6 +20,11 @@ import flooring7 from '../../Styles/Assets/Services/Flooring/7.jpg';
 import flooring8 from '../../Styles/Assets/Services/Flooring/8.jpg';
 import flooring9 from '../../Styles/Assets/Services/Flooring/9.jpg';
 import flooring10 from '../../Styles/Assets/Services/Flooring/10.jpg';
+import flooring11 from '../../Styles/Assets/Services/Flooring/11.jpg';
+import flooring12 from '../../Styles/Assets/Services/Flooring/12.jpg';
+import flooring13 from '../../Styles/Assets/Services/Flooring/13.jpg';
+import flooring14 from '../../Styles/Assets/Services/Flooring/14.jpg';
+import flooring15 from '../../Styles/Assets/Services/Flooring/15.jpg';
 
 import junk1A from '../../Styles/Assets/Services/JunkRemoval/1A.jpg';
 import junk1B from '../../Styles/Assets/Services/JunkRemoval/1B.jpg';
@@ -72,7 +77,7 @@ const Service = props => {
       introTitle="Flooring";
       // secondaryText="we stand by the work you'll stand on"
       description="All of the floors we install are beautiful and long-lasting, so you'll be able to enjoy them for years to come. We also offer custom vinyl flooring. Like everything else we do, we stand by the quality of every flooring job we take on.";
-      images=[ flooring2, flooring5, flooring4, flooring6, flooring3, flooring1, flooring7, flooring8, flooring9, flooring10 ];
+      images=[ flooring2, flooring5, flooring4, flooring6, flooring3, flooring1, flooring7, flooring8, flooring9, flooring10, flooring11, flooring12, flooring13, flooring14, flooring15 ];
       break;
 
     case '/services/remodels':
