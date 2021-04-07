@@ -17,6 +17,8 @@ import Ian from '../../Styles/Assets/Bios/Ian.jpg';
 import Isaac from '../../Styles/Assets/Bios/Isaac.jpg';
 import Tyler from '../../Styles/Assets/Bios/Tyler.jpg';
 import Dan from '../../Styles/Assets/Bios/Dan.jpg';
+import Rusty from '../../Styles/Assets/Bios/Rusty.jpg';
+import Derek from '../../Styles/Assets/Bios/Derek.jpg';
 
 const About = props => {
   return <div className='about'>
@@ -135,6 +137,18 @@ const About = props => {
         name="Tyler Smith"
         title="Employee"
         bio="Tyler lives in the Ogden area with his family. He's currently studying at Weber State University and hopes to run his own business one day. He loves to play guitar and banjo. He loves working at Quality because it provides a great flexible opportunity to work and still go to school."
+      />
+      <Bio
+        pic={Rusty}
+        name="Rusty"
+        title="Employee"
+        bio="I'm Rusty. I'm a handyman and love carpentry, plumbing, electrical work, and anything else I can get my hands on."
+      />
+      <Bio
+        pic={Derek}
+        name="Derek Price"
+        title="Employee"
+        bio="Derek is 21 years old and has been working in construction for 5 years. He plans on attending Salt Lake Community College in the fall."
       />
     </div>
   </div>
