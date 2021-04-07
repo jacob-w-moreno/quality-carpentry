@@ -17,15 +17,17 @@ const Intro = props => {
   // ===== ===== DATA END ===== =====
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      let newIndex = index + 1;
-      if (newIndex < images.length) {
-        setIndex(newIndex);
-      } else {
-        setIndex(0);
-      }
-    }, 4000);
-    return () => clearInterval(interval);
+    if (props.gallery) {
+      const interval = setInterval(() => {
+        let newIndex = index + 1;
+        if (newIndex < images.length) {
+          setIndex(newIndex);
+        } else {
+          setIndex(0);
+        }
+      }, 4000);
+      return () => clearInterval(interval);
+    }
   }, [index, images.length]);
 
   let gallery = null;
@@ -42,7 +44,7 @@ const Intro = props => {
     { gallery }
     <img className="mascot" 
       src={ Mascot } 
-      alt="Quality Carpentry mascot (a cartoon man with a tool belt)"/>
+      alt="Quality Carpentry mascot (a cartoon man with a large hammer, a drill, and a tool belt)"/>
   </div>
 }
 

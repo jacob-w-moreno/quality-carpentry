@@ -69,7 +69,7 @@ const Service = props => {
     case '/services/flooring':
       introTitle="Flooring";
       // secondaryText="we stand by the work you'll stand on"
-      description="All of the floors we repair and install are beautiful and long-lasting, so you'll be able to enjoy them for years to come. Like everything else we do, we stand by the quality of every flooring job we take on.";
+      description="All of the floors we install are beautiful and long-lasting, so you'll be able to enjoy them for years to come. We also offer custom vinyl flooring. Like everything else we do, we stand by the quality of every flooring job we take on.";
       images=[ flooring2, flooring5, flooring4, flooring6, flooring3, flooring1, flooring7, flooring8, flooring9, flooring10 ];
       break;
 
