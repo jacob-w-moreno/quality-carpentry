@@ -16,6 +16,7 @@ import Cayden from '../../Styles/Assets/Bios/Cayden.jpg';
 import Ian from '../../Styles/Assets/Bios/Ian.jpg';
 import Isaac from '../../Styles/Assets/Bios/Isaac.jpg';
 import Tyler from '../../Styles/Assets/Bios/Tyler.jpg';
+import Dan from '../../Styles/Assets/Bios/Dan.jpg';
 
 const About = props => {
   return <div className='about'>
@@ -24,7 +25,7 @@ const About = props => {
       secondaryText="We'll get the job done together"/>
     <div className='bio_grid'>
       <Bio
-        pic={Placeholder}
+        pic={Dan}
         name="Daniel Crawley"
         title="Co-founder, owner"
         bio="Daniel has over 13 years' experience as a realtor, and

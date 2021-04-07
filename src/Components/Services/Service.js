@@ -76,14 +76,15 @@ const Service = props => {
     case '/services/remodels':
       introTitle="Remodels";
       // secondaryText="your home—but better"
-      description="Our team of experienced professionals are waiting to make the dream you have for your house a reality. We'll work with you to determine goals for your house, then we'll bring them to life. With our help, you'll be living in your dream home before you know it!";
+      description="If you're looking to remodel your house or business, we have you covered. We'll work with you to determine your goals, then we'll take it from there and bring them to life. With our help, your home or business will match your vision before you know it!"
+      let description2="Our team of experienced professionals are waiting to make the dream you have for your house a reality. We'll work with you to determine goals for your house, then we'll bring them to life. With our help, you'll be living in your dream home before you know it!";
       images=[ remodels1, remodels2 ];
       break;
 
     case '/services/basements':
       introTitle="Basements";
       // secondaryText="invest in your basement";
-      description="With our help, finally finishing your basement is a realistic goal. At Quality Carpentry, we're known for our fast, beautiful, and high-quality basements that increase the value of houses. Whether you're building a basement apartment or creating more space for your growing family, we can get the job done.";
+      description="With our help, finally finishing your basement is a realistic goal. At Quality Carpentry, we're known for our beautiful and high-quality basements that increase the value of houses. Whether you're building a basement apartment or creating more space for your growing family, we can get the job done.";
       images=[ basement1, basement3, basement4, basement5 ];
       break;
 
