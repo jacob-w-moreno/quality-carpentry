@@ -3,7 +3,7 @@ import Mascot from '../Styles/Assets/Mascot.png';
 
 import basement from '../Styles/Assets/Services/Basements/5.jpg';
 import flooring from '../Styles/Assets/Services/Flooring/5.jpg';
-import roofing from '../Styles/Assets/Services/Roofing/3.jpg';
+import roofing from '../Styles/Assets/Services/Roofing/5.jpg';
 import remodels from '../Styles/Assets/Services/Remodels/2.jpg';
 import tree from '../Styles/Assets/Services/TreeRemoval/1.jpg';
 

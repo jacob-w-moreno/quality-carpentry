@@ -34,7 +34,9 @@ import junk5B from '../../Styles/Assets/Services/JunkRemoval/5B.jpg';
 
 import roofing1 from '../../Styles/Assets/Services/Roofing/1.jpg';
 import roofing2 from '../../Styles/Assets/Services/Roofing/2.jpg';
-import roofing3 from '../../Styles/Assets/Services/Roofing/3.jpg';
+import roofing4 from '../../Styles/Assets/Services/Roofing/4.jpg';
+import roofing5 from '../../Styles/Assets/Services/Roofing/5.jpg';
+import roofing6 from '../../Styles/Assets/Services/Roofing/6.jpg';
 
 import remodels1 from '../../Styles/Assets/Services/Remodels/1.jpg';
 import remodels2 from '../../Styles/Assets/Services/Remodels/2.jpg';
@@ -63,7 +65,7 @@ const Service = props => {
       introTitle="Roofing";
       // secondaryText="we'll put a roof over your head";
       description="Our roofing experts have experience protecting Utah's homes by installing and repairing high-quality roofs. We understand that the roof is one of the most important features of any home — both structurally and aesthetically — which is why we use premium materials, never cut corners, and do every job the right way.";
-      images=[ roofing1, roofing2, roofing3 ];
+      images=[ roofing4, roofing6, roofing5, roofing1, roofing2 ];
       break;
 
     case '/services/flooring':
