@@ -24,7 +24,7 @@ const Footer = props => {
         <span>(385) 244-7957</span>
       </a>
     </Column>
-    <Column title="SITE MAP">
+    <Column title="NAVIGATION">
       <Link to='/'>
         <div className='footer_child'> HOME </div>
       </Link>
