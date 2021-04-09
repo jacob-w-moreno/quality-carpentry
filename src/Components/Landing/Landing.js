@@ -19,7 +19,6 @@ import remodels from '../../Styles/Assets/Services/Remodels/2.jpg';
 import tree from '../../Styles/Assets/Services/TreeRemoval/1.jpg';
 
 const Landing = props => {
-  const [index, setIndex] = useState(0);
 // ===== ===== DATA BEG ===== =====
 
   const valuesList = [
@@ -48,7 +47,20 @@ const Landing = props => {
   let images = [ basement, flooring, roofing, remodels, tree ];
   
 // ===== ===== DATA END ===== =====
-// ===== ===== COMPONENTS BEG ===== =====
+// ===== ===== FUNCTIONS BEG ===== =====
+
+
+
+// ===== ===== FUNCTIONS END ===== =====
+// ===== ===== 'COMPONENTS' BEG ===== =====
+
+  let intro = <Intro
+    primaryText="QUALITY CARPENTRY"
+    secondaryText="We'll get the job done"
+    cta={true}
+    mascot={true}
+    gallery={true}
+  />
 
   const values = <div className='landing_values-container'>
       <h3 className='landing_title'>OUR CORE VALUES</h3>
@@ -62,25 +74,16 @@ const Landing = props => {
       </div>
     </div>
 
-// ===== ===== COMPONENTS END ===== =====
-// ===== ===== RETURN BEG ===== =====
+// ===== ===== 'COMPONENTS' END ===== =====
 
   return <div className='landing'>
-    <Intro
-      primaryText="QUALITY CARPENTRY"
-      secondaryText="We'll get the job done"
-      cta={true}
-      mascot={true}
-      gallery={true}/>
+    { intro }
     <Services title="What we do"/>
-    <Gallery
-      images={images}/>
+    <Gallery images={images}/>
     <Reviews background='#e3e3e3'/>
     {values}
     <GetQuote title="" background="#e3e3e3"/>
   </div>
-
-// ===== ===== RETURN END ===== =====
 }
 
 export default Landing;

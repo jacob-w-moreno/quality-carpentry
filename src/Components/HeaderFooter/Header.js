@@ -11,14 +11,22 @@ const Header = props => {
 // ===== ===== DATA BEG ===== =====
   
   const [dropdown, setDropdown] = useState(false);
+
   const [contact, setContact] = useState(false);
+
   const services = [
     "Roofing", "Flooring", "Remodels", "Basements", "Tree Removal", "Junk Removal", "Other"
   ];
   
 // ===== ===== DATA END ===== =====
 
-// ===== ===== "COMPONENTS"" BEG ===== =====
+// ===== ===== FUNCTIONS BEG ===== =====
+
+
+
+// ===== ===== FUNCTIONS END ===== =====
+
+// ===== ===== 'COMPONENTS' BEG ===== =====
 
   const logo = <Link to='/'>
     <div className='header_logo'>
@@ -77,7 +85,6 @@ const Header = props => {
     {hamburger}
   </div>
 
-
   const hamburgerDropdown = <div className='header_dropdown-2'>
     <ul>
       <Link to='/'>
@@ -102,10 +109,10 @@ const Header = props => {
 
   return <Aux>
   <div className='header'>
-    {logo}
-    {navigation}
+    { logo }
+    { navigation }
   </div>
-  {dropdown
+  { dropdown
     ? hamburgerDropdown
     : null
   }

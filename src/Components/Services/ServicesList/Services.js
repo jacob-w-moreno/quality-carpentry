@@ -10,6 +10,8 @@ import Other from '../../../Styles/Assets/Icons/Other.png';
 import JunkRemoval from '../../../Styles/Assets/Icons/JunkRemoval.png';
 
 const Services = props => {
+  
+// ===== ===== DATA BEG ===== =====
 
   const services = [
     {service: 'Roofing', image: Roofing},
@@ -21,9 +23,17 @@ const Services = props => {
     {service: 'Other', image: Other}
   ];
 
-  return <div className='landing_services' style={{background: props.style}}>
-  <h3 className='landing_title'>{props.title.toUpperCase()}</h3>
-  <div className='landing_services-container'>
+// ===== ===== DATA END ===== =====
+// ===== ===== FUNCTIONS BEG ===== =====
+
+
+
+// ===== ===== FUNCTIONS END ===== =====
+// ===== ===== 'COMPONENTS' BEG ===== =====
+
+  const title = <h3 className='landing_title'>{props.title.toUpperCase()}</h3>
+
+  const servicesList = <div className='landing_services-container'>
     {services.map((element, index) => {
       return <Service
         key={index}
@@ -32,6 +42,12 @@ const Services = props => {
       />
     })}
   </div>
+
+// ===== ===== 'COMPONENTS' END ===== =====
+
+  return <div className='landing_services' style={{background: props.style}}>
+  { title }
+  { servicesList }
 </div>
 }
 
