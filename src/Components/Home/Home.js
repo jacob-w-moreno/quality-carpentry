@@ -14,11 +14,13 @@ import Speed from '../../Styles/Assets/Icons/Speed2.png';
 
 import basement from '../../Styles/Assets/Services/Basements/5.jpg';
 import flooring from '../../Styles/Assets/Services/Flooring/5.jpg';
+import junk from '../../Styles/Assets/Services/JunkRemoval/1A.jpg';
 import roofing from '../../Styles/Assets/Services/Roofing/5.jpg';
 import remodels from '../../Styles/Assets/Services/Remodels/2.jpg';
 import tree from '../../Styles/Assets/Services/TreeRemoval/1.jpg';
 
 const Landing = props => {
+  
 // ===== ===== DATA BEG ===== =====
 
   const valuesList = [
@@ -44,7 +46,7 @@ const Landing = props => {
     }
   ]
 
-  let images = [ basement, flooring, roofing, remodels, tree ];
+  let images = [ basement, flooring, roofing, remodels, tree, junk ];
   
 // ===== ===== DATA END ===== =====
 // ===== ===== FUNCTIONS BEG ===== =====
