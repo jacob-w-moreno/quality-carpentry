@@ -2,7 +2,11 @@ import React, {useEffect, useState} from 'react';
 import ReviewStar from '../Styles/Assets/ReviewStar.png';
 
 const Reviews = props => {
+
+// ===== ===== DATA BEG ===== =====
+
   const [index, setIndex] = useState(1);
+
   const reviews = [
     {
       name: 'Eren J.',
@@ -21,7 +25,9 @@ const Reviews = props => {
     },
   ]
 
-// /*
+// ===== ===== DATA END ===== =====
+// ===== ===== FUNCTIONS BEG ===== =====
+
   useEffect(() => {
     const interval = setInterval(() => {
       let newIndex = index + 1;
@@ -33,22 +39,28 @@ const Reviews = props => {
     }, 6500);
     return () => clearInterval(interval);
   }, [index, reviews.length]);
-// */
+
+// ===== ===== FUNCTIONS END ===== =====
+// ===== ===== 'COMPONENTS' BEG ===== =====
+
+  let review = <div className='review'>
+    <p className='review_review'>
+      "{reviews[index].review}"
+    </p>
+    <p className='review_name'>— {reviews[index].name}</p>
+    {reviews[index].stars.map(element => {
+      return <img className='review_star'
+      src={ReviewStar}
+      alt="review star"
+      key={element}/>
+    })}
+  </div>
+
+// ===== ===== 'COMPONENTS' END ===== =====
 
   return <div className='reviews' >
     <h3>WHAT OUR CUSTOMERS THINK</h3>
-    <div className='review'>
-      <p className='review_review'>
-        "{reviews[index].review}"
-      </p>
-      <p className='review_name'>— {reviews[index].name}</p>
-      {reviews[index].stars.map(element => {
-        return <img className='review_star'
-        src={ReviewStar}
-        alt="review star"
-        key={element}/>
-      })}
-    </div>
+    { review }
   </div>
 }
 

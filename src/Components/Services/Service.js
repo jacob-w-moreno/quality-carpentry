@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React from 'react';
 import Intro from '../Intro';
 import Services from './ServicesList/Services';
 import GetQuote from '../Contact/GetQuote';
@@ -50,16 +50,10 @@ import tree1 from '../../Styles/Assets/Services/TreeRemoval/1.jpg';
 import tree2 from '../../Styles/Assets/Services/TreeRemoval/2.jpg';
 import tree3 from '../../Styles/Assets/Services/TreeRemoval/3.jpg';
 
-
-
 const Service = props => {
 
-  useEffect(()=>{
-    setIndex(1);
-  },[props.location.pathname])
-// ===== ===== CONSTANTS BEG ===== =====
+// ===== ===== DATA BEG ===== =====
 
-  const [index, setIndex] = useState(1);
   let images, introTitle, secondaryText;
   let description = <p className='service_summary-p'>
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
@@ -84,7 +78,6 @@ const Service = props => {
       introTitle="Remodels";
       // secondaryText="your home—but better"
       description="If you're looking to remodel your house or business, we have you covered. We'll work with you to determine your goals, then we'll take it from there and bring them to life. With our help, your home or business will match your vision before you know it!"
-      let description2="Our team of experienced professionals are waiting to make the dream you have for your house a reality. We'll work with you to determine goals for your house, then we'll bring them to life. With our help, you'll be living in your dream home before you know it!";
       images=[ remodels1, remodels2 ];
       break;
 
@@ -118,20 +111,25 @@ const Service = props => {
     default: images=null;
   }
   
-// ===== ===== CONSTANTS END ===== =====
-// ===== ===== "COMPONENTS" BEG ===== =====
+// ===== ===== DATA END ===== =====
+// ===== ===== FUNCTIONS BEG ===== =====
+
+
+
+// ===== ===== FUNCTIONS END ===== =====
+// ===== ===== 'COMPONENTS' BEG ===== =====
 
   const serviceIntro = <div className='service_summary'>
     <h3 className='service_summary-h3'> { 'MORE ABOUT ' + introTitle.toUpperCase() } </h3>
-    <p className='service_summary-p'>{description}</p>
+    <p className='service_summary-p'>{ description }</p>
   </div>
 
-// ===== ===== "COMPONENTS" END ===== =====
+// ===== ===== 'COMPONENTS' END ===== =====
 
   return <div>
     <Intro
-      primaryText={'Quality ' + introTitle}
-      secondaryText={secondaryText}
+      primaryText={ 'Quality ' + introTitle }
+      secondaryText={ secondaryText }
     />
     {serviceIntro}
     <Gallery

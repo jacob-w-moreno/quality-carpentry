@@ -1,7 +1,23 @@
 import React from 'react';
 
 const Component = props => {
-s
+
+// ===== ===== DATA BEG ===== =====
+
+
+
+// ===== ===== DATA END ===== =====
+// ===== ===== FUNCTIONS BEG ===== =====
+
+
+
+// ===== ===== FUNCTIONS END ===== =====
+// ===== ===== 'COMPONENTS' BEG ===== =====
+
+
+
+// ===== ===== 'COMPONENTS' END ===== =====
+
   return <div className='className'>
 
   </div>

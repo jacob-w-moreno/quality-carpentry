@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 import Intro from '../Intro';
 import Services from '../Services/ServicesList/Services';
@@ -63,16 +63,16 @@ const Landing = props => {
   />
 
   const values = <div className='landing_values-container'>
-      <h3 className='landing_title'>OUR CORE VALUES</h3>
-      <div className='landing_values'>
-        {valuesList.map(element => <Value 
-          img={element.image} 
-          value={element.value}
-          description={element.description}
-          key={element.value}
-          />)}
-      </div>
+    <h3 className='landing_title'>OUR CORE VALUES</h3>
+    <div className='landing_values'>
+      {valuesList.map(element => <Value 
+        img={element.image} 
+        value={element.value}
+        description={element.description}
+        key={element.value}
+        />)}
     </div>
+  </div>
 
 // ===== ===== 'COMPONENTS' END ===== =====
 
