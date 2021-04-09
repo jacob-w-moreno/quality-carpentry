@@ -28,20 +28,25 @@ const Intro = props => {
       }, 4000);
       return () => clearInterval(interval);
     }
-  }, [index, images.length]);
+  }, [index, images.length, props.gallery]);
 
-  let gallery = null;
+  let gallery, cta;
 
-  if (props.gallery) {
-    gallery = <img className='intro_gallery'
-      src={images[index]}
-      alt={'gallery'}/>
+  // if (props.gallery) {
+  //   gallery = <img className='intro_gallery'
+  //     src={images[index]}
+  //     alt={'gallery'}/>
+  // }
+
+  if (props.cta) {
+    cta = <button className='button_cta'>GET A QUOTE</button>
   }
 
   return <div className='intro'>
     <h1>{props.primaryText.toUpperCase()}</h1>
     {/* <h2><i>{props.secondaryText}</i></h2> */}
-    { gallery }
+    {/* { gallery } */}
+    { cta }
     <img className="mascot" 
       src={ Mascot } 
       alt="Quality Carpentry mascot (a cartoon man with a large hammer, a drill, and a tool belt)"/>

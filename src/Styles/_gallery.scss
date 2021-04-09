@@ -1,0 +1,43 @@
+.gallery {
+  // box
+    padding-bottom: 24px;
+  // display
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.gallery-box {
+// box
+  height: 15.5vw;
+  width: 15.5vw;
+  max-height: 124px;
+  max-width: 124px;
+  margin: 6px 12px;
+  padding: 4px;
+// style
+  opacity: 0.4;
+// pseudo
+  &:hover { 
+    cursor: pointer;
+    padding: 0px;
+  }
+}
+
+.gallery-box_active {
+// box
+  padding: 0px;
+// style
+  opacity: 1;
+}
+  
+.gallery-preview {
+// box
+  margin-top: 18px;
+  max-width: 745px;
+// display
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import Intro from '../Intro';
-import GalleryBox from './GalleryBox';
+import GalleryBox from '../Gallery/GalleryBox';
 import Services from './ServicesList/Services';
 import GetQuote from '../Contact/GetQuote';
 import Reviews from '../Reviews';

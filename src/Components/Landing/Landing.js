@@ -1,17 +1,25 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import Intro from '../Intro';
 import Services from '../Services/ServicesList/Services';
 import GetQuote from '../Contact/GetQuote';
 import Reviews from '../Reviews';
 import Value from './Value';
+import Gallery from '../Gallery/Gallery';
 
 import Communication from '../../Styles/Assets/Icons/Communication2.png';
 import Price from '../../Styles/Assets/Icons/Price2.png';
 import Quality from '../../Styles/Assets/Icons/Quality2.png';
 import Speed from '../../Styles/Assets/Icons/Speed2.png';
 
+import basement from '../../Styles/Assets/Services/Basements/5.jpg';
+import flooring from '../../Styles/Assets/Services/Flooring/5.jpg';
+import roofing from '../../Styles/Assets/Services/Roofing/5.jpg';
+import remodels from '../../Styles/Assets/Services/Remodels/2.jpg';
+import tree from '../../Styles/Assets/Services/TreeRemoval/1.jpg';
+
 const Landing = props => {
+  const [index, setIndex] = useState(0);
 // ===== ===== DATA BEG ===== =====
 
   const valuesList = [
@@ -36,6 +44,8 @@ const Landing = props => {
       description: "We quote honest and reasonable prices, and work with our customers to help them finish every project within their budget."
     }
   ]
+
+  let images = [ basement, flooring, roofing, remodels, tree ];
   
 // ===== ===== DATA END ===== =====
 // ===== ===== COMPONENTS BEG ===== =====
@@ -58,9 +68,13 @@ const Landing = props => {
   return <div className='landing'>
     <Intro
       primaryText="QUALITY CARPENTRY"
+      secondaryText="We'll get the job done"
+      cta={true}
       mascot={true}
       gallery={true}/>
     <Services title="What we do"/>
+    <Gallery
+      images={images}/>
     <Reviews background='#e3e3e3'/>
     {values}
     <GetQuote title="" background="#e3e3e3"/>

@@ -1,13 +1,14 @@
 .button_cta {
   // box
     border: none;
+    margin-top: 12px;
     padding: 8px 24px;
     border-radius: 8px;
   // style
-    background: $red;
+    background: $yellow;
   // text
-    color: white;
     font-weight: bold;
+    font-size: 1.3rem;
   // pseudo
     &:hover {
       transform: scale(1.05);
@@ -37,15 +38,10 @@
   h2 { color: $logogray; }
 }
 
-// .intro_intro {
-//   position: absolute;
-//   top: 75px;
-// }
-
 .intro_gallery {
 // box
   border: 8px solid white;
-  max-height: 300px;
+  max-height: 350px;
   width: auto;
   margin-top: 12px;
 // style
