@@ -1,24 +1,14 @@
 import React, { useState, useEffect } from 'react';
+import { withRouter } from 'react-router-dom';
 import GalleryBox from './GalleryBox';
 
 const Gallery = props => {
 
   let [index, setIndex] = useState(0);
 
-  // useEffect(() => {
-  //   setIndex(0);
-  //   if (props.images.length > 0) {
-  //     const interval = setInterval(() => {
-  //       let newIndex = index + 1;
-  //       if (newIndex < props.images.length) {
-  //         setIndex(newIndex);
-  //       } else {
-  //         setIndex(0);
-  //       }
-  //     }, 4000);
-  //     return () => clearInterval(interval);
-  //   }
-  // }, [index, props.images.length]);
+  useEffect (() => {
+    setIndex(0);
+  }, [props.location.pathname])
 
 return <div className='gallery' style={{background: '#e3e3e3'}}>
   <h3 className='service_summary-h3'>{ props.introTitle?props.introTitle.toUpperCase():null} GALLERY</h3>
@@ -40,4 +30,4 @@ return <div className='gallery' style={{background: '#e3e3e3'}}>
   </div>
 </div>
 }
-export default Gallery;
+export default withRouter(Gallery);

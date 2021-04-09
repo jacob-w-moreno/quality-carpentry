@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, { useState } from 'react';
 import Mascot from '../Styles/Assets/Mascot.png';
 
 import basement from '../Styles/Assets/Services/Basements/5.jpg';
@@ -11,41 +11,16 @@ const Intro = props => {
 
   // ===== ===== DATA BEG ===== =====
   
-  const [index, setIndex] = useState(0);
-  const images = [ basement, flooring, roofing, remodels, tree ];
 
   // ===== ===== DATA END ===== =====
 
-  useEffect(() => {
-    if (props.gallery) {
-      const interval = setInterval(() => {
-        let newIndex = index + 1;
-        if (newIndex < images.length) {
-          setIndex(newIndex);
-        } else {
-          setIndex(0);
-        }
-      }, 4000);
-      return () => clearInterval(interval);
-    }
-  }, [index, images.length, props.gallery]);
-
-  let gallery, cta;
-
-  // if (props.gallery) {
-  //   gallery = <img className='intro_gallery'
-  //     src={images[index]}
-  //     alt={'gallery'}/>
-  // }
-
+  let cta;
   if (props.cta) {
     cta = <button className='button_cta'>GET A QUOTE</button>
   }
 
   return <div className='intro'>
     <h1>{props.primaryText.toUpperCase()}</h1>
-    {/* <h2><i>{props.secondaryText}</i></h2> */}
-    {/* { gallery } */}
     { cta }
     <img className="mascot" 
       src={ Mascot } 

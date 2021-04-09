@@ -1,9 +1,9 @@
 import React, {useState, useEffect} from 'react';
 import Intro from '../Intro';
-import GalleryBox from '../Gallery/GalleryBox';
 import Services from './ServicesList/Services';
 import GetQuote from '../Contact/GetQuote';
 import Reviews from '../Reviews';
+import Gallery from '../Gallery/Gallery';
 
 import basement1 from '../../Styles/Assets/Services/Basements/1.jpg';
 import basement3 from '../../Styles/Assets/Services/Basements/3.jpg';
@@ -126,30 +126,6 @@ const Service = props => {
     <p className='service_summary-p'>{description}</p>
   </div>
 
-  let gallery = null;
-  if (images.length > 0) {
-    gallery = <div className='service_gallery' style={{background: '#e3e3e3'}}>
-      <h3 className='service_summary-h3'>{ introTitle.toUpperCase() } GALLERY</h3>
-      <div className='service_main-picture'>
-        <img className='service_main-img' src={images[index]} alt='Gallery'/>
-      </div>
-      <div className='service_gallery-preview'>
-        {
-          images.map((element, i) => {
-            return <GalleryBox
-              img={element}
-              alt='Gallery'
-              clicked={()=>setIndex(i)}
-              current={i===index}
-              key={i + element}/>
-          })
-        }
-      </div>
-    </div>
-  }
-
-  
-
 // ===== ===== "COMPONENTS" END ===== =====
 
   return <div>
@@ -158,7 +134,9 @@ const Service = props => {
       secondaryText={secondaryText}
     />
     {serviceIntro}
-    {gallery}
+    <Gallery
+      images={ images }
+    />
     <GetQuote title="GET A QUOTE"/>
     <Reviews background='#e3e3e3'/>
     <Services title="Our other services"/>
