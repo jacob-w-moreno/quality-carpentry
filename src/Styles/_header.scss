@@ -79,6 +79,7 @@
 .header_dropdown {
 // position
   position: absolute;
+  top: 40px;
 // display
   display: none;
 // box
@@ -167,6 +168,12 @@
   &:hover { cursor: pointer; }
 }
 
+.header_img {
+  height: 40px;
+  filter: invert(86%) sepia(6%) saturate(216%) hue-rotate(314deg) brightness(88%) contrast(89%);
+  margin-right: 8px;
+}
+
 .header_link {
 // box
   height: 50px;
@@ -175,14 +182,16 @@
   color: #c1b9b9;
   line-height: 50px;
   font-weight: bold;
+// display
+  display: flex;
+  align-items: center;
 // pseudo
   &:hover {
     cursor: pointer;
     color: white;
-  }
-  &:hover {
-    cursor: pointer;
-    color: white;
+    img {
+      filter: invert(99%) sepia(6%) saturate(26%) hue-rotate(268deg) brightness(107%) contrast(100%);
+    }
   }
 }
 

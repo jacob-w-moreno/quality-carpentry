@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import {Link} from 'react-router-dom';
 
 import Aux from '../Aux';
+import Phone from '../../Styles/Assets/Icons/Phone.png';
 import Logo from '../../Styles/Assets/Logos/Minimal.png';
 import Dropdown from '../../Styles/Assets/Icons/Dropdown.png';
 import Hamburger from '../../Styles/Assets/Icons/Hamburger.png';
@@ -11,8 +12,6 @@ const Header = props => {
 // ===== ===== DATA BEG ===== =====
   
   const [dropdown, setDropdown] = useState(false);
-
-  const [contact, setContact] = useState(false);
 
   const services = [
     "Roofing", "Flooring", "Remodels", "Basements", "Tree Removal", "Junk Removal", "Other"
@@ -53,14 +52,6 @@ const Header = props => {
     onClick={()=>dropdown?setDropdown(false):setDropdown(true)}
   />
 
-  let contactInfo;
-  if (contact) {
-    contactInfo = <div className='header_contact'>
-      <a href='tel:3852447957'> (385) 244-7957 </a>
-      <a href='mailto:sales@qualityutah.com?subject=Quote Request'> sales@qualityutah.com </a>
-    </div>
-  }
-
   const navigation = <div className='header_nav-container'>
     <nav>
       <ul>
@@ -77,16 +68,25 @@ const Header = props => {
         <Link to='/about' className='header_link'>
           <li>ABOUT</li>
         </Link>
+
+        <li>
+          <a className='header_link' href='tel:3852447957'>
+            <img className='header_img' src={Phone} alt="Circular-icon-with-a-phone-inside"/>
+            (385) 244-7957
+          </a>
+        </li>
       </ul>
-      <button className='header_button'
-        onClick={()=>setContact(contact?false:true)}>GET A QUOTE</button>
-      {contactInfo}
     </nav>
     {hamburger}
   </div>
 
   const hamburgerDropdown = <div className='header_dropdown-2'>
     <ul>
+      <li>
+        <a className='header_link' href='tel:3852447957' style={{color:"white"}}>
+          (385) 244-7957
+        </a>
+      </li>
       <Link to='/'>
         <li className='header_link' onClick={()=>setDropdown(false)}>HOME</li>
       </Link>
