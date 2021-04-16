@@ -62,7 +62,7 @@
   border-radius: 50%;
   margin-right: 12px;
 // style
-  background: $logogray;
+  filter: invert(86%) sepia(6%) saturate(216%) hue-rotate(314deg) brightness(88%) contrast(89%);
 }
 
 .footer_logo {

@@ -2,6 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Column from './Column';
 import Logo from '../../Styles/Assets/Logos/Full.png';
+import Phone from '../../Styles/Assets/Icons/Phone.png';
+import Email from '../../Styles/Assets/Icons/Email.png';
 
 const Footer = props => {
 
@@ -20,12 +22,12 @@ const Footer = props => {
   let column1 = <Column title="CONNECT WITH US">
     <a className='footer_child'
       href='mailto:sales@qualityutah.com?subject=Quote Request'>
-      <div className='footer_icon'/>
+      <img className='footer_icon' src={Email} alt="A small circular icon with an envelope inside."/>
       <span>sales@qualityutah.com</span>
     </a>
     <a className='footer_child'
       href='tel:3852447957'>
-      <div className='footer_icon'/>
+      <img className='footer_icon' src={Phone} alt="A small circular icon with a telephone inside."/>
       <span>(385) 244-7957</span>
     </a>
   </Column>
