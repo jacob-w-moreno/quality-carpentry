@@ -11,7 +11,7 @@ const Intro = props => {
 
   let cta;
   if (props.cta) {
-    cta = <button className='button_cta'>GET A QUOTE</button>
+    cta = <a className='button_cta' href='tel:3852447957' style={{color:'black'}}>GET A QUOTE</a>
   }
 
 // ===== ===== 'COMPONENTS' END ===== =====
