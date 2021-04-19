@@ -1,4 +1,5 @@
 import React from 'react';
+
 import Mascot from '../Styles/Assets/Mascot.png';
 
 const Intro = props => {

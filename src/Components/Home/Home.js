@@ -7,10 +7,10 @@ import Reviews from '../Reviews';
 import Value from './Value';
 import Gallery from '../Gallery/Gallery';
 
-import Communication from '../../Styles/Assets/Icons/Communication2.png';
-import Price from '../../Styles/Assets/Icons/Price2.png';
-import Quality from '../../Styles/Assets/Icons/Quality2.png';
-import Speed from '../../Styles/Assets/Icons/Speed2.png';
+import Communication from '../../Styles/Assets/Icons/Communication.png';
+import Price from '../../Styles/Assets/Icons/Price.png';
+import Quality from '../../Styles/Assets/Icons/Quality.png';
+import Speed from '../../Styles/Assets/Icons/Speed.png';
 
 import basement from '../../Styles/Assets/Services/Basements/5.jpg';
 import flooring from '../../Styles/Assets/Services/Flooring/5.jpg';
