@@ -21,11 +21,13 @@ const GalleryBox = props => {
   
 // ===== ===== 'COMPONENTS' END ===== =====
   
-  return <img className={'gallery-box ' + active}
-    src={props.img}
-    alt={props.alt}
-    onClick={props.clicked}
-  />
+  return <div className={'gallery-box ' + active}>
+    <img 
+      src={props.img}
+      alt={props.alt}
+      onClick={props.clicked}
+    />
+  </div>
 }
 
 export default GalleryBox;

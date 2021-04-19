@@ -17,13 +17,21 @@
   padding: 4px;
 // style
   opacity: 0.4;
-  background: cover;
   overflow: hidden;
+  position: relative;
 // pseudo
   &:hover { 
     cursor: pointer;
     padding: 0px;
   }
+}
+
+.gallery-box img {
+  position: absolute;
+  width: 100%;
+  min-height: 100%;
+  top: 0;
+  left: 0;
 }
 
 .gallery-box_active {
