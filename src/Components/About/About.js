@@ -2,10 +2,10 @@ import React from 'react';
 
 import Intro from '../Intro';
 import Bio from './Bio';
-import Esteban from '../../Styles/Assets/Bios/Esteban.png';
-import Jonathan from '../../Styles/Assets/Bios/Jonathan.png';
-import Rob from '../../Styles/Assets/Bios/Rob.png';
-import Placeholder from '../../Styles/Assets/Bios/Placeholder.png';
+import Esteban from '../../Styles/Assets/Bios/Esteban.jpg';
+import Jonathan from '../../Styles/Assets/Bios/Jonathan.jpg';
+import Rob from '../../Styles/Assets/Bios/Rob.jpg';
+import Placeholder from '../../Styles/Assets/Bios/Placeholder.jpg';
 import Kyle from '../../Styles/Assets/Bios/Kyle.jpg';
 import Landon from '../../Styles/Assets/Bios/Landon.jpg';
 import Jarom from '../../Styles/Assets/Bios/Jarom.jpg';

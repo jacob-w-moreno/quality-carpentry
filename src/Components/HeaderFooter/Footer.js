@@ -2,8 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Column from './Column';
 import Logo from '../../Styles/Assets/Logos/Full.png';
-import Phone from '../../Styles/Assets/Icons/Phone.png';
-import Email from '../../Styles/Assets/Icons/Email.png';
+import Phone from '../../Styles/Assets/Icons/Contact/Phone.png';
+import Email from '../../Styles/Assets/Icons/Contact/Email.png';
 
 const Footer = props => {
 

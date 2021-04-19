@@ -1,13 +1,13 @@
 import React from 'react';
 import Service from './Service';
 
-import Basements from '../../../Styles/Assets/Icons/Basements.png';
-import Flooring from '../../../Styles/Assets/Icons/Flooring.png';
-import Remodels from '../../../Styles/Assets/Icons/Remodels.png';
-import Roofing from '../../../Styles/Assets/Icons/Roofing.png';
-import TreeRemoval from '../../../Styles/Assets/Icons/TreeRemoval.png';
-import Other from '../../../Styles/Assets/Icons/Other.png';
-import JunkRemoval from '../../../Styles/Assets/Icons/JunkRemoval.png';
+import Basements from '../../../Styles/Assets/Icons/Services/Basements.png';
+import Flooring from '../../../Styles/Assets/Icons/Services/Flooring.png';
+import Remodels from '../../../Styles/Assets/Icons/Services/Remodels.png';
+import Roofing from '../../../Styles/Assets/Icons/Services/Roofing.png';
+import TreeRemoval from '../../../Styles/Assets/Icons/Services/TreeRemoval.png';
+import Other from '../../../Styles/Assets/Icons/Services/Other.png';
+import JunkRemoval from '../../../Styles/Assets/Icons/Services/JunkRemoval.png';
 
 const Services = props => {
   

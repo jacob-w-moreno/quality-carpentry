@@ -2,11 +2,14 @@ import React, {useState} from 'react';
 import {Link} from 'react-router-dom';
 
 import Aux from '../Aux';
-import Phone from '../../Styles/Assets/Icons/Phone.png';
+
 import Logo from '../../Styles/Assets/Logos/Minimal.png';
-import Dropdown from '../../Styles/Assets/Icons/Dropdown.png';
-import Hamburger from '../../Styles/Assets/Icons/Hamburger.png';
-import X from '../../Styles/Assets/Icons/X.png';
+
+import Phone from '../../Styles/Assets/Icons/Contact/Phone.png';
+
+import Dropdown from '../../Styles/Assets/Icons/Navigation/Dropdown.png';
+import Hamburger from '../../Styles/Assets/Icons/Navigation/Hamburger.png';
+import X from '../../Styles/Assets/Icons/Navigation/X.png';
 
 const Header = props => {
 // ===== ===== DATA BEG ===== =====

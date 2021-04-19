@@ -2,6 +2,9 @@ import React from 'react';
 
 import ContactMethod from './ContactMethod';
 
+import Email from '../../Styles/Assets/Icons/Contact/Email.png';
+import Phone from '../../Styles/Assets/Icons/Contact/Phone.png';
+
 const GetQuote = props => {
 
 // ===== ===== DATA BEG ===== =====
@@ -22,18 +25,14 @@ const GetQuote = props => {
   
   let contactMethods = <div className='contact_methods'>
     <ContactMethod
-      img='http://simpleicon.com/wp-content/uploads/phone-symbol-2.png'
-      alt="phone icon"
-      method="Call or text us"
-      href='tel:3852447957'
       contactInfo="(385) 244-7957"
+      href='tel:3852447957'
+      method="Call or text us"
     />
     <ContactMethod
-      img='https://www.freepnglogos.com/uploads/email-png/blue-email-box-circle-png-transparent-icon-2.png'
-      alt="email icon"
-      method="Email us"
-      href='mailto:sales@qualityutah.com?subject=Quote Request'
       contactInfo="sales@qualityutah.com"
+      href='mailto:sales@qualityutah.com?subject=Quote Request'
+      method="Email us"
     />
   </div>
 
