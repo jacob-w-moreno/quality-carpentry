@@ -17,6 +17,8 @@
   padding: 4px;
 // style
   opacity: 0.4;
+  background: cover;
+  overflow: hidden;
 // pseudo
   &:hover { 
     cursor: pointer;
