@@ -1,24 +1,27 @@
 import React from 'react';
 
-import Intro from '../Intro';
 import Bio from './Bio';
-import Esteban from '../../Styles/Assets/Bios/Esteban.jpg';
-import Jonathan from '../../Styles/Assets/Bios/Jonathan.jpg';
-import Rob from '../../Styles/Assets/Bios/Rob.jpg';
-import Placeholder from '../../Styles/Assets/Bios/Placeholder.jpg';
-import Kyle from '../../Styles/Assets/Bios/Kyle.jpg';
-import Landon from '../../Styles/Assets/Bios/Landon.jpg';
-import Jarom from '../../Styles/Assets/Bios/Jarom.jpg';
-import Donette from '../../Styles/Assets/Bios/Donette.jpg';
-import Cody from '../../Styles/Assets/Bios/Cody.jpg';
-import Wes from '../../Styles/Assets/Bios/Wes.jpg';
+import Intro from '../Intro';
+
+import Andrea from '../../Styles/Assets/Bios/Andrea.jpg';
+import Anika from '../../Styles/Assets/Bios/Anika.jpg';
 import Cayden from '../../Styles/Assets/Bios/Cayden.jpg';
+import Cody from '../../Styles/Assets/Bios/Cody.jpg';
+import Dan from '../../Styles/Assets/Bios/Dan.jpg';
+import Derek from '../../Styles/Assets/Bios/Derek.jpg';
+import Donette from '../../Styles/Assets/Bios/Donette.jpg';
+import Esteban from '../../Styles/Assets/Bios/Esteban.jpg';
 import Ian from '../../Styles/Assets/Bios/Ian.jpg';
 import Isaac from '../../Styles/Assets/Bios/Isaac.jpg';
-import Tyler from '../../Styles/Assets/Bios/Tyler.jpg';
-import Dan from '../../Styles/Assets/Bios/Dan.jpg';
+import Jarom from '../../Styles/Assets/Bios/Jarom.jpg';
+import Jonathan from '../../Styles/Assets/Bios/Jonathan.jpg';
+import Kyle from '../../Styles/Assets/Bios/Kyle.jpg';
+import Landon from '../../Styles/Assets/Bios/Landon.jpg';
+import Placeholder from '../../Styles/Assets/Bios/Placeholder.jpg';
+import Rob from '../../Styles/Assets/Bios/Rob.jpg';
 import Rusty from '../../Styles/Assets/Bios/Rusty.jpg';
-import Derek from '../../Styles/Assets/Bios/Derek.jpg';
+import Tyler from '../../Styles/Assets/Bios/Tyler.jpg';
+import Wes from '../../Styles/Assets/Bios/Wes.jpg';
 
 const About = props => {
   
@@ -39,23 +42,20 @@ const About = props => {
       pic={Dan}
       name="Daniel Crawley"
       title="Co-founder, owner"
-      bio="Daniel has over 13 years' experience as a realtor, and
-      has been in sales for 20 years. With a Bachelor's degree
-      in business management and a marketing degree from Utah
-      Valley State College, he has owned, invested in, or sold
-      nearly 200 flips. Specializes in flips, real estate, and
-      project management."
+      bio="Daniel has over 13 years' experience as a realtor, and has been in sales for 20 years. With a Bachelor's degree in business management and a marketing degree from Utah Valley State College, he has owned, invested in, or sold nearly 200 flips. Specializes in flips, real estate, and project management."
     />
     <Bio
       pic={Rob}
       name="Robert Crawley"
       title="Co-founder, owner"
-      bio="Robert has over 25 years of experience in financing,
-      and has held many high-ranking positions such as CEO, CFO,
-      and VP in his career. He has a Master's Degree in accounting
-      from Brigham Young University. He specializes in management,
-      human resources, finish carpentry, and roofing."
+      bio="Robert has over 25 years of experience in financing, and has held many high-ranking positions such as CEO, CFO, and VP in his career. He has a Master's Degree in accounting from Brigham Young University. He specializes in management, human resources, finish carpentry, and roofing."
       background="#e3e3e3"
+    />
+    <Bio
+      pic={Andrea}
+      name="Andrea Crawley"
+      title="Owner"
+      bio="Andrea is the one who keeps everything organized and running behind the scenes. She has years of management experience and is a skilled business strategist."
     />
     <Bio
       pic={Placeholder}
@@ -79,6 +79,19 @@ const About = props => {
       cleanups."
     />
     <Bio
+      pic={Anika}
+      name="Anika Crawley"
+      title="Accountant"
+      bio="Anika handles the company's finances and does all of the accounting work. She also helps the Office Manager keep everything organized—from inventory to current jobs and more."
+      background="#e3e3e3"
+    />
+    <Bio
+      pic={Donette}
+      name="Donette Dennison"
+      title="Office Manager"
+      bio="Donette has 4 children (2 boys and 2 girls) and 7 grandchildren. She loves to work hard and play harder. She loves sports, especially golf, this company, her bosses, and all of our employees."
+    />
+    <Bio
       pic={Kyle}
       name="Kyle Ravsten"
       title="Employee"
@@ -97,12 +110,6 @@ const About = props => {
       title="Employee"
       bio="Jarom is a freaking rockstar and he loves you!"
       background="#e3e3e3"
-    />
-    <Bio
-      pic={Donette}
-      name="Donette Dennison"
-      title="Office Manager"
-      bio="Donette has 4 children (2 boys and 2 girls) and 7 grandchildren. She loves to work hard and play harder. She loves sports, especially golf, this company, her bosses, and all of our employees."
     />
     <Bio
       pic={Cody}
