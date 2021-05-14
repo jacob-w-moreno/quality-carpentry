@@ -12,7 +12,7 @@ import Price from '../../Styles/Assets/Icons/Values/Price.png';
 import Quality from '../../Styles/Assets/Icons/Values/Quality.png';
 import Speed from '../../Styles/Assets/Icons/Values/Speed.png';
 
-import basement from '../../Styles/Assets/Services/Basements/5.jpg';
+import basement from '../../Styles/Assets/Services/Basements/A6.jpg';
 import flooring from '../../Styles/Assets/Services/Flooring/5.jpg';
 import junk from '../../Styles/Assets/Services/JunkRemoval/1A.jpg';
 import roofing from '../../Styles/Assets/Services/Roofing/5.jpg';

@@ -5,10 +5,27 @@ import GetQuote from '../Contact/GetQuote';
 import Reviews from '../Reviews';
 import Gallery from '../Gallery/Gallery';
 
-import basement1 from '../../Styles/Assets/Services/Basements/1.jpg';
-import basement3 from '../../Styles/Assets/Services/Basements/3.jpg';
-import basement4 from '../../Styles/Assets/Services/Basements/4.jpg';
-import basement5 from '../../Styles/Assets/Services/Basements/5.jpg';
+import basementA1 from '../../Styles/Assets/Services/Basements/A1.jpg';
+import basementA2 from '../../Styles/Assets/Services/Basements/A2.jpg';
+import basementA3 from '../../Styles/Assets/Services/Basements/A3.jpg';
+import basementA4 from '../../Styles/Assets/Services/Basements/A4.jpg';
+import basementA5 from '../../Styles/Assets/Services/Basements/A5.jpg';
+import basementA6 from '../../Styles/Assets/Services/Basements/A6.jpg';
+import basementA7 from '../../Styles/Assets/Services/Basements/A7.jpg';
+import basementA8 from '../../Styles/Assets/Services/Basements/A8.jpg';
+import basementB1 from '../../Styles/Assets/Services/Basements/B1.jpg';
+import basementB2 from '../../Styles/Assets/Services/Basements/B2.jpg';
+import basementB3 from '../../Styles/Assets/Services/Basements/B3.jpg';
+import basementB4 from '../../Styles/Assets/Services/Basements/B4.jpg';
+import basementB5 from '../../Styles/Assets/Services/Basements/B5.jpg';
+import basementB6 from '../../Styles/Assets/Services/Basements/B6.jpg';
+import basementB7 from '../../Styles/Assets/Services/Basements/B7.jpg';
+import basementB8 from '../../Styles/Assets/Services/Basements/B8.jpg';
+import basementA9 from '../../Styles/Assets/Services/Basements/A9.jpg';
+import basementA10 from '../../Styles/Assets/Services/Basements/A10.jpg';
+import basementB10 from '../../Styles/Assets/Services/Basements/B10.jpg';
+import basementA11 from '../../Styles/Assets/Services/Basements/A11.jpg';
+import basementA12 from '../../Styles/Assets/Services/Basements/A12.jpg';
 
 import flooring1 from '../../Styles/Assets/Services/Flooring/1.jpg';
 import flooring2 from '../../Styles/Assets/Services/Flooring/2.jpg';
@@ -85,7 +102,7 @@ const Service = props => {
       introTitle="Basements";
       // secondaryText="invest in your basement";
       description="With our help, finally finishing your basement is a realistic goal. At Quality Carpentry, we're known for our beautiful and high-quality basements that increase the value of houses. Whether you're building a basement apartment or creating more space for your growing family, we can get the job done.";
-      images=[ basement1, basement3, basement4, basement5 ];
+      images=[ basementA1, basementA2, basementA3, basementA4, basementA5, basementA6, basementA7, basementA8, basementA9, basementA10 ];
       break;
 
     case '/services/other':
