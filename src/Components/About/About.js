@@ -6,8 +6,10 @@ import Intro from '../Intro';
 import Andrea from '../../Styles/Assets/Bios/Andrea.jpg';
 import Anika from '../../Styles/Assets/Bios/Anika.jpg';
 import Cayden from '../../Styles/Assets/Bios/Cayden.jpg';
-import Cody from '../../Styles/Assets/Bios/Cody.jpg';
+import Coda from '../../Styles/Assets/Bios/Coda.jpg';
+// import Cody from '../../Styles/Assets/Bios/Cody.jpg';
 import Dan from '../../Styles/Assets/Bios/Dan.jpg';
+import Daric from '../../Styles/Assets/Bios/Daric.jpg';
 import Derek from '../../Styles/Assets/Bios/Derek.jpg';
 import Donette from '../../Styles/Assets/Bios/Donette.jpg';
 import Esteban from '../../Styles/Assets/Bios/Esteban.jpg';
@@ -15,11 +17,14 @@ import Ian from '../../Styles/Assets/Bios/Ian.jpg';
 import Isaac from '../../Styles/Assets/Bios/Isaac.jpg';
 import Jarom from '../../Styles/Assets/Bios/Jarom.jpg';
 import Jonathan from '../../Styles/Assets/Bios/Jonathan.jpg';
+import Joseph from '../../Styles/Assets/Bios/Joseph.jpg';
+import Josh from '../../Styles/Assets/Bios/Josh.jpg';
 import Kyle from '../../Styles/Assets/Bios/Kyle.jpg';
 import Landon from '../../Styles/Assets/Bios/Landon.jpg';
 import Placeholder from '../../Styles/Assets/Bios/Placeholder.jpg';
 import Rob from '../../Styles/Assets/Bios/Rob.jpg';
 import Rusty from '../../Styles/Assets/Bios/Rusty.jpg';
+import Todd from '../../Styles/Assets/Bios/Todd.jpg';
 import Tyler from '../../Styles/Assets/Bios/Tyler.jpg';
 import Wes from '../../Styles/Assets/Bios/Wes.jpg';
 
@@ -58,7 +63,7 @@ const About = props => {
       bio="Andrea is the one who keeps everything organized and running behind the scenes. She has years of management experience and is a skilled business strategist."
     />
     <Bio
-      pic={Placeholder}
+      pic={Josh}
       name="Josh Smith"
       title="Owner"
       bio="Josh has spent many years as a general contractor. He
@@ -102,7 +107,25 @@ const About = props => {
       pic={Landon}
       name="Landon Lebaron"
       title="Employee"
-      bio="Landon grew up in Saratoga springs, Utah before serving a mission in San Diego, California. Landon and his wife love spending all their free time together and look forward to buying a home and having their first child in August."
+      bio="Landon grew up in Saratoga Springs, Utah before serving a mission in San Diego, California. Landon and his wife love spending all their free time together and look forward to buying a home and having their first child in August."
+    />
+    <Bio
+      pic={Coda}
+      name="Coda Lebaron"
+      title="Employee"
+      bio="Coda was raised in Saratoga Springs. He enjoys playing the piano, hanging out with his friends, and playing sports."
+    />
+    <Bio
+      pic={Joseph}
+      name="Joseph"
+      title="Employee"
+      bio="Joseph is 21 years old and from Ogden, Utah. He recently returned from serving a full-time mission in Chile and St. Louis, Missouri. He is currently studying at Brigham Young University. He loves to run, explore the outdoors, and spend time with family. He loves working at Quality because of the amazing people he gets to work with and because he is learning so much."
+    />
+    <Bio
+      pic={Todd}
+      name="Todd Barnum"
+      title="Employee"
+      bio="Todd grew up in Cedar Valley where he learned to love sports before serving a mission in Johanneburg, South Africa. He is the son of Scott and Julie and is the sibling of 2 brothers and 3 sisters."
     />
     <Bio
       pic={Jarom}
@@ -111,31 +134,31 @@ const About = props => {
       bio="Jarom is a freaking rockstar and he loves you!"
       background="#e3e3e3"
     />
-    <Bio
+    {/* <Bio
       pic={Cody}
       name="Cody McLaughlin"
       title="Employee"
       bio="Cody grew up living all around Utah county and traveling around the United States playing in soccer and futsal tournaments. He is planning to attend WSU to study accounting after his wife graduates with her masters from Skin Science Institute."
       background="#e3e3e3"
-    />
-    <Bio
+    /> */}
+    {/* <Bio
       pic={Wes}
       name="Wes Price"
       title="Employee"
       bio="Wes grew up in Lehi, Utah. He's currently studying architectural design at UVU. His favorite thinga bout working for Quality Carpentry is the process of seeing an idea or plan come to life. He enjoys the small detials that really make a project come together. Some of his hobbies include woodworking, camping, hiking, basketball, soccer, gaming, and exercise."
-    />
+    /> */}
     <Bio
       pic={Cayden}
       name="Cayden Dennison"
       title="Employee"
       bio="His name is Cayden, but most people call him Denny. He loves learning new things and getting to know new people."
     />
-    <Bio
+    {/* <Bio
       pic={Placeholder}
       name="Jay Price"
       title="Employee"
       bio="Jay is 24 years old and already has several years of experience in residential remodeling and construction. He is currently studying at Utah Valley University."
-    />
+    /> */}
     <Bio
       pic={Ian}
       name="Ian Reid"
@@ -147,6 +170,12 @@ const About = props => {
       name="Isaac Gividen"
       title="Employee"
       bio="Isaac grew up in Cedar Hills Ut. He is currently attending Brigham Young University. He was recently married in August 2020. He has a passion for building and creating."
+    />
+    <Bio
+      pic={Daric}
+      name="Daric Meyers"
+      title="Employee"
+      bio="Daric is from Star, Idaho and is the oldest of 4 children. He grew up loving and playing sports and is an avid BYU fan. Currently, he is a mechanical engineering student at BYU and one day hopes to work in the aerospace industry for NASA."
     />
     <Bio
       pic={Tyler}
