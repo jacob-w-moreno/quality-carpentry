@@ -2,9 +2,6 @@ import React from 'react';
 
 import ContactMethod from './ContactMethod';
 
-import Email from '../../Styles/Assets/Icons/Contact/Email.png';
-import Phone from '../../Styles/Assets/Icons/Contact/Phone.png';
-
 const GetQuote = props => {
 
 // ===== ===== DATA BEG ===== =====

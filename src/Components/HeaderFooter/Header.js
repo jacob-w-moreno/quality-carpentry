@@ -17,7 +17,7 @@ const Header = props => {
   const [dropdown, setDropdown] = useState(false);
 
   const services = [
-    "Roofing", "Flooring", "Remodels", "Basements", "Tree Removal", "Junk Removal", "Fihish Carpentry"
+    "Roofing", "Flooring", "Remodels", "Basements", "Tree Removal", "Junk Removal", "Finish Carpentry"
   ];
   
 // ===== ===== DATA END ===== =====

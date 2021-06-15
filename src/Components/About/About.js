@@ -21,12 +21,11 @@ import Joseph from '../../Styles/Assets/Bios/Joseph.jpg';
 import Josh from '../../Styles/Assets/Bios/Josh.jpg';
 import Kyle from '../../Styles/Assets/Bios/Kyle.jpg';
 import Landon from '../../Styles/Assets/Bios/Landon.jpg';
-import Placeholder from '../../Styles/Assets/Bios/Placeholder.jpg';
 import Rob from '../../Styles/Assets/Bios/Rob.jpg';
 import Rusty from '../../Styles/Assets/Bios/Rusty.jpg';
 import Todd from '../../Styles/Assets/Bios/Todd.jpg';
 import Tyler from '../../Styles/Assets/Bios/Tyler.jpg';
-import Wes from '../../Styles/Assets/Bios/Wes.jpg';
+// import Wes from '../../Styles/Assets/Bios/Wes.jpg';
 
 const About = props => {
   
