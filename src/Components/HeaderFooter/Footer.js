@@ -60,8 +60,8 @@ const Footer = props => {
       <Link to='/services/junk-removal'>
         <div className='footer_grandchild'> Junk Removal </div>
       </Link>
-      <Link to='/services/other'>
-        <div className='footer_grandchild'> Other </div>
+      <Link to='/services/finish-carpentry'>
+        <div className='footer_grandchild'> Finish Carpentry </div>
       </Link>
   </Column>
 
