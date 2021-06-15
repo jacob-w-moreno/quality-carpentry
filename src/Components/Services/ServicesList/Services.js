@@ -20,7 +20,7 @@ const Services = props => {
     {service: 'Basements', image: Basements},
     {service: 'Tree Removal', image: TreeRemoval},
     {service: 'Junk Removal', image: JunkRemoval},
-    {service: 'Other', image: Other}
+    {service: 'Finish Carpentry', image: Other}
   ];
 
 // ===== ===== DATA END ===== =====

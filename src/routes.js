@@ -15,6 +15,6 @@ export default (
     <Route exact path='/services/roofing' component={Other}/>
     <Route exact path='/services/remodels' component={Other}/>
     <Route exact path='/services/tree-removal' component={Other}/>
-    <Route exact path='/services/other' component={Other}/>
+    <Route exact path='/services/finish-carpentry' component={Other}/>
   </Switch>
 )
