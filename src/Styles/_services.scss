@@ -1,18 +1,19 @@
 .service_icon {
-// box
+  // box
   height: 128px;
   width: 128px;
   margin-bottom: 16px;
-  filter: invert(26%) sepia(12%) saturate(19%) hue-rotate(339deg) brightness(100%) contrast(89%);
+  filter: invert(26%) sepia(12%) saturate(19%) hue-rotate(339deg)
+    brightness(100%) contrast(89%);
 }
 
 .service_main-picture {
-// box
+  // box
   height: 50vw;
   width: 90vw;
   max-width: 716px;
   max-height: 400px;
-// display
+  // display
   display: flex;
   justify-content: center;
 }
@@ -23,29 +24,29 @@
 }
 
 .service_summary {
-// display
+  // display
   display: flex;
   flex-flow: column;
   align-items: center;
-// box
+  // box
   margin-bottom: 24px;
 }
 
 .service_summary-h3 {
-// style
+  // style
   color: $red;
 }
 
 .service_summary-p {
-// box
+  // box
   max-width: 716px;
   padding: 0 18px;
   margin-top: -12px;
-// style
+  // style
   text-align: center;
 }
 
-@media(max-width: 800px) {
+@media (max-width: 800px) {
   .service_gallery-box {
     margin: 0 1.6vw;
   }
