@@ -3,12 +3,10 @@
   width: 90vw;
   max-width: 716px;
   max-height: 400px;
-  margin: 0 auto;
 }
 
 .ba_image_container {
   height: 100%;
-  width: 90vw;
   max-width: 716px;
   max-height: 400px;
   user-select: none;
@@ -18,7 +16,8 @@
 .ba_image {
   // box
   height: 100%;
-  width: 90vw;
+  width: 100%;
+
   max-width: 716px;
   max-height: 400px;
   position: absolute;
