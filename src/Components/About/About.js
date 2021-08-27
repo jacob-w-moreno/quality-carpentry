@@ -16,7 +16,7 @@ import Ian from "../../Styles/Assets/Bios/Ian.jpg";
 import Isaac from "../../Styles/Assets/Bios/Isaac.jpg";
 import Jarom from "../../Styles/Assets/Bios/Jarom.jpg";
 import Jonathan from "../../Styles/Assets/Bios/Jonathan.jpg";
-import Joseph from "../../Styles/Assets/Bios/Joseph.jpg";
+// import Joseph from "../../Styles/Assets/Bios/Joseph.jpg";
 import Josh from "../../Styles/Assets/Bios/Josh.jpg";
 import Kyle from "../../Styles/Assets/Bios/Kyle.jpg";
 import Landon from "../../Styles/Assets/Bios/Landon.jpg";

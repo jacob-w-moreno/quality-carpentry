@@ -62,8 +62,20 @@ import roofing4 from "../../Styles/Assets/Services/Roofing/4.jpg";
 import roofing5 from "../../Styles/Assets/Services/Roofing/5.jpg";
 import roofing6 from "../../Styles/Assets/Services/Roofing/6.jpg";
 
-import remodels1 from "../../Styles/Assets/Services/Remodels/1.jpg";
-import remodels2 from "../../Styles/Assets/Services/Remodels/2.jpg";
+import remodels1A from "../../Styles/Assets/Services/Remodels/1A.jpg";
+import remodels2A from "../../Styles/Assets/Services/Remodels/2A.jpg";
+
+import remodels3A from "../../Styles/Assets/Services/Remodels/3A.JPG";
+import remodels4A from "../../Styles/Assets/Services/Remodels/4A.JPG";
+import remodels5A from "../../Styles/Assets/Services/Remodels/5A.JPG";
+import remodels6A from "../../Styles/Assets/Services/Remodels/6A.JPG";
+import remodels7A from "../../Styles/Assets/Services/Remodels/7A.JPG";
+import remodels8A from "../../Styles/Assets/Services/Remodels/8A.JPG";
+import remodels9A from "../../Styles/Assets/Services/Remodels/9A.JPG";
+import remodels10A from "../../Styles/Assets/Services/Remodels/10A.JPG";
+import remodels11A from "../../Styles/Assets/Services/Remodels/11A.JPG";
+import remodels12A from "../../Styles/Assets/Services/Remodels/12A.JPG";
+import remodels13A from "../../Styles/Assets/Services/Remodels/13A.JPG";
 
 import tree1 from "../../Styles/Assets/Services/TreeRemoval/1.jpg";
 import tree2 from "../../Styles/Assets/Services/TreeRemoval/2.jpg";
@@ -120,7 +132,21 @@ const Service = (props) => {
       introTitle = "Remodels";
       description =
         "If you're looking to remodel your house or business, we have you covered. We'll work with you to determine your goals, then we'll take it from there and bring them to life. With our help, your home or business will match your vision before you know it!";
-      images = [[remodels1], [remodels2]];
+      images = [
+        [remodels1A],
+        [remodels2A],
+        [remodels3A],
+        [remodels4A],
+        [remodels5A],
+        [remodels6A],
+        [remodels7A],
+        [remodels8A],
+        [remodels9A],
+        [remodels10A],
+        [remodels11A],
+        [remodels12A],
+        [remodels13A],
+      ];
       break;
 
     case "/services/basements":

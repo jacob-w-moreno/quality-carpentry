@@ -16,7 +16,7 @@ import basement from "../../Styles/Assets/Services/Basements/6A.jpg";
 import flooring from "../../Styles/Assets/Services/Flooring/5.jpg";
 import junk from "../../Styles/Assets/Services/JunkRemoval/1A.jpg";
 import roofing from "../../Styles/Assets/Services/Roofing/5.jpg";
-import remodels from "../../Styles/Assets/Services/Remodels/2.jpg";
+import remodels from "../../Styles/Assets/Services/Remodels/2A.jpg";
 import tree from "../../Styles/Assets/Services/TreeRemoval/1.jpg";
 
 const Landing = (props) => {
