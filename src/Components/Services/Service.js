@@ -62,20 +62,24 @@ import roofing4 from "../../Styles/Assets/Services/Roofing/4.jpg";
 import roofing5 from "../../Styles/Assets/Services/Roofing/5.jpg";
 import roofing6 from "../../Styles/Assets/Services/Roofing/6.jpg";
 
-import remodels1A from "../../Styles/Assets/Services/Remodels/1A.jpg";
-import remodels2A from "../../Styles/Assets/Services/Remodels/2A.jpg";
-
-import remodels3A from "../../Styles/Assets/Services/Remodels/3A.JPG";
-import remodels4A from "../../Styles/Assets/Services/Remodels/4A.JPG";
-import remodels5A from "../../Styles/Assets/Services/Remodels/5A.JPG";
-import remodels6A from "../../Styles/Assets/Services/Remodels/6A.JPG";
-import remodels7A from "../../Styles/Assets/Services/Remodels/7A.JPG";
-import remodels8A from "../../Styles/Assets/Services/Remodels/8A.JPG";
-import remodels9A from "../../Styles/Assets/Services/Remodels/9A.JPG";
-import remodels10A from "../../Styles/Assets/Services/Remodels/10A.JPG";
-import remodels11A from "../../Styles/Assets/Services/Remodels/11A.JPG";
-import remodels12A from "../../Styles/Assets/Services/Remodels/12A.JPG";
-import remodels13A from "../../Styles/Assets/Services/Remodels/13A.JPG";
+import remodel_AF555_after_downstairs_bathroom from "../../Styles/Assets/Services/Remodels/AF555/After/Downstairs_Bathroom.JPG";
+import remodel_AF555_after_downstairs_bedroom_northeast from "../../Styles/Assets/Services/Remodels/AF555/After/Downstairs_Bedroom_Northeast.JPG";
+import remodel_AF555_after_downstairs_bedroom_northwest from "../../Styles/Assets/Services/Remodels/AF555/After/Downstairs_Bedroom_Northwest.JPG";
+import remodel_AF555_after_downstairs_entry from "../../Styles/Assets/Services/Remodels/AF555/After/Downstairs_Entry.JPG";
+import remodel_AF555_after_downstairs_kitchen from "../../Styles/Assets/Services/Remodels/AF555/After/Downstairs_Kitchen.JPG";
+import remodel_AF555_after_downstairs_laundry from "../../Styles/Assets/Services/Remodels/AF555/After/Downstairs_Laundry.JPG";
+import remodel_AF555_after_downstairs_living from "../../Styles/Assets/Services/Remodels/AF555/After/Downstairs_Living.JPG";
+import remodel_AF555_after_Outside_Back from "../../Styles/Assets/Services/Remodels/AF555/After/Outside_Back.JPG";
+import remodel_AF555_after_Outside_Front from "../../Styles/Assets/Services/Remodels/AF555/After/Outside_Front.JPG";
+import remodel_AF555_after_Upstairs_Bathroom from "../../Styles/Assets/Services/Remodels/AF555/After/Upstairs_Bathroom.JPG";
+import remodel_AF555_after_Upstairs_Bedroom_Northeast from "../../Styles/Assets/Services/Remodels/AF555/After/Upstairs_Bedroom_Northeast.JPG";
+import remodel_AF555_after_Upstairs_Bedroom_Northwest from "../../Styles/Assets/Services/Remodels/AF555/After/Upstairs_Bedroom_Northwest.JPG";
+import remodel_AF555_after_Upstairs_Bedroom_Southwest from "../../Styles/Assets/Services/Remodels/AF555/After/Upstairs_Bedroom_Southwest.JPG";
+import remodel_AF555_after_Upstairs_Dining from "../../Styles/Assets/Services/Remodels/AF555/After/Upstairs_Dining.JPG";
+import remodel_AF555_after_Upstairs_Kitchen from "../../Styles/Assets/Services/Remodels/AF555/After/Upstairs_Kitchen.JPG";
+import remodel_AF555_after_Upstairs_Laundry from "../../Styles/Assets/Services/Remodels/AF555/After/Upstairs_Laundry.JPG";
+import remodel_AF555_after_Upstairs_Living from "../../Styles/Assets/Services/Remodels/AF555/After/Upstairs_Living.JPG";
+import remodel_AF555_after_Upstairs_Pantry from "../../Styles/Assets/Services/Remodels/AF555/After/Upstairs_Pantry.JPG";
 
 import tree1 from "../../Styles/Assets/Services/TreeRemoval/1.jpg";
 import tree2 from "../../Styles/Assets/Services/TreeRemoval/2.jpg";
@@ -133,19 +137,24 @@ const Service = (props) => {
       description =
         "If you're looking to remodel your house or business, we have you covered. We'll work with you to determine your goals, then we'll take it from there and bring them to life. With our help, your home or business will match your vision before you know it!";
       images = [
-        [remodels1A],
-        [remodels2A],
-        [remodels3A],
-        [remodels4A],
-        [remodels5A],
-        [remodels6A],
-        [remodels7A],
-        [remodels8A],
-        [remodels9A],
-        [remodels10A],
-        [remodels11A],
-        [remodels12A],
-        [remodels13A],
+        [remodel_AF555_after_downstairs_bathroom],
+        [remodel_AF555_after_downstairs_bedroom_northeast],
+        [remodel_AF555_after_downstairs_bedroom_northwest],
+        [remodel_AF555_after_downstairs_entry],
+        [remodel_AF555_after_downstairs_kitchen],
+        [remodel_AF555_after_downstairs_laundry],
+        [remodel_AF555_after_downstairs_living],
+        [remodel_AF555_after_Outside_Back],
+        [remodel_AF555_after_Outside_Front],
+        [remodel_AF555_after_Upstairs_Bathroom],
+        [remodel_AF555_after_Upstairs_Bedroom_Northeast],
+        [remodel_AF555_after_Upstairs_Bedroom_Northwest],
+        [remodel_AF555_after_Upstairs_Bedroom_Southwest],
+        [remodel_AF555_after_Upstairs_Dining],
+        [remodel_AF555_after_Upstairs_Kitchen],
+        [remodel_AF555_after_Upstairs_Laundry],
+        [remodel_AF555_after_Upstairs_Living],
+        [remodel_AF555_after_Upstairs_Pantry],
       ];
       break;
 
